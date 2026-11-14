@@ -232,9 +232,12 @@ void main() {
   });
 
   test('maps yesterday in Libyan Arabic to the previous local date', () {
-    final before = DateTime.now();
+    // It is already November 15 in Tripoli, even on a host running in UTC.
+    final datedParser = FinancialCommandParser(
+      clock: () => DateTime.utc(2026, 11, 14, 23, 30),
+    );
     final draft =
-        parser.parse(
+        datedParser.parse(
               input: 'امبارح شريت دواء بـ 25',
               accounts: [account(id: 'cash')],
               categories: buildDefaultCategories(),
@@ -242,11 +245,7 @@ void main() {
               paymentMethodClarificationMessage: clarification,
             )
             as AiTransactionDraft;
-    final expected = DateTime(
-      before.year,
-      before.month,
-      before.day,
-    ).subtract(const Duration(days: 1)).toUtc();
+    final expected = DateTime.utc(2026, 11, 13, 22);
 
     expect(draft.transactionDate, expected);
   });
