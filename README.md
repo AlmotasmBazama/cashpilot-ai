@@ -160,6 +160,7 @@ authority to choose an owner.
 
 ## Documentation
 
+- [مراجعة المصدر والتحقق في 14 نوفمبر 2026](docs/qa/publication/VALIDATION_2026_11_14_AR.md)
 - [Engineering guide](AGENTS.md) and [architecture rules](docs/architecture/clean_architecture_rules.md)
 - [Firebase setup](docs/firebase_setup.md) and [AI activation](docs/ai_activation.md)
 - [Financial agent architecture](docs/ai_financial_agent_architecture.md), [tool registry](docs/ai_tool_registry.md), and [permissions](docs/ai_tool_permission_policy.md)

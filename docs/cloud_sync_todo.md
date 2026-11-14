@@ -16,6 +16,8 @@ The current implementation is backup-only and uses the authenticated
   balances or reads cloud data into Drift.
 - Opt-in backup controls, queue counts, last-success time, manual backup, and
   retry controls in Settings. Guest and unauthenticated sessions are blocked.
+- GitHub Actions runs the Firestore rules and account-deletion emulator suites
+  against the local `demo-cashpilot-ai` project.
 
 ## Restore Contract
 
@@ -26,7 +28,6 @@ non-destructive preview are designed and tested.
 
 ## Remaining Work
 
-- Run the implemented Firestore emulator security suite in release CI.
 - Add bounded exponential backoff for high-volume or unreliable networks.
 - Add schema versions and idempotency tokens to backup documents.
 - Define guest-data ownership when an anonymous user upgrades an account.
