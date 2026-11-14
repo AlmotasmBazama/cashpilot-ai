@@ -17,7 +17,7 @@
     "verify-groq-models": "tsx scripts/verify-groq-models.ts"
   },
   "dependencies": {
-    "express": "^4.21.2",
+    "express": "^5.3.0",
     "firebase-admin": "^14.2.0",
     "zod": "^4.6.7"
   },
