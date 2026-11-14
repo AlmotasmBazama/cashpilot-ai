@@ -1,0 +1,400 @@
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'CHANGELOG.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'android/app/build.gradle.kts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'android/app/src/main/AndroidManifest.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/ai_activation.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/firebase_setup.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/manual_qa_checklist.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/receipt_scanning.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'firebase.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'firestore.rules', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'integration_test/app_check_diagnostics_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'integration_test/firebase_ai_chat_smoke_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'integration_test/firebase_ai_receipt_smoke_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'integration_test/firebase_ai_smoke_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'integration_test/firebase_auth_smoke_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ios/Runner.xcodeproj/project.pbxproj', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/app/app.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/app/bootstrap.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/app/router/app_router.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/database/app_database.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/database/app_database.g.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/firebase/firebase_initializer.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/firebase/firebase_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/logging/app_logger.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/storage/settings_keys.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/storage/settings_local_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/sync/application/sync_manager.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/sync/application/sync_mutation_queue.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/sync/application/sync_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/sync/data/firestore_sync_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/sync/data/sync_preferences_local_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/sync/data/sync_queue_repository.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/sync/data/tables/sync_queue_table.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/core/sync/domain/sync_queue_item.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/accounts/accounts.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/accounts/application/providers/accounts_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/accounts/data/datasources/local/accounts_local_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/accounts/data/datasources/local/tables/accounts_table.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/accounts/data/repositories/accounts_repository_impl.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/accounts/presentation/widgets/account_form_fields.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/accounts/presentation/widgets/add_account_bottom_sheet.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/accounts/presentation/widgets/edit_account_bottom_sheet.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/application/providers/ai_assistant_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/application/services/ai_action_executor.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/application/services/ai_connection_diagnostic.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/data/config/ai_runtime_config.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/data/config/firebase_ai_config.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/data/datasources/firebase_ai_provider_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/domain/entities/ai_capability.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/domain/entities/ai_transaction_draft.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/domain/services/ai_action_draft_factory.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/domain/services/ai_action_validator.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/domain/services/ai_intent_router.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/domain/services/financial_command_parser.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/domain/usecases/create_ai_action_draft.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/presentation/pages/ai_assistant_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/ai_assistant/presentation/widgets/ai_action_confirmation_card.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/application/providers/auth_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/data/datasources/firebase_auth_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/data/dtos/auth_user_dto.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/data/mappers/auth_mapper.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/data/repositories/auth_repository_impl.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/domain/entities/auth_user.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/domain/repositories/auth_repository.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/domain/usecases/complete_profile.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/presentation/pages/email_verification_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/presentation/pages/forgot_password_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/presentation/pages/guest_mode_info_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/presentation/pages/login_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/presentation/pages/profile_completion_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/auth/presentation/pages/register_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/budgets/application/providers/budgets_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/budgets/data/datasources/local/budgets_local_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/budgets/data/datasources/local/tables/budgets_table.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/budgets/presentation/widgets/budget_form_sheet.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/categories/application/providers/categories_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/categories/data/datasources/local/categories_local_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/categories/data/datasources/local/tables/categories_table.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/categories/data/repositories/categories_repository_impl.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/categories/presentation/pages/categories_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/dashboard/application/dashboard_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/dashboard/presentation/pages/dashboard_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/data_deletion/application/data_deletion_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/data_deletion/data/datasources/account_deletion_auth_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/data_deletion/data/datasources/cloud_user_data_deletion_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/data_deletion/data/datasources/deletion_preferences_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/data_deletion/data/datasources/local_user_data_deletion_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/data_deletion/data/repositories/data_deletion_repository_impl.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/data_deletion/domain/entities/data_deletion_request.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/data_deletion/domain/failures/data_deletion_failure_codes.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/exchange_rates/application/providers/exchange_rates_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/exchange_rates/data/datasources/local/exchange_rates_local_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/exchange_rates/data/datasources/local/tables/exchange_rates_table.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/exchange_rates/presentation/widgets/exchange_rates_settings_section.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/finance_engine/domain/exceptions/finance_exception.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/finance_engine/domain/services/finance_validation_service.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/finance_engine/domain/services/transfer_processor.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/goals/application/providers/goals_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/goals/data/datasources/local/goals_local_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/goals/data/datasources/local/tables/goal_contributions_table.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/goals/data/datasources/local/tables/goals_table.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/goals/presentation/widgets/goal_contribution_sheet.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/goals/presentation/widgets/goal_form_sheet.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/income_sources/domain/enums/income_source_type.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/income_sources/domain/services/income_reporting_policy.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/payees/application/providers/payees_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/payees/data/datasources/local/payees_local_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/payees/data/datasources/local/tables/payees_table.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/application/receipt_capture_state.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/application/receipt_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/data/datasources/local/tables/receipt_line_items_table.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/data/datasources/local/tables/receipts_table.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/data/datasources/local/tables/transaction_splits_table.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/data/providers/firebase_receipt_analysis_provider.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/data/repositories/receipt_repository_impl.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/data/services/receipt_local_image_store.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/data/services/receipt_privacy_consent_store.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/domain/entities/receipt_transaction_draft.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/domain/entities/transaction_split.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/domain/failures/receipt_failure_codes.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/domain/repositories/receipt_analysis_provider.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/domain/repositories/receipt_repository.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/domain/services/receipt_split_allocator.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/domain/usecases/analyze_receipt_image.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/domain/usecases/build_receipt_transaction_draft.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/domain/usecases/capture_receipt_image.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/domain/usecases/confirm_receipt_transaction.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/domain/usecases/import_receipt_image.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/domain/usecases/prepare_receipt_image.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/presentation/pages/receipt_capture_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/receipts/presentation/pages/receipt_review_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/reports/presentation/pages/reports_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/settings/application/base_currency_provider.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/settings/presentation/pages/settings_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/settings/presentation/widgets/ai_diagnostics_settings_section.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/settings/presentation/widgets/backup_sync_settings_section.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/settings/presentation/widgets/delete_all_user_data_dialog.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/application/providers/transactions_providers.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/data/adapters/drift_account_balance_repository.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/data/adapters/drift_finance_transaction_manager.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/data/datasources/local/tables/transactions_table.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/data/datasources/local/transactions_local_data_source.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/data/repositories/transactions_repository_impl.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/domain/entities/create_transfer_command.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/domain/entities/created_transfer.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/domain/failures/transaction_failure_codes.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/domain/repositories/transactions_repository.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/domain/usecases/search_transactions.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/presentation/pages/transaction_details_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/presentation/pages/transactions_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/presentation/pages/transfer_screen.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/features/transactions/presentation/widgets/transaction_form_sheet.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/firebase_options.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/l10n/app_ar.arb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lib/l10n/app_en.arb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'linux/flutter/generated_plugin_registrant.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'linux/flutter/generated_plugins.cmake', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'macos/Flutter/GeneratedPluginRegistrant.swift', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'macos/Runner/DebugProfile.entitlements', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'macos/Runner/Release.entitlements', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pubspec.lock', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pubspec.yaml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/core/database/app_database_migration_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/core/logging/app_logger_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/core/sync/sync_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/ai_assistant/ai_action_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/ai_assistant/ai_assistant_send_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/ai_assistant/ai_connection_diagnostic_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/ai_assistant/ai_module_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/ai_assistant/ai_runtime_config_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/ai_assistant/ai_understanding_expansion_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/ai_assistant/financial_command_parser_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/budgets/budgets_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/categories/categories_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/dashboard/dashboard_exchange_rate_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/dashboard/dashboard_warning_ui_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/data_deletion/data_deletion_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/exchange_rates/exchange_rates_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/exchange_rates/exchange_rates_ui_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/finance_engine/finance_engine_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/goals/goals_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/payees/payees_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/receipts/firebase_receipt_analysis_provider_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/receipts/receipt_capture_usecases_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/receipts/receipt_persistence_and_image_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/receipts/receipt_processing_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/receipts/receipt_ui_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/settings/ai_diagnostics_settings_section_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/settings/base_currency_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/settings/delete_all_user_data_dialog_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/transactions/transactions_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/features/transactions/transactions_ui_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/firestore/firestore.rules.test.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'test/widget_test.dart', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'windows/flutter/generated_plugin_registrant.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'windows/flutter/generated_plugins.cmake', LF will be replaced by CRLF the next time Git touches it
+.gitignore
+CHANGELOG.md
+README.md
+android/app/build.gradle.kts
+android/app/src/main/AndroidManifest.xml
+docs/ai_activation.md
+docs/firebase_setup.md
+docs/manual_qa_checklist.md
+docs/receipt_scanning.md
+firebase.json
+firestore.rules
+integration_test/app_check_diagnostics_test.dart
+integration_test/firebase_ai_chat_smoke_test.dart
+integration_test/firebase_ai_receipt_smoke_test.dart
+integration_test/firebase_ai_smoke_test.dart
+integration_test/firebase_auth_smoke_test.dart
+ios/Runner.xcodeproj/project.pbxproj
+lib/app/app.dart
+lib/app/bootstrap.dart
+lib/app/router/app_router.dart
+lib/core/database/app_database.dart
+lib/core/database/app_database.g.dart
+lib/core/firebase/firebase_initializer.dart
+lib/core/firebase/firebase_providers.dart
+lib/core/logging/app_logger.dart
+lib/core/storage/settings_keys.dart
+lib/core/storage/settings_local_data_source.dart
+lib/core/sync/application/sync_manager.dart
+lib/core/sync/application/sync_mutation_queue.dart
+lib/core/sync/application/sync_providers.dart
+lib/core/sync/data/firestore_sync_data_source.dart
+lib/core/sync/data/sync_preferences_local_data_source.dart
+lib/core/sync/data/sync_queue_repository.dart
+lib/core/sync/data/tables/sync_queue_table.dart
+lib/core/sync/domain/sync_queue_item.dart
+lib/features/accounts/accounts.dart
+lib/features/accounts/application/providers/accounts_providers.dart
+lib/features/accounts/data/datasources/local/accounts_local_data_source.dart
+lib/features/accounts/data/datasources/local/tables/accounts_table.dart
+lib/features/accounts/data/repositories/accounts_repository_impl.dart
+lib/features/accounts/presentation/widgets/account_form_fields.dart
+lib/features/accounts/presentation/widgets/add_account_bottom_sheet.dart
+lib/features/accounts/presentation/widgets/edit_account_bottom_sheet.dart
+lib/features/ai_assistant/application/providers/ai_assistant_providers.dart
+lib/features/ai_assistant/application/services/ai_action_executor.dart
+lib/features/ai_assistant/application/services/ai_connection_diagnostic.dart
+lib/features/ai_assistant/data/config/ai_runtime_config.dart
+lib/features/ai_assistant/data/config/firebase_ai_config.dart
+lib/features/ai_assistant/data/datasources/firebase_ai_provider_data_source.dart
+lib/features/ai_assistant/domain/entities/ai_capability.dart
+lib/features/ai_assistant/domain/entities/ai_transaction_draft.dart
+lib/features/ai_assistant/domain/services/ai_action_draft_factory.dart
+lib/features/ai_assistant/domain/services/ai_action_validator.dart
+lib/features/ai_assistant/domain/services/ai_intent_router.dart
+lib/features/ai_assistant/domain/services/financial_command_parser.dart
+lib/features/ai_assistant/domain/usecases/create_ai_action_draft.dart
+lib/features/ai_assistant/presentation/pages/ai_assistant_screen.dart
+lib/features/ai_assistant/presentation/widgets/ai_action_confirmation_card.dart
+lib/features/auth/application/providers/auth_providers.dart
+lib/features/auth/data/datasources/firebase_auth_data_source.dart
+lib/features/auth/data/dtos/auth_user_dto.dart
+lib/features/auth/data/mappers/auth_mapper.dart
+lib/features/auth/data/repositories/auth_repository_impl.dart
+lib/features/auth/domain/entities/auth_user.dart
+lib/features/auth/domain/repositories/auth_repository.dart
+lib/features/auth/domain/usecases/complete_profile.dart
+lib/features/auth/domain/usecases/delete_auth_account.dart
+lib/features/auth/presentation/pages/email_verification_screen.dart
+lib/features/auth/presentation/pages/forgot_password_screen.dart
+lib/features/auth/presentation/pages/guest_mode_info_screen.dart
+lib/features/auth/presentation/pages/login_screen.dart
+lib/features/auth/presentation/pages/profile_completion_screen.dart
+lib/features/auth/presentation/pages/register_screen.dart
+lib/features/budgets/application/providers/budgets_providers.dart
+lib/features/budgets/data/datasources/local/budgets_local_data_source.dart
+lib/features/budgets/data/datasources/local/tables/budgets_table.dart
+lib/features/budgets/presentation/widgets/budget_form_sheet.dart
+lib/features/categories/application/providers/categories_providers.dart
+lib/features/categories/data/datasources/local/categories_local_data_source.dart
+lib/features/categories/data/datasources/local/tables/categories_table.dart
+lib/features/categories/data/repositories/categories_repository_impl.dart
+lib/features/categories/presentation/pages/categories_screen.dart
+lib/features/dashboard/application/dashboard_providers.dart
+lib/features/dashboard/presentation/pages/dashboard_screen.dart
+lib/features/data_deletion/application/data_deletion_providers.dart
+lib/features/data_deletion/data/datasources/account_deletion_auth_data_source.dart
+lib/features/data_deletion/data/datasources/cloud_user_data_deletion_data_source.dart
+lib/features/data_deletion/data/datasources/deletion_preferences_data_source.dart
+lib/features/data_deletion/data/datasources/local_user_data_deletion_data_source.dart
+lib/features/data_deletion/data/repositories/data_deletion_repository_impl.dart
+lib/features/data_deletion/domain/entities/data_deletion_request.dart
+lib/features/data_deletion/domain/failures/data_deletion_failure_codes.dart
+lib/features/exchange_rates/application/providers/exchange_rates_providers.dart
+lib/features/exchange_rates/data/datasources/local/exchange_rates_local_data_source.dart
+lib/features/exchange_rates/data/datasources/local/tables/exchange_rates_table.dart
+lib/features/exchange_rates/presentation/widgets/exchange_rates_settings_section.dart
+lib/features/finance_engine/domain/exceptions/finance_exception.dart
+lib/features/finance_engine/domain/services/finance_validation_service.dart
+lib/features/finance_engine/domain/services/transfer_processor.dart
+lib/features/goals/application/providers/goals_providers.dart
+lib/features/goals/data/datasources/local/goals_local_data_source.dart
+lib/features/goals/data/datasources/local/tables/goal_contributions_table.dart
+lib/features/goals/data/datasources/local/tables/goals_table.dart
+lib/features/goals/presentation/widgets/goal_contribution_sheet.dart
+lib/features/goals/presentation/widgets/goal_form_sheet.dart
+lib/features/income_sources/domain/enums/income_source_type.dart
+lib/features/income_sources/domain/services/income_reporting_policy.dart
+lib/features/payees/application/providers/payees_providers.dart
+lib/features/payees/data/datasources/local/payees_local_data_source.dart
+lib/features/payees/data/datasources/local/tables/payees_table.dart
+lib/features/receipts/application/receipt_capture_state.dart
+lib/features/receipts/application/receipt_providers.dart
+lib/features/receipts/data/datasources/local/tables/receipt_line_items_table.dart
+lib/features/receipts/data/datasources/local/tables/receipts_table.dart
+lib/features/receipts/data/datasources/local/tables/transaction_splits_table.dart
+lib/features/receipts/data/providers/firebase_receipt_analysis_provider.dart
+lib/features/receipts/data/repositories/receipt_repository_impl.dart
+lib/features/receipts/data/services/receipt_local_image_store.dart
+lib/features/receipts/data/services/receipt_privacy_consent_store.dart
+lib/features/receipts/domain/entities/receipt_transaction_draft.dart
+lib/features/receipts/domain/entities/transaction_split.dart
+lib/features/receipts/domain/failures/receipt_failure_codes.dart
+lib/features/receipts/domain/repositories/receipt_analysis_provider.dart
+lib/features/receipts/domain/repositories/receipt_repository.dart
+lib/features/receipts/domain/services/receipt_split_allocator.dart
+lib/features/receipts/domain/usecases/analyze_receipt_image.dart
+lib/features/receipts/domain/usecases/build_receipt_transaction_draft.dart
+lib/features/receipts/domain/usecases/capture_receipt_image.dart
+lib/features/receipts/domain/usecases/confirm_receipt_transaction.dart
+lib/features/receipts/domain/usecases/import_receipt_image.dart
+lib/features/receipts/domain/usecases/prepare_receipt_image.dart
+lib/features/receipts/presentation/pages/receipt_capture_screen.dart
+lib/features/receipts/presentation/pages/receipt_review_screen.dart
+lib/features/reports/presentation/pages/reports_screen.dart
+lib/features/settings/application/base_currency_provider.dart
+lib/features/settings/presentation/pages/settings_screen.dart
+lib/features/settings/presentation/widgets/ai_diagnostics_settings_section.dart
+lib/features/settings/presentation/widgets/backup_sync_settings_section.dart
+lib/features/settings/presentation/widgets/delete_all_user_data_dialog.dart
+lib/features/transactions/application/providers/transactions_providers.dart
+lib/features/transactions/data/adapters/drift_account_balance_repository.dart
+lib/features/transactions/data/adapters/drift_finance_transaction_manager.dart
+lib/features/transactions/data/datasources/local/tables/transactions_table.dart
+lib/features/transactions/data/datasources/local/transactions_local_data_source.dart
+lib/features/transactions/data/repositories/transactions_repository_impl.dart
+lib/features/transactions/domain/entities/create_transfer_command.dart
+lib/features/transactions/domain/entities/created_transfer.dart
+lib/features/transactions/domain/failures/transaction_failure_codes.dart
+lib/features/transactions/domain/repositories/transactions_repository.dart
+lib/features/transactions/domain/usecases/search_transactions.dart
+lib/features/transactions/presentation/pages/transaction_details_screen.dart
+lib/features/transactions/presentation/pages/transactions_screen.dart
+lib/features/transactions/presentation/pages/transfer_screen.dart
+lib/features/transactions/presentation/widgets/transaction_form_sheet.dart
+lib/firebase_options.dart
+lib/l10n/app_ar.arb
+lib/l10n/app_en.arb
+lib/l10n/app_localizations.dart
+lib/l10n/app_localizations_ar.dart
+lib/l10n/app_localizations_en.dart
+linux/flutter/generated_plugin_registrant.cc
+linux/flutter/generated_plugins.cmake
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/Runner/DebugProfile.entitlements
+macos/Runner/Release.entitlements
+package.json
+pubspec.lock
+pubspec.yaml
+test/core/database/app_database_migration_test.dart
+test/core/logging/app_logger_test.dart
+test/core/sync/sync_test.dart
+test/features/ai_assistant/ai_action_test.dart
+test/features/ai_assistant/ai_assistant_send_test.dart
+test/features/ai_assistant/ai_connection_diagnostic_test.dart
+test/features/ai_assistant/ai_module_test.dart
+test/features/ai_assistant/ai_runtime_config_test.dart
+test/features/ai_assistant/ai_understanding_expansion_test.dart
+test/features/ai_assistant/financial_command_parser_test.dart
+test/features/budgets/budgets_test.dart
+test/features/categories/categories_test.dart
+test/features/dashboard/dashboard_exchange_rate_test.dart
+test/features/dashboard/dashboard_warning_ui_test.dart
+test/features/data_deletion/data_deletion_test.dart
+test/features/exchange_rates/exchange_rates_test.dart
+test/features/exchange_rates/exchange_rates_ui_test.dart
+test/features/finance_engine/finance_engine_test.dart
+test/features/goals/goals_test.dart
+test/features/payees/payees_test.dart
+test/features/receipts/firebase_receipt_analysis_provider_test.dart
+test/features/receipts/receipt_capture_usecases_test.dart
+test/features/receipts/receipt_persistence_and_image_test.dart
+test/features/receipts/receipt_processing_test.dart
+test/features/receipts/receipt_ui_test.dart
+test/features/settings/ai_diagnostics_settings_section_test.dart
+test/features/settings/base_currency_test.dart
+test/features/settings/delete_all_user_data_dialog_test.dart
+test/features/transactions/transactions_test.dart
+test/features/transactions/transactions_ui_test.dart
+test/firestore/firestore.rules.test.mjs
+test/widget_test.dart
+windows/flutter/generated_plugin_registrant.cc
+windows/flutter/generated_plugins.cmake

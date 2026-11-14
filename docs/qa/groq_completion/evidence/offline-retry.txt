@@ -1,0 +1,20 @@
+CashPilot AI Groq Android offline and retry acceptance - sanitized evidence
+Date: 2026-08-14 (Africa/Tripoli)
+Candidate revision: cashpilot-ai-gateway-staging-00005-civ (0% traffic during test)
+
+- Initial gateway reachability: PASS
+- Emulator network changed to offline: PASS
+- Loading state became visible: PASS
+- Double send while loading: blocked
+- Failure: gatewayUnreachable, retryable=true
+- Loading ended: PASS
+- Visible user turns after failure: exactly 1
+- Emulator network restored: PASS
+- One Retry action: PASS
+- Retry completed through Groq: PASS
+- User turn after Retry: exactly 1; duplicate response: 0
+- New conversation cleared state: PASS
+- Network restoration in runner finally block: PASS
+- Synthetic user deletion/sign-out: PASS
+
+No credential, token, raw UID, prompt, or response is included in this evidence.

@@ -1,0 +1,66 @@
+SAFE ORIGINAL DENIAL TRACE
+===========================
+
+Captured: 2026-08-23 (Africa/Tripoli)
+
+The trace contains only allowlisted policy facts. It excludes the raw prompt,
+UID, owner-scope value, tokens, transaction history, and credentials.
+
+Displayed path before the fix
+-----------------------------
+
+route=financialRecordOffer
+retained_intent=unknown
+displayed_typed_failure=permissionDenied
+
+The affirmative continuation evaluated failureForIntent(unknown), so the UI
+showed a generic permission denial before the transaction-draft resolver was
+asked. Evaluating the same operation as transactionDraft exposed the first
+exact policy denial:
+
+first_policy_specific_denial=transactionDraftsDisabled
+
+Original safe policy snapshot
+-----------------------------
+
+account_control_level=fullControl
+policy_provenance=persistedUserSelection
+policy_revision=1
+transaction_draft_permission=false
+confirmed_execution_permission=false
+owner_scope_readiness=true
+app_control_flag_enabled=true
+create_drafts_flag_enabled=true
+confirmed_execution_flag_enabled=true
+local_dataset_scope_flag_enabled=true
+audit_flag_enabled=true
+confirmation_required=true
+
+Root cause
+----------
+
+The persisted V2 record selected Full Control but retained false values from
+the retired independent capability switches. V1 records were normalized from
+the selected level; V2 records were not. The settings screen, draft check, and
+confirmed execution check therefore observed contradictory authorization.
+
+Post-fix safe policy snapshot
+-----------------------------
+
+account_control_level=fullControl
+policy_provenance=persistedUserSelection
+transaction_draft_permission=true
+confirmed_execution_permission=true
+owner_scope_readiness=true
+app_control_flag_enabled=true
+create_drafts_flag_enabled=true
+confirmed_execution_flag_enabled=true
+local_dataset_scope_flag_enabled=true
+audit_flag_enabled=true
+confirmation_required=true
+denial=none
+
+Full Control and Review Before Execution now admit transaction drafts and
+confirmed creates when every build/owner/audit gate is ready. Read Only and Off
+remain blocked. Every supported level is reconstructed from one canonical
+mapping, and confirmation cannot be disabled.

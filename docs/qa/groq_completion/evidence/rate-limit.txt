@@ -1,0 +1,13 @@
+CashPilot AI Groq gateway live rate-limit evidence
+Date: 2026-08-14 (Africa/Tripoli)
+Candidate revision: cashpilot-ai-gateway-staging-00005-civ (0% traffic during test)
+
+- User A: requests 1-20 accepted by the rate limiter and stopped at the disabled
+  tool-selection route without Groq egress.
+- User A request 21: HTTP 429, groqRateLimited, positive Retry-After present.
+- User B first request: not rate-limited, proving per-user isolation.
+- Automatic client resend: 0.
+- Synthetic users created: 2; deleted: 2; signed out: true.
+- Provider calls for this controlled test: 0.
+
+No credential, token, raw UID, prompt, response, or provider secret is included.

@@ -1,0 +1,5 @@
+Date: 2026-08-13
+Command: flutter build apk --release
+Status: BLOCKED / NOT EXECUTED
+Reason: final application ID is unapproved; real release signing and Play Integrity/App Check are not configured or accepted.
+Decision: no Debug artifact is relabeled as a release candidate.

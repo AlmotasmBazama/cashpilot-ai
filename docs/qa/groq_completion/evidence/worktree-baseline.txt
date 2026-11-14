@@ -1,0 +1,30 @@
+Captured: 2026-08-14T11:35:20+02:00
+Repository root: <REPOSITORY_ROOT>
+Branch: master
+HEAD: fd24526f3f21ba0e96ca73dcc4a69f5a11aed632
+
+Commands executed before sprint changes:
+- git rev-parse --show-toplevel
+- git branch --show-current
+- git rev-parse HEAD
+- git status --short
+- git diff --stat
+- git diff --name-only
+- git ls-files --others --exclude-standard
+
+Sanitized baseline summary:
+- git status --short entries: 370
+- tracked paths in git diff --name-only: 204
+- untracked files from git ls-files --others --exclude-standard: 489
+- git diff --stat: 204 files changed, 37802 insertions(+), 5688 deletions(-)
+- SHA-256 of UTF-8 joined `git status --short` output: 96e4ac0a82d74be80cc72187798d0ab00073b4c0d90e2ada6fe9775389f54b9e
+- SHA-256 of UTF-8 joined untracked-file output: 30b23e7396e52f82bfa74e8de0d9665c699ce1d451ce4caf2f8c87a0cf8c9b1c
+
+Protection note:
+The worktree was already heavily modified before this sprint. The complete gateway under
+`services/cashpilot_ai_gateway/`, the Groq documentation, and many Groq Flutter/tests were
+already untracked. Existing tracked and untracked work is treated as user-owned. No branch
+change, reset, clean, restore, stash, merge, rebase, commit, push, or deletion was performed.
+
+Secret handling:
+No provider key, Firebase token, App Check token, raw UID, prompt, or response is included.

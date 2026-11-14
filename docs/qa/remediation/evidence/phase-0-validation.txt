@@ -1,0 +1,33 @@
+CashPilot remediation Phase 0 validation (sanitized)
+Date: 2026-08-10 (Africa/Tripoli)
+Branch: master
+Commit: fd24526f3f21ba0e96ca73dcc4a69f5a11aed632
+
+Source of truth loaded:
+- docs/qa/CASHPILOT_FULL_QA_REPORT_AR.md
+- docs/qa/CASHPILOT_FINDINGS.csv
+- all 16 files under docs/qa/evidence
+- all architecture, privacy, receipt, gateway, and hardening documents required by the remediation brief
+
+CSV validation:
+- rows: 70
+- unique IDs: 70
+- empty IDs: 0
+- P0: 11
+- P1: 34
+- P2: 18
+- P3: 1
+- P4: 6
+- P0+P1: 45
+
+Phase 0 classification:
+- Reproduced: 39
+- Investigating: 6
+- Not Started: 25
+- Duplicate: 0
+- Invalid With Evidence: 0
+- Already fixed with evidence: 0
+- root-cause groups: 12; membership total: 70
+
+No product source was edited during Phase 0. No credentials, raw user identifiers,
+prompts, receipt data, or private financial records were read or stored.

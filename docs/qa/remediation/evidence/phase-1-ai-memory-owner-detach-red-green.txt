@@ -1,0 +1,68 @@
+Phase 1 reopened AI memory + owner-detach remediation evidence
+Date: 2026-08-10
+
+Scope
+- Persisted assistant-memory work is bound to the captured canonical owner
+  scope and authenticated-session epoch.
+- The shared deletion/quarantine fence drains in-flight assistant-memory
+  writers and rejects new writers while fenced.
+- Owner detach is serialized and the scoped session remains unavailable until
+  old durable commands/plans/proofs have been invalidated.
+
+RED
+Command:
+  flutter test --no-pub test/features/ai_assistant/ai_agent_memory_late_write_test.dart test/core/owner_scope/owner_scope_detach_race_test.dart
+
+Result before implementation:
+  +0 -2; both test files failed to load at the intended contract boundary.
+  Missing production boundaries included AiAgentMemoryAccess,
+  currentToolOwnerScope/operation-fence orchestration inputs, and injectable
+  OwnerScopeDetachService/DriftOwnerScopeDetachService.
+
+GREEN -- new race regressions
+Command:
+  flutter test --no-pub test/features/ai_assistant/ai_agent_memory_late_write_test.dart test/core/owner_scope/owner_scope_detach_race_test.dart
+
+Result:
+  +8; All tests passed.
+
+Covered assertions:
+- A delayed real-orchestrator response cannot overwrite new-session A memory
+  after A -> B -> A.
+- A delayed real-orchestrator response cannot overwrite new-session A memory
+  after logout -> relogin A.
+- The owner epoch is rechecked at the delayed memory-store commit boundary.
+- A bound orchestrator with missing owner-reader/fence guards fails closed and
+  performs no memory access.
+- A deletion fence drains a delayed provider response before purge and the
+  persisted assistant-memory key remains absent.
+- An old-session memory-preference completion cannot update new-session state
+  or the persisted owner preference flag.
+- An old-session clear-history completion cannot delete new-session A memory.
+- A delayed real Drift detach keeps owner scope unavailable; old command/plan
+  rows are cancelled and old proof removed, while new-session A command/plan/
+  proof rows survive and the new proof remains consumable.
+
+GREEN -- adjacent compatibility suite
+Command:
+  flutter test --no-pub test/features/ai_assistant/ai_agent_memory_scope_test.dart test/features/ai_assistant/ai_agent_test.dart test/features/ai_assistant/ai_owner_scope_epoch_test.dart test/features/ai_assistant/ai_deletion_operation_fence_test.dart test/features/ai_assistant/ai_app_control_scope_race_test.dart test/core/owner_scope/scoped_session_stream_test.dart
+
+Result:
+  +28; All tests passed.
+
+STATIC ANALYSIS -- changed files
+Command:
+  flutter analyze --no-pub lib/core/storage/settings_local_data_source.dart lib/features/ai_assistant/domain/agent/ai_agent_contracts.dart lib/features/ai_assistant/application/agent/ai_agent_memory.dart lib/features/ai_assistant/application/agent/ai_agent_orchestrator_impl.dart lib/features/ai_assistant/application/providers/ai_agent_providers.dart lib/core/owner_scope/application/owner_scope_providers.dart test/features/ai_assistant/ai_agent_memory_late_write_test.dart test/core/owner_scope/owner_scope_detach_race_test.dart test/features/exchange_rates/exchange_rates_ui_test.dart test/widget_test.dart
+
+Result:
+  No issues found.
+
+STATIC ANALYSIS -- full workspace
+Command:
+  flutter analyze --no-pub
+
+Result:
+  No issues found.
+
+No credentials, raw Firebase UIDs, tokens, memory contents, or production owner
+scope values are included in this evidence.

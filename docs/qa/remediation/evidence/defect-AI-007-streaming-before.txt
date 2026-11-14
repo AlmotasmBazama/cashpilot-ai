@@ -1,0 +1,7 @@
+Command:
+  flutter test --no-pub -r expanded test/features/ai_assistant/ai_agent_streaming_safety_test.dart
+
+Result: FAILED (expected RED before implementation)
+Tests: 0 passed, 1 failed, 0 skipped.
+Failure: expected one safety-validated final response, but three responses were emitted because two provider snapshots were exposed before final validation.
+Secrets/private data: none.

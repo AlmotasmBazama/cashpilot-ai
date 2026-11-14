@@ -1,0 +1,19 @@
+CashPilot AI live Android closure baseline
+Date: 2026-08-11
+Scope: live Android/Firebase acceptance plus FUNC-015/016/017/018/028 only
+Safety: existing tracked and untracked work is preserved; no reset/clean/restore/stash/commit/push.
+Secrets: hashes and public metadata only; no token, UID, owner scope, API key, prompt, or response.
+
+Branch: master
+HEAD: fd24526f3f21ba0e96ca73dcc4a69f5a11aed632
+Dirty status entries: 343
+Flutter: 3.41.9
+Devices:
+List of devices attached
+emulator-5554          device product:sdk_gphone64_x86_64 model:sdk_gphone64_x86_64 device:emu64xa transport_id:2
+
+Config hashes:
+android\app\google-services.json 73595911E89D16C3B2D2BCA15149A60E390639E7836F4F0EBE9492D9ACF944A1
+lib\firebase_options.dart B80F13A5980EF3ACBAF42B46A2426E27EAF6C11CBFD456FEF660632429321D36
+android\app\build.gradle.kts 65C77BCBE7891D438A3CA57174B0639E314EE9FAD489FC22A58ED97A661FA8C4
+pubspec.lock 0825599E6B2A85FD66FE719F625D2E354A01E9792F1C8DC5AAC9019DB3548F4D

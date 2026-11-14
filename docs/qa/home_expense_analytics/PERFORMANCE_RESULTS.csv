@@ -1,0 +1,4 @@
+scenario,fixture_rows,eligible_source_rows,aggregate_rows,rows_reduction_percent,worst_duration_us,logical_subscriptions,memory_measurement,status,notes
+"10k mixed transaction aggregate",10000,6000,42,99.58,78980,1,"Not independently profiled",PASS,"Multiple categories/currencies; missing FX; posted/pending/cancelled; expense/income/transfer; current and previous periods"
+"Two listeners same selected period",2,2,2,0,0,1,"Provider objects only",PASS,"Riverpod family reuses one repository watch for the same period"
+"Weekly/monthly switch",2,2,2,0,0,1,"No full transaction list allocated",PASS,"Widget replaces 850 monthly with 120 weekly and removes stale value"

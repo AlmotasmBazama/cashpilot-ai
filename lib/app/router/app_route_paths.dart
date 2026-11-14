@@ -1,0 +1,66 @@
+abstract final class AppRoutePaths {
+  static const home = '/';
+  static const splash = '/splash';
+  static const onboarding = '/onboarding';
+  static const welcome = '/welcome';
+  static const login = '/login';
+  static const register = '/register';
+  static const forgotPassword = '/forgot-password';
+  static const emailVerification = '/email-verification';
+  static const profileCompletion = '/profile-completion';
+  static const guestInfo = '/guest';
+  static const dashboard = '/dashboard';
+  static const accounts = '/accounts';
+  static const accountDetails = '/accounts/:accountId';
+  static const transactions = '/transactions';
+  static const transactionDetails = '/transactions/:transactionId';
+  static const categories = '/categories';
+  static const reports = '/reports';
+  static const budgets = '/budgets';
+  static const goals = '/goals';
+  static const payees = '/payees';
+  static const payeeDetails = '/payees/:payeeId';
+  static const aiAssistant = '/ai-assistant';
+  static const transfer = '/transfer';
+  static const receiptCapture = '/receipts/scan';
+  static const receiptReview = '/receipts/:receiptId/review';
+  static const settings = '/settings';
+  static const profile = '/profile';
+  static const privacyPolicy = '/privacy';
+  static const termsOfUse = '/terms';
+
+  static String receiptReviewPath(String receiptId) =>
+      '/receipts/$receiptId/review';
+}
+
+abstract final class AppRouteNames {
+  static const home = 'home';
+  static const splash = 'splash';
+  static const onboarding = 'onboarding';
+  static const welcome = 'welcome';
+  static const login = 'login';
+  static const register = 'register';
+  static const forgotPassword = 'forgotPassword';
+  static const emailVerification = 'emailVerification';
+  static const profileCompletion = 'profileCompletion';
+  static const guestInfo = 'guestInfo';
+  static const dashboard = 'dashboard';
+  static const accounts = 'accounts';
+  static const accountDetails = 'accountDetails';
+  static const transactions = 'transactions';
+  static const transactionDetails = 'transactionDetails';
+  static const categories = 'categories';
+  static const reports = 'reports';
+  static const budgets = 'budgets';
+  static const goals = 'goals';
+  static const payees = 'payees';
+  static const payeeDetails = 'payeeDetails';
+  static const aiAssistant = 'aiAssistant';
+  static const transfer = 'transfer';
+  static const receiptCapture = 'receiptCapture';
+  static const receiptReview = 'receiptReview';
+  static const settings = 'settings';
+  static const profile = 'profile';
+  static const privacyPolicy = 'privacyPolicy';
+  static const termsOfUse = 'termsOfUse';
+}

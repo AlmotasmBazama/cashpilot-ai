@@ -1,0 +1,24 @@
+CashPilot AI measured performance evidence
+Date: 2026-08-11
+
+Dashboard long-history fixture:
+- Storage: NativeDatabase.memory
+- Owner rows: 10020 (10000 historical + 20 current)
+- Repeats: one warm-up then five serial samples per path
+- Before: map 10020 rows; median 520787 microseconds
+- After: map 20 rows while carrying exact total count 10020; median 2349 microseconds
+- Row mapping reduction: 99.8004 percent (501x row ratio)
+- Median reduction: approximately 99.55 percent
+- Observed speedup: 221.71x
+- Final dashboard/report/widget gate: 33 passed / 0 failed
+
+Other bounded improvements are functionally verified but not assigned invented timing:
+- Non-empty transaction search: owner-scoped SQL, filters before limit, max 200,
+  300 ms UI debounce, lazy card construction
+- AI streaming: progressive safety batches, detachable cancellation, hard deadline
+- Startup: required work bounded; App Check no longer blocks local first frame
+- Web Drift: version-matched worker/Wasm assets included and served correctly
+
+Known unmeasured risks remain: empty transaction history is unbounded; search ordering
+is limited to the newest 200 matches; budget calculations may read broad history;
+receipt image preparation may still block the UI isolate.

@@ -1,0 +1,17 @@
+CashPilot AI focused validation summary
+Date: 2026-08-11
+
+- Final AI review gate: 88 passed / 0 failed
+- Direct local English/Arabic greeting named gate: 2 passed / 0 failed
+- Post-content typed provider failure/no-fallback named gate: 1 passed / 0 failed
+- Earlier authoritative AI capability/controller gate: 46 passed / 0 failed
+- Earlier owner-transition regression gate: 76 passed / 0 failed
+- Final full Flutter gate: 1158 passed / 0 failed
+- Final Android synthetic navigation/lifecycle integration: 1 passed / 0 failed
+
+Regression attribution: 55 local tests were added or materially updated across
+14 files, plus 7 live integration call sites now explicitly await typed App Check
+activation before protected provider calls.
+
+No live Firebase AI or Groq model response was executed. Financial AI execution
+remains disabled by default and governed by local review/confirmation gates.

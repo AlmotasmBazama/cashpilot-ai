@@ -1,0 +1,66 @@
+OF-026..OF-030 backup/privacy remediation evidence
+Date: 2026-08-10
+Sanitization: synthetic identifiers only; owner scopes, Firebase UIDs, local
+absolute paths, financial values, notes, and payload bodies are omitted.
+
+Red baseline
+------------
+Command:
+  flutter test test/core/sync/backup_privacy_regression_test.dart
+  --reporter expanded
+
+Result:
+  +0 -1 (test compilation failed as intended)
+  Missing contracts: scoped snapshot lifecycle, durable reconciliation,
+  opaque queue ownership, execution consent generation, purge, and hard-delete
+  write planning.
+
+The first functional pass then exposed a second deterministic red regression:
+  22 passed, 1 failed across the focused sync files.
+  The second unchanged synchronization attempted 7 uploads instead of 0.
+Root cause: timestamp comparison was not a stable dirty-state marker.
+Repair: a minimized SHA-256 document fingerprint replaced timestamp-only dirty
+detection; no financial payload is retained in the clean manifest.
+
+Green verification
+------------------
+Focused backup/privacy regressions:
+  9/9 passed.
+
+Existing sync and backup-settings regressions:
+  16/16 passed.
+
+Total focused tests:
+  25/25 passed.
+
+Focused static analysis:
+  dart analyze lib/core/sync test/core/sync
+  No issues found.
+
+Verified local contracts
+------------------------
+- Opt-in prepares one owner-scoped snapshot covering all 8 supported entity
+  types, including the safe settings marker; a second unchanged sync uploads
+  no document.
+- Snapshot completeness/version are written only after all pending documents
+  and metadata succeed.
+- Consent is checked at execution start and at every awaited write boundary.
+  Generation changes invalidate pre-disable work; disable drains writers and
+  purges the scoped queue before returning.
+- Reconciliation repairs a mutation whose best-effort hook was lost, including
+  a deletion discovered from the durable minimized manifest.
+- The physical legacy owner column stores only the opaque local scope. Pending
+  financial payloads are materialized from scoped Drift only in memory; Drift
+  retains no full financial JSON. Successful rows retain only a versioned
+  fingerprint; successful deletes purge their row immediately.
+- Pre-scope legacy queue rows are discarded and rebuilt from scoped local data.
+- Firestore deletion uses a hard document delete. The local write-plan contract
+  has an empty payload and non-merge semantics, so no tombstone can preserve
+  amount, note, account, or other prior fields.
+- Scoped queue stats still use ScopedAppDatabaseSession.guardStream.
+
+Pending live acceptance
+-----------------------
+- A Firestore emulator/staging run must seed a document containing synthetic
+  sensitive fields, execute the delete, and confirm the remote document is
+  absent. No emulator or live project was used in this local remediation run.

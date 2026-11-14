@@ -1,0 +1,8 @@
+Phase 8 receipt remediation gate
+Date: 2026-08-10
+Command: flutter test test/features/receipts --reporter expanded
+Result: 64 passed, 0 failed, 0 skipped.
+
+Covered receipt provider privacy, owner-switch cancellation, aggregate persistence,
+confirmation idempotency and truthfulness, image cleanup/deletion retry, FX validation,
+minor-unit split allocation, persistence, capture, and responsive UI behavior.

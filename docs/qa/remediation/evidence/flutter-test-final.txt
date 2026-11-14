@@ -1,0 +1,10 @@
+Final repository-wide Flutter test gate
+Date: 2026-08-10
+Command: flutter test --no-pub -r expanded
+Exit code: 0
+Result: 1,068 passed, 0 failed, 0 skipped.
+Duration reported by the command wrapper: 69.3 seconds.
+
+Expected fail-closed error logs and Drift warnings were emitted by adversarial and
+multi-connection fixtures. They did not represent failed assertions. No test was
+suppressed, filtered, retried out of the final count, or marked skipped.

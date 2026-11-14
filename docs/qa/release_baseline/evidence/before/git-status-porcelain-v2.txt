@@ -1,0 +1,1249 @@
+1 .M N... 100644 100644 100644 25115a9b9b832c36e4e98f32306bf67519043916 25115a9b9b832c36e4e98f32306bf67519043916 .gitignore
+1 .M N... 100644 100644 100644 2ba986f6f136f061ad7c345c47245788068e9218 2ba986f6f136f061ad7c345c47245788068e9218 .vscode/launch.json
+1 .M N... 100644 100644 100644 92629a77e5508a355d7fd171f1f75ebdb9de5f3e 92629a77e5508a355d7fd171f1f75ebdb9de5f3e CHANGELOG.md
+1 .M N... 100644 100644 100644 d90eacdecf99bd5ac02d02c7ee4c2bab999f0b3c d90eacdecf99bd5ac02d02c7ee4c2bab999f0b3c README.md
+1 .M N... 100644 100644 100644 61455e8f95dcbac80181eb0fd66a699d2140de54 61455e8f95dcbac80181eb0fd66a699d2140de54 android/app/build.gradle.kts
+1 .M N... 100644 100644 100644 3d2d0e384b59a5870dc328b8b2915763d979a122 3d2d0e384b59a5870dc328b8b2915763d979a122 android/app/src/main/AndroidManifest.xml
+1 .M N... 100644 100644 100644 e0c80a970a8846895c4f0da11d68166d02f51759 e0c80a970a8846895c4f0da11d68166d02f51759 docs/ai_activation.md
+1 .M N... 100644 100644 100644 fd3a20e042091cc4f2c4954a0922d0eab5553613 fd3a20e042091cc4f2c4954a0922d0eab5553613 docs/firebase_setup.md
+1 .M N... 100644 100644 100644 ba49312837cb96b6c5df9ca50a8e218770b97583 ba49312837cb96b6c5df9ca50a8e218770b97583 docs/manual_qa_checklist.md
+1 .M N... 100644 100644 100644 af10c3dc8cca5773db6c4bed8241d149a4cf192d af10c3dc8cca5773db6c4bed8241d149a4cf192d docs/receipt_scanning.md
+1 .M N... 100644 100644 100644 5347e8623257314418ff2adf012b36c3d41e36a2 5347e8623257314418ff2adf012b36c3d41e36a2 firebase.json
+1 .M N... 100644 100644 100644 3b482a92d41c1fe7dec0d8b4743754a640e6f626 3b482a92d41c1fe7dec0d8b4743754a640e6f626 firestore.rules
+1 .M N... 100644 100644 100644 d0f45491739d9eea8e53c4339c19bcbc56c71231 d0f45491739d9eea8e53c4339c19bcbc56c71231 integration_test/app_check_diagnostics_test.dart
+1 .M N... 100644 100644 100644 82fe66650bd45b8db86a1cb6260a7afcf9cb39af 82fe66650bd45b8db86a1cb6260a7afcf9cb39af integration_test/firebase_ai_chat_smoke_test.dart
+1 .M N... 100644 100644 100644 cf4ffbf0da44f49b0ad194955677c665f0702026 cf4ffbf0da44f49b0ad194955677c665f0702026 integration_test/firebase_ai_receipt_smoke_test.dart
+1 .M N... 100644 100644 100644 b58772e152a2e5fbf7a1567df2e1ec12cee9c6e6 b58772e152a2e5fbf7a1567df2e1ec12cee9c6e6 integration_test/firebase_auth_smoke_test.dart
+1 .M N... 100644 100644 100644 1a4fc3d31f021be8ae2c0aded90b3382a0843f65 1a4fc3d31f021be8ae2c0aded90b3382a0843f65 ios/Runner.xcodeproj/project.pbxproj
+1 .M N... 100644 100644 100644 db04eef131516118c901a4d1dbf7a76193c1939b db04eef131516118c901a4d1dbf7a76193c1939b lib/app/app.dart
+1 .M N... 100644 100644 100644 3dec5fb438dd923120a0ce9faf20abf01b3ab5bf 3dec5fb438dd923120a0ce9faf20abf01b3ab5bf lib/app/bootstrap.dart
+1 .M N... 100644 100644 100644 4001fa502068251863494a694825ba71e3a95856 4001fa502068251863494a694825ba71e3a95856 lib/app/router/app_router.dart
+1 .M N... 100644 100644 100644 6a13a8743cb8855174b3cd845e74a105103bee74 6a13a8743cb8855174b3cd845e74a105103bee74 lib/core/database/app_database.dart
+1 .M N... 100644 100644 100644 d154faca60920baed296b00ab085c9b21df28985 d154faca60920baed296b00ab085c9b21df28985 lib/core/database/app_database.g.dart
+1 .M N... 100644 100644 100644 c44b6f82752f1dd22030a48bb292ae8c40ce59f0 c44b6f82752f1dd22030a48bb292ae8c40ce59f0 lib/core/firebase/firebase_initializer.dart
+1 .M N... 100644 100644 100644 4ea3d07766d7382bda42d1818bf38dae07f2b6e9 4ea3d07766d7382bda42d1818bf38dae07f2b6e9 lib/core/firebase/firebase_providers.dart
+1 .M N... 100644 100644 100644 bf5536b2b0c050c4242caac36cdbc26ff49c06a5 bf5536b2b0c050c4242caac36cdbc26ff49c06a5 lib/core/logging/app_logger.dart
+1 .M N... 100644 100644 100644 3e67f26024c745a81557a01cceeb391242c0f55d 3e67f26024c745a81557a01cceeb391242c0f55d lib/core/storage/settings_keys.dart
+1 .M N... 100644 100644 100644 17ee2df9499af66dd3e2733d77b99020710375e6 17ee2df9499af66dd3e2733d77b99020710375e6 lib/core/storage/settings_local_data_source.dart
+1 .M N... 100644 100644 100644 c6af12cadba511b0a439fbcbad86bdc7e3fd4273 c6af12cadba511b0a439fbcbad86bdc7e3fd4273 lib/core/sync/application/sync_manager.dart
+1 .M N... 100644 100644 100644 af77484fbba1cd39c2394124f2cf9caaee2ab443 af77484fbba1cd39c2394124f2cf9caaee2ab443 lib/core/sync/application/sync_mutation_queue.dart
+1 .M N... 100644 100644 100644 fb3592bd0d6159fbe52e36ba8a06eec5a584857b fb3592bd0d6159fbe52e36ba8a06eec5a584857b lib/core/sync/application/sync_providers.dart
+1 .M N... 100644 100644 100644 345eb76066de644a01ebe1a441fc4e894b9f6106 345eb76066de644a01ebe1a441fc4e894b9f6106 lib/core/sync/data/firestore_sync_data_source.dart
+1 .M N... 100644 100644 100644 b5f7020954b2403330ef3b67b2efbff4678a50fb b5f7020954b2403330ef3b67b2efbff4678a50fb lib/core/sync/data/sync_preferences_local_data_source.dart
+1 .M N... 100644 100644 100644 0757e1306ae0cebaeae0e49eedeb28da24b2ae95 0757e1306ae0cebaeae0e49eedeb28da24b2ae95 lib/core/sync/data/sync_queue_repository.dart
+1 .M N... 100644 100644 100644 b9b6586aeb609332c145e05d79f0459a2397882f b9b6586aeb609332c145e05d79f0459a2397882f lib/core/sync/data/tables/sync_queue_table.dart
+1 .M N... 100644 100644 100644 1f6c9024a158228845c714b401277670b05133d8 1f6c9024a158228845c714b401277670b05133d8 lib/core/sync/domain/sync_queue_item.dart
+1 .M N... 100644 100644 100644 28ec91b4f22f02ecbf6a197796976c3a5b298631 28ec91b4f22f02ecbf6a197796976c3a5b298631 lib/features/accounts/accounts.dart
+1 .M N... 100644 100644 100644 c7954c9de284c8a928c3cd6ee2d533621e773a4e c7954c9de284c8a928c3cd6ee2d533621e773a4e lib/features/accounts/application/providers/accounts_providers.dart
+1 .M N... 100644 100644 100644 7431d5381172c15f60687301bf2356d4eebf8ef9 7431d5381172c15f60687301bf2356d4eebf8ef9 lib/features/accounts/data/datasources/local/accounts_local_data_source.dart
+1 .M N... 100644 100644 100644 167963ad2f0f8b4b15a93b29a2b9db1d7668473f 167963ad2f0f8b4b15a93b29a2b9db1d7668473f lib/features/accounts/data/datasources/local/tables/accounts_table.dart
+1 .M N... 100644 100644 100644 fe34d43c1813259aa51d3201f1ee2f006ced9c3c fe34d43c1813259aa51d3201f1ee2f006ced9c3c lib/features/accounts/data/repositories/accounts_repository_impl.dart
+1 .M N... 100644 100644 100644 5b408f7f265d9b37227b1be631078ddfd17d36aa 5b408f7f265d9b37227b1be631078ddfd17d36aa lib/features/accounts/presentation/pages/account_details_screen.dart
+1 .M N... 100644 100644 100644 e06f0b4ba1feecbef89b9d19827b099a47fd421f e06f0b4ba1feecbef89b9d19827b099a47fd421f lib/features/accounts/presentation/pages/accounts_screen.dart
+1 .M N... 100644 100644 100644 c738a817bdfe4dcc91fa18fba1eeb98c96bc41f0 c738a817bdfe4dcc91fa18fba1eeb98c96bc41f0 lib/features/accounts/presentation/widgets/account_card.dart
+1 .M N... 100644 100644 100644 d7dc22550f026293ba76ecd8ab97a08acfdee6d8 d7dc22550f026293ba76ecd8ab97a08acfdee6d8 lib/features/accounts/presentation/widgets/account_form_fields.dart
+1 .M N... 100644 100644 100644 28b442f79acfac6099cf9a6e151b7758f192b4f4 28b442f79acfac6099cf9a6e151b7758f192b4f4 lib/features/accounts/presentation/widgets/add_account_bottom_sheet.dart
+1 .M N... 100644 100644 100644 36589e5705fd4751bd7fd6e7f13492e71bb73bb2 36589e5705fd4751bd7fd6e7f13492e71bb73bb2 lib/features/accounts/presentation/widgets/edit_account_bottom_sheet.dart
+1 .M N... 100644 100644 100644 78e0410f72a01f0553aed00bd199f526ba799b31 78e0410f72a01f0553aed00bd199f526ba799b31 lib/features/ai_assistant/application/providers/ai_assistant_providers.dart
+1 .M N... 100644 100644 100644 1e269f5028796ad2bc7e634e69de9fcc0d605ff0 1e269f5028796ad2bc7e634e69de9fcc0d605ff0 lib/features/ai_assistant/application/services/ai_action_executor.dart
+1 .M N... 100644 100644 100644 2125a56f6e39aa34ac7fda0c1b9c61cbe482a033 2125a56f6e39aa34ac7fda0c1b9c61cbe482a033 lib/features/ai_assistant/application/services/ai_connection_diagnostic.dart
+1 .M N... 100644 100644 100644 bc992ab762fbf4006874b07548bf6e7236873731 bc992ab762fbf4006874b07548bf6e7236873731 lib/features/ai_assistant/data/config/ai_runtime_config.dart
+1 .M N... 100644 100644 100644 9681b2b5e3f966e28add83f1806a46be959299aa 9681b2b5e3f966e28add83f1806a46be959299aa lib/features/ai_assistant/data/config/firebase_ai_config.dart
+1 .M N... 100644 100644 100644 f09be46b25f4fd10ddc9c1d58ae8a40ac6ce03e7 f09be46b25f4fd10ddc9c1d58ae8a40ac6ce03e7 lib/features/ai_assistant/data/datasources/firebase_ai_provider_data_source.dart
+1 .M N... 100644 100644 100644 0816584d99271047ae03e3a32ae26e8b505a196b 0816584d99271047ae03e3a32ae26e8b505a196b lib/features/ai_assistant/domain/entities/ai_action.dart
+1 .M N... 100644 100644 100644 0d603b1a4ad4e5447c4be8efeefb3d791a28387a 0d603b1a4ad4e5447c4be8efeefb3d791a28387a lib/features/ai_assistant/domain/entities/ai_capability.dart
+1 .M N... 100644 100644 100644 d47218d448601fc42ca00be096aba72471c7505c d47218d448601fc42ca00be096aba72471c7505c lib/features/ai_assistant/domain/entities/ai_intent.dart
+1 .M N... 100644 100644 100644 5d41550abf2ecee2ff7e0d505736304a07c5127e 5d41550abf2ecee2ff7e0d505736304a07c5127e lib/features/ai_assistant/domain/entities/ai_transaction_draft.dart
+1 .M N... 100644 100644 100644 c588995e47312372594a747bbc41f7e8f4645c80 c588995e47312372594a747bbc41f7e8f4645c80 lib/features/ai_assistant/domain/entities/ai_understanding_result.dart
+1 .M N... 100644 100644 100644 b23a1fe793ef67e118f0550e89b3786105763185 b23a1fe793ef67e118f0550e89b3786105763185 lib/features/ai_assistant/domain/services/ai_action_draft_factory.dart
+1 .M N... 100644 100644 100644 2437b820f8a38dcf940fcd4788d0c476132d7b6f 2437b820f8a38dcf940fcd4788d0c476132d7b6f lib/features/ai_assistant/domain/services/ai_action_validator.dart
+1 .M N... 100644 100644 100644 1be8e15cb6f3219f3b794b1a7a277088f1f48f17 1be8e15cb6f3219f3b794b1a7a277088f1f48f17 lib/features/ai_assistant/domain/services/ai_intent_router.dart
+1 .M N... 100644 100644 100644 59cc5a727c0be10ec3a538347d58306aa9c6d4ba 59cc5a727c0be10ec3a538347d58306aa9c6d4ba lib/features/ai_assistant/domain/services/financial_command_parser.dart
+1 .M N... 100644 100644 100644 fd2ed61d0e5338419b205c36176a8e2abdacaa46 fd2ed61d0e5338419b205c36176a8e2abdacaa46 lib/features/ai_assistant/domain/usecases/create_ai_action_draft.dart
+1 .M N... 100644 100644 100644 9fb0b697b01a4ca430b0d6cfb7750286cb41ab17 9fb0b697b01a4ca430b0d6cfb7750286cb41ab17 lib/features/ai_assistant/domain/usecases/understand_ai_message.dart
+1 .M N... 100644 100644 100644 5e030bb174487d74e669ceed20358a1c7264a1e9 5e030bb174487d74e669ceed20358a1c7264a1e9 lib/features/ai_assistant/presentation/pages/ai_assistant_screen.dart
+1 .M N... 100644 100644 100644 2b54bb18b03f59ef930b38afbe45b736b2fbd01d 2b54bb18b03f59ef930b38afbe45b736b2fbd01d lib/features/ai_assistant/presentation/widgets/ai_action_confirmation_card.dart
+1 .M N... 100644 100644 100644 bb67df2dd65c344410850a517a38f6f6f153f136 bb67df2dd65c344410850a517a38f6f6f153f136 lib/features/app_shell/presentation/pages/app_shell_page.dart
+1 .M N... 100644 100644 100644 76c5f360199af038a13f9100121da1a8d5abff81 76c5f360199af038a13f9100121da1a8d5abff81 lib/features/auth/application/providers/auth_providers.dart
+1 .M N... 100644 100644 100644 333e17248e8abf8aa5b7b8d93d453fbaa9022262 333e17248e8abf8aa5b7b8d93d453fbaa9022262 lib/features/auth/data/datasources/firebase_auth_data_source.dart
+1 .M N... 100644 100644 100644 3137b42d20683712c89cdb025d01c12bd5b1fb02 3137b42d20683712c89cdb025d01c12bd5b1fb02 lib/features/auth/data/dtos/auth_user_dto.dart
+1 .M N... 100644 100644 100644 21577589d44e5f9e3b2cccb95ff8a9ab82c07b07 21577589d44e5f9e3b2cccb95ff8a9ab82c07b07 lib/features/auth/data/mappers/auth_mapper.dart
+1 .M N... 100644 100644 100644 1672637d5893cec954708d12d098440b3c5fcc35 1672637d5893cec954708d12d098440b3c5fcc35 lib/features/auth/data/repositories/auth_repository_impl.dart
+1 .M N... 100644 100644 100644 5dfb8aca69bd11ecdc840e2cf44f209923e2365f 5dfb8aca69bd11ecdc840e2cf44f209923e2365f lib/features/auth/domain/entities/auth_user.dart
+1 .M N... 100644 100644 100644 f9e50c0a7446ba5490c0f4d85e45e85a22cce30a f9e50c0a7446ba5490c0f4d85e45e85a22cce30a lib/features/auth/domain/repositories/auth_repository.dart
+1 .M N... 100644 100644 100644 cee994daa0494e4a0329b4653185915d3fc21d4e cee994daa0494e4a0329b4653185915d3fc21d4e lib/features/auth/domain/usecases/complete_profile.dart
+1 .D N... 100644 100644 000000 f67f3b848c41ea5fe32e40d31083a7f687128b37 f67f3b848c41ea5fe32e40d31083a7f687128b37 lib/features/auth/domain/usecases/delete_auth_account.dart
+1 .M N... 100644 100644 100644 e0a3351ec42c75ae6d23a15bdeeba606991c8013 e0a3351ec42c75ae6d23a15bdeeba606991c8013 lib/features/auth/presentation/pages/email_verification_screen.dart
+1 .M N... 100644 100644 100644 3e46296781c9b3051709e188a5de0816a6de011f 3e46296781c9b3051709e188a5de0816a6de011f lib/features/auth/presentation/pages/forgot_password_screen.dart
+1 .M N... 100644 100644 100644 24182c0d0ef896ebcd41f30d885eab19af4604ee 24182c0d0ef896ebcd41f30d885eab19af4604ee lib/features/auth/presentation/pages/guest_mode_info_screen.dart
+1 .M N... 100644 100644 100644 593e33f55d3a97660e3d1c08d4ea6128da6cc6cf 593e33f55d3a97660e3d1c08d4ea6128da6cc6cf lib/features/auth/presentation/pages/login_screen.dart
+1 .M N... 100644 100644 100644 7ea478bb676fe2057c11239834e9c0aac6ff005d 7ea478bb676fe2057c11239834e9c0aac6ff005d lib/features/auth/presentation/pages/onboarding_screen.dart
+1 .M N... 100644 100644 100644 82a65b591af508f9df2ca67f80927b09033932a9 82a65b591af508f9df2ca67f80927b09033932a9 lib/features/auth/presentation/pages/profile_completion_screen.dart
+1 .M N... 100644 100644 100644 452ffd3743da3fff7a2fea1499283443069652ec 452ffd3743da3fff7a2fea1499283443069652ec lib/features/auth/presentation/pages/register_screen.dart
+1 .M N... 100644 100644 100644 2c6f6e1f7f490f451bba110c808253418bc4000b 2c6f6e1f7f490f451bba110c808253418bc4000b lib/features/auth/presentation/pages/welcome_screen.dart
+1 .M N... 100644 100644 100644 2b849b4a0f7b678789d633bed06e5051effbbc74 2b849b4a0f7b678789d633bed06e5051effbbc74 lib/features/budgets/application/providers/budgets_providers.dart
+1 .M N... 100644 100644 100644 ef472dbcb7e1475f60558bd2c20ad4d7fca08514 ef472dbcb7e1475f60558bd2c20ad4d7fca08514 lib/features/budgets/data/datasources/local/budgets_local_data_source.dart
+1 .M N... 100644 100644 100644 c4803ac5f4c04f1724b0e4a69cac75b6a27fc96a c4803ac5f4c04f1724b0e4a69cac75b6a27fc96a lib/features/budgets/data/datasources/local/tables/budgets_table.dart
+1 .M N... 100644 100644 100644 ea65b8e37533de0b7af08732a8237d4209d595bc ea65b8e37533de0b7af08732a8237d4209d595bc lib/features/budgets/presentation/pages/budgets_screen.dart
+1 .M N... 100644 100644 100644 f8cd9ada84c2f6530b46d830f5537e4758d08d0a f8cd9ada84c2f6530b46d830f5537e4758d08d0a lib/features/budgets/presentation/widgets/budget_form_sheet.dart
+1 .M N... 100644 100644 100644 f26f94fa2ae11bb22e3314a7030a0dc4e8403c18 f26f94fa2ae11bb22e3314a7030a0dc4e8403c18 lib/features/categories/application/providers/categories_providers.dart
+1 .M N... 100644 100644 100644 0168c881fec5944e90ee88a521cc9eb43f498f68 0168c881fec5944e90ee88a521cc9eb43f498f68 lib/features/categories/data/datasources/local/categories_local_data_source.dart
+1 .M N... 100644 100644 100644 a2e1e3f1c682bf515a09269acf81e22ec12adcb1 a2e1e3f1c682bf515a09269acf81e22ec12adcb1 lib/features/categories/data/datasources/local/tables/categories_table.dart
+1 .M N... 100644 100644 100644 de86a187b30e3b9bac3c599352357ecff9b7176a de86a187b30e3b9bac3c599352357ecff9b7176a lib/features/categories/data/repositories/categories_repository_impl.dart
+1 .M N... 100644 100644 100644 f111f8e415b85cd5100b8ddb76188684be4a8478 f111f8e415b85cd5100b8ddb76188684be4a8478 lib/features/categories/presentation/pages/categories_screen.dart
+1 .M N... 100644 100644 100644 f24b73ebdab7d4d4b519ba2874371b10a5096d4a f24b73ebdab7d4d4b519ba2874371b10a5096d4a lib/features/dashboard/application/dashboard_providers.dart
+1 .M N... 100644 100644 100644 290a29cfc8a3c823a1760568497ce4d32002eaff 290a29cfc8a3c823a1760568497ce4d32002eaff lib/features/dashboard/presentation/pages/dashboard_screen.dart
+1 .M N... 100644 100644 100644 6914a66bb187140ccd313666cfb31e32e6eaefbf 6914a66bb187140ccd313666cfb31e32e6eaefbf lib/features/data_deletion/application/data_deletion_providers.dart
+1 .M N... 100644 100644 100644 a52d909014f39e5307e78a0fb600584eac457f41 a52d909014f39e5307e78a0fb600584eac457f41 lib/features/data_deletion/data/datasources/account_deletion_auth_data_source.dart
+1 .M N... 100644 100644 100644 82190e66324c1c7d4e89cb4cf19a0a9d3bd4d69d 82190e66324c1c7d4e89cb4cf19a0a9d3bd4d69d lib/features/data_deletion/data/datasources/cloud_user_data_deletion_data_source.dart
+1 .M N... 100644 100644 100644 71ba189137987b8685ac29fabbba6024e1e26d52 71ba189137987b8685ac29fabbba6024e1e26d52 lib/features/data_deletion/data/datasources/deletion_preferences_data_source.dart
+1 .M N... 100644 100644 100644 add99c5006b9ef7546554b8ccb14d4305aba51b9 add99c5006b9ef7546554b8ccb14d4305aba51b9 lib/features/data_deletion/data/datasources/local_user_data_deletion_data_source.dart
+1 .M N... 100644 100644 100644 f54ce0a02e2f8a80a15223aaca9e53894a03a8e8 f54ce0a02e2f8a80a15223aaca9e53894a03a8e8 lib/features/data_deletion/data/repositories/data_deletion_repository_impl.dart
+1 .M N... 100644 100644 100644 48788e056cd044bd3eff9d229d016f03aa625d0a 48788e056cd044bd3eff9d229d016f03aa625d0a lib/features/data_deletion/domain/entities/data_deletion_request.dart
+1 .M N... 100644 100644 100644 0107ed2943817687086bd9b79ec48acc2a5e60ab 0107ed2943817687086bd9b79ec48acc2a5e60ab lib/features/data_deletion/domain/failures/data_deletion_failure_codes.dart
+1 .M N... 100644 100644 100644 54ec9a286a43c2f4e70f8f8b4b8443a0666d26aa 54ec9a286a43c2f4e70f8f8b4b8443a0666d26aa lib/features/exchange_rates/application/providers/exchange_rates_providers.dart
+1 .M N... 100644 100644 100644 ce345210ce8fb902297ae73aa41b8eb4b13c1241 ce345210ce8fb902297ae73aa41b8eb4b13c1241 lib/features/exchange_rates/data/datasources/local/exchange_rates_local_data_source.dart
+1 .M N... 100644 100644 100644 f52dbe2ea673bef2e961f9bee8d466504f7d76bd f52dbe2ea673bef2e961f9bee8d466504f7d76bd lib/features/exchange_rates/data/datasources/local/tables/exchange_rates_table.dart
+1 .M N... 100644 100644 100644 84ea65b3d7a38a09033988adc90abfc93e5429a1 84ea65b3d7a38a09033988adc90abfc93e5429a1 lib/features/exchange_rates/presentation/widgets/exchange_rates_settings_section.dart
+1 .M N... 100644 100644 100644 644ba80af7bed320ca9219452b84254afb0dc17e 644ba80af7bed320ca9219452b84254afb0dc17e lib/features/finance_engine/domain/exceptions/finance_exception.dart
+1 .M N... 100644 100644 100644 4519ec53093d20a9ec7400da9a77ae3a3c0b2786 4519ec53093d20a9ec7400da9a77ae3a3c0b2786 lib/features/finance_engine/domain/services/finance_validation_service.dart
+1 .M N... 100644 100644 100644 eb52baa726272250071673a6b9db968c668e8614 eb52baa726272250071673a6b9db968c668e8614 lib/features/finance_engine/domain/services/transfer_processor.dart
+1 .M N... 100644 100644 100644 2cb65afbaf6bde2a9fc7ad6cff5a0abb83b0ec46 2cb65afbaf6bde2a9fc7ad6cff5a0abb83b0ec46 lib/features/goals/application/providers/goals_providers.dart
+1 .M N... 100644 100644 100644 364c02f17ab74506b9e5a18665a815fedeaf215f 364c02f17ab74506b9e5a18665a815fedeaf215f lib/features/goals/data/datasources/local/goals_local_data_source.dart
+1 .M N... 100644 100644 100644 b71fdcd95d8479824748d45f5aa00a5f24ecf754 b71fdcd95d8479824748d45f5aa00a5f24ecf754 lib/features/goals/data/datasources/local/tables/goal_contributions_table.dart
+1 .M N... 100644 100644 100644 9340e4b566a992c3b12c7fa1a04fcbc48b92189d 9340e4b566a992c3b12c7fa1a04fcbc48b92189d lib/features/goals/data/datasources/local/tables/goals_table.dart
+1 .M N... 100644 100644 100644 11cd40c54d783c8c27843d6407ec1aba98e4bc57 11cd40c54d783c8c27843d6407ec1aba98e4bc57 lib/features/goals/goals.dart
+1 .M N... 100644 100644 100644 496737db94c1b8d560e9ff52e5ae61222a03b45f 496737db94c1b8d560e9ff52e5ae61222a03b45f lib/features/goals/presentation/pages/goals_screen.dart
+1 .M N... 100644 100644 100644 c60b3309004538f39877ecaee69c66bd18a037d6 c60b3309004538f39877ecaee69c66bd18a037d6 lib/features/goals/presentation/widgets/goal_contribution_sheet.dart
+1 .M N... 100644 100644 100644 bdb5de87fee8d9f53fd0901c63279a873a6ccce9 bdb5de87fee8d9f53fd0901c63279a873a6ccce9 lib/features/goals/presentation/widgets/goal_form_sheet.dart
+1 .M N... 100644 100644 100644 5739e8ea74672950fd804afb92ba730da58c6213 5739e8ea74672950fd804afb92ba730da58c6213 lib/features/income_sources/domain/enums/income_source_type.dart
+1 .M N... 100644 100644 100644 c3863d1a2124d3a351a39de2abc7af613cc430b0 c3863d1a2124d3a351a39de2abc7af613cc430b0 lib/features/income_sources/domain/services/income_reporting_policy.dart
+1 .M N... 100644 100644 100644 790b25cf1661aaf2ba29e7f10f36ca23c0136015 790b25cf1661aaf2ba29e7f10f36ca23c0136015 lib/features/income_sources/domain/services/income_source_resolver.dart
+1 .M N... 100644 100644 100644 0efc4816add4be7d525cd6302fd2815e74494e19 0efc4816add4be7d525cd6302fd2815e74494e19 lib/features/insights/application/providers/insights_providers.dart
+1 .M N... 100644 100644 100644 e1976575af5a8ddafa28e9055a9d2a971245e7d7 e1976575af5a8ddafa28e9055a9d2a971245e7d7 lib/features/insights/domain/usecases/explain_financial_insight.dart
+1 .M N... 100644 100644 100644 5751d6726ef5934249c76932fb59e3f74db50cb6 5751d6726ef5934249c76932fb59e3f74db50cb6 lib/features/insights/presentation/widgets/financial_insight_card.dart
+1 .M N... 100644 100644 100644 456c75e9841b94b46180230e3cf48f62b11dbf22 456c75e9841b94b46180230e3cf48f62b11dbf22 lib/features/payees/application/providers/payees_providers.dart
+1 .M N... 100644 100644 100644 03c6f72a911e56c5226a163b2c01be7cb4a62cbc 03c6f72a911e56c5226a163b2c01be7cb4a62cbc lib/features/payees/data/datasources/local/payees_local_data_source.dart
+1 .M N... 100644 100644 100644 3fe40be820eb6a97418c372728abdaf5943ea8ae 3fe40be820eb6a97418c372728abdaf5943ea8ae lib/features/payees/data/datasources/local/tables/payees_table.dart
+1 .M N... 100644 100644 100644 2e778e05ef846781f9447ec3cb6de200f0c430cd 2e778e05ef846781f9447ec3cb6de200f0c430cd lib/features/payees/presentation/pages/payee_details_screen.dart
+1 .M N... 100644 100644 100644 352ad65a854b41ffdfee93e6c0bc32da6b231bd2 352ad65a854b41ffdfee93e6c0bc32da6b231bd2 lib/features/payees/presentation/pages/payees_screen.dart
+1 .M N... 100644 100644 100644 68071530c16390ad7dbcfa44b8337c75bd3b87ab 68071530c16390ad7dbcfa44b8337c75bd3b87ab lib/features/payment_methods/domain/defaults/libyan_payment_method_catalog.dart
+1 .M N... 100644 100644 100644 552b5af698f2b0f46d201e3ef3349bbcdf6cf415 552b5af698f2b0f46d201e3ef3349bbcdf6cf415 lib/features/payment_methods/domain/entities/payment_method_definition.dart
+1 .M N... 100644 100644 100644 9554db129384565c0ddc8f1f926f1c4a9d688468 9554db129384565c0ddc8f1f926f1c4a9d688468 lib/features/receipts/application/receipt_capture_state.dart
+1 .M N... 100644 100644 100644 74bd4f0ff93474a307bb376bd3cde34b3734406d 74bd4f0ff93474a307bb376bd3cde34b3734406d lib/features/receipts/application/receipt_providers.dart
+1 .M N... 100644 100644 100644 600831e67e9d47a844f9a49d959a6d493494321e 600831e67e9d47a844f9a49d959a6d493494321e lib/features/receipts/data/datasources/local/tables/receipt_line_items_table.dart
+1 .M N... 100644 100644 100644 975a61a1bccdbe6ac33510669aba2128b10d1a29 975a61a1bccdbe6ac33510669aba2128b10d1a29 lib/features/receipts/data/datasources/local/tables/receipts_table.dart
+1 .M N... 100644 100644 100644 5a4b9bdfafeff1fca48a23708f6801da2a24b8d8 5a4b9bdfafeff1fca48a23708f6801da2a24b8d8 lib/features/receipts/data/datasources/local/tables/transaction_splits_table.dart
+1 .M N... 100644 100644 100644 ba071372c2ee2d605465ee25581a1f523ebbb6ee ba071372c2ee2d605465ee25581a1f523ebbb6ee lib/features/receipts/data/providers/firebase_receipt_analysis_provider.dart
+1 .M N... 100644 100644 100644 b2db64211dbdf8a16c7bd6f17fd980f0e84e81ce b2db64211dbdf8a16c7bd6f17fd980f0e84e81ce lib/features/receipts/data/repositories/receipt_repository_impl.dart
+1 .M N... 100644 100644 100644 eee9a33bffeec03e5cb585fc5a7912673f794e62 eee9a33bffeec03e5cb585fc5a7912673f794e62 lib/features/receipts/data/services/receipt_local_image_store.dart
+1 .M N... 100644 100644 100644 ec77dcf1626f55d7aecd7383738c2be35b4053f8 ec77dcf1626f55d7aecd7383738c2be35b4053f8 lib/features/receipts/data/services/receipt_privacy_consent_store.dart
+1 .M N... 100644 100644 100644 da38641ad4e28facdd4a599cc0addd7a3b80f5fe da38641ad4e28facdd4a599cc0addd7a3b80f5fe lib/features/receipts/domain/entities/receipt_transaction_draft.dart
+1 .M N... 100644 100644 100644 e2ef1a431fd5ae020d0d48967ace854cd722f6ec e2ef1a431fd5ae020d0d48967ace854cd722f6ec lib/features/receipts/domain/entities/transaction_split.dart
+1 .M N... 100644 100644 100644 9064b2f0697d058f8821b611c84391ba43fc286a 9064b2f0697d058f8821b611c84391ba43fc286a lib/features/receipts/domain/failures/receipt_failure_codes.dart
+1 .M N... 100644 100644 100644 23087374f6c5d31b377d98d3d67a17e591a45b9b 23087374f6c5d31b377d98d3d67a17e591a45b9b lib/features/receipts/domain/repositories/receipt_analysis_provider.dart
+1 .M N... 100644 100644 100644 1e8cb78e5b91f1a31e81251701b01884093c1a91 1e8cb78e5b91f1a31e81251701b01884093c1a91 lib/features/receipts/domain/repositories/receipt_repository.dart
+1 .M N... 100644 100644 100644 2844d5b5a9c0e62681c09c5dd98b290eb03ca757 2844d5b5a9c0e62681c09c5dd98b290eb03ca757 lib/features/receipts/domain/services/receipt_split_allocator.dart
+1 .M N... 100644 100644 100644 ce287b37c12b66153ddab3f5a5c09473289efc91 ce287b37c12b66153ddab3f5a5c09473289efc91 lib/features/receipts/domain/usecases/analyze_receipt_image.dart
+1 .M N... 100644 100644 100644 32acef1cf20b5c91f1bdfaefd72e0d0cfb0fe271 32acef1cf20b5c91f1bdfaefd72e0d0cfb0fe271 lib/features/receipts/domain/usecases/build_receipt_transaction_draft.dart
+1 .M N... 100644 100644 100644 93a257adaa34d85e6fb94d695fec5f6034d871e7 93a257adaa34d85e6fb94d695fec5f6034d871e7 lib/features/receipts/domain/usecases/capture_receipt_image.dart
+1 .M N... 100644 100644 100644 abd661ebfc1132a213d3b3d702fe91ad14cb8a1a abd661ebfc1132a213d3b3d702fe91ad14cb8a1a lib/features/receipts/domain/usecases/confirm_receipt_transaction.dart
+1 .M N... 100644 100644 100644 5ef8271fd3830a338f74cc1d2e98e863cb813b03 5ef8271fd3830a338f74cc1d2e98e863cb813b03 lib/features/receipts/domain/usecases/import_receipt_image.dart
+1 .M N... 100644 100644 100644 29784999e1dcb54798ecbc24e1e9227273c5f474 29784999e1dcb54798ecbc24e1e9227273c5f474 lib/features/receipts/domain/usecases/prepare_receipt_image.dart
+1 .M N... 100644 100644 100644 b7979a476da01eb3fc48e6ad23fac1a29150bfbe b7979a476da01eb3fc48e6ad23fac1a29150bfbe lib/features/receipts/presentation/pages/receipt_capture_screen.dart
+1 .M N... 100644 100644 100644 5a1028f47a0ad5e9b83cf9eb0b35439a3914d947 5a1028f47a0ad5e9b83cf9eb0b35439a3914d947 lib/features/receipts/presentation/pages/receipt_review_screen.dart
+1 .M N... 100644 100644 100644 85c55a7f0cba687e013ebfdc386217a2f51e157d 85c55a7f0cba687e013ebfdc386217a2f51e157d lib/features/reports/presentation/pages/reports_screen.dart
+1 .M N... 100644 100644 100644 513ac430f8e7f59db81b150a78f0625350376ff0 513ac430f8e7f59db81b150a78f0625350376ff0 lib/features/settings/application/base_currency_provider.dart
+1 .M N... 100644 100644 100644 004e8907053fe2077cfde04b7579c1c8d17c3d04 004e8907053fe2077cfde04b7579c1c8d17c3d04 lib/features/settings/presentation/pages/settings_screen.dart
+1 .M N... 100644 100644 100644 19dcae2f08e2e356c1a963d12b96c2750648db53 19dcae2f08e2e356c1a963d12b96c2750648db53 lib/features/settings/presentation/widgets/ai_diagnostics_settings_section.dart
+1 .M N... 100644 100644 100644 0cfb05df8744d3f5bc877263ad5104220a5ef7a6 0cfb05df8744d3f5bc877263ad5104220a5ef7a6 lib/features/settings/presentation/widgets/backup_sync_settings_section.dart
+1 .M N... 100644 100644 100644 3bbaacebd2cd6d7720a94c3f369dd0f5b1eb35d0 3bbaacebd2cd6d7720a94c3f369dd0f5b1eb35d0 lib/features/settings/presentation/widgets/delete_all_user_data_dialog.dart
+1 .M N... 100644 100644 100644 a2802f195581cb769e07592e3ed7cc94ee62c97b a2802f195581cb769e07592e3ed7cc94ee62c97b lib/features/transactions/application/providers/transactions_providers.dart
+1 .M N... 100644 100644 100644 83c21d1a0918a678dc125bada5238af9beecb0a0 83c21d1a0918a678dc125bada5238af9beecb0a0 lib/features/transactions/data/adapters/drift_account_balance_repository.dart
+1 .M N... 100644 100644 100644 108bc4724f4f48791232aa019ca055aa48e83b94 108bc4724f4f48791232aa019ca055aa48e83b94 lib/features/transactions/data/adapters/drift_finance_transaction_manager.dart
+1 .M N... 100644 100644 100644 7ff0da8c4a98d05709862f02e532b341087e34aa 7ff0da8c4a98d05709862f02e532b341087e34aa lib/features/transactions/data/datasources/local/tables/transactions_table.dart
+1 .M N... 100644 100644 100644 da7df1244b74a8b4ebf1855471eddd62b4293e9a da7df1244b74a8b4ebf1855471eddd62b4293e9a lib/features/transactions/data/datasources/local/transactions_local_data_source.dart
+1 .M N... 100644 100644 100644 d21051dc1bddf5e3ca7ebbce6437f3d5a0551816 d21051dc1bddf5e3ca7ebbce6437f3d5a0551816 lib/features/transactions/data/mappers/transaction_mapper.dart
+1 .M N... 100644 100644 100644 8e3a9d14b97ad45b24b7e9973da7acd2f1a345ce 8e3a9d14b97ad45b24b7e9973da7acd2f1a345ce lib/features/transactions/data/repositories/transactions_repository_impl.dart
+1 .M N... 100644 100644 100644 2d88f2ac625722048f8e0b1b6a4fddcca92a929e 2d88f2ac625722048f8e0b1b6a4fddcca92a929e lib/features/transactions/domain/entities/create_transfer_command.dart
+1 .M N... 100644 100644 100644 9072e39b34d32911ff1ba91ace978525d4c89955 9072e39b34d32911ff1ba91ace978525d4c89955 lib/features/transactions/domain/entities/created_transfer.dart
+1 .M N... 100644 100644 100644 b7f5bed5b3829449ad27924b395252ed17a54644 b7f5bed5b3829449ad27924b395252ed17a54644 lib/features/transactions/domain/entities/transaction.dart
+1 .M N... 100644 100644 100644 175cacf5842f09b2d5e53835696c97d08b17136f 175cacf5842f09b2d5e53835696c97d08b17136f lib/features/transactions/domain/entities/transaction.g.dart
+1 .M N... 100644 100644 100644 bf01e1d1092daa13cfc08892fbfeeb643f1cfcfe bf01e1d1092daa13cfc08892fbfeeb643f1cfcfe lib/features/transactions/domain/enums/payment_method.dart
+1 .M N... 100644 100644 100644 0a17c874b61a429cc6ef5c1b06a96426128f1e4f 0a17c874b61a429cc6ef5c1b06a96426128f1e4f lib/features/transactions/domain/failures/transaction_failure_codes.dart
+1 .M N... 100644 100644 100644 db73fae945c3c1002857c4325e233e6c6c43a2e9 db73fae945c3c1002857c4325e233e6c6c43a2e9 lib/features/transactions/domain/repositories/transactions_repository.dart
+1 .M N... 100644 100644 100644 758ec068bf5b1221c0f87396ea9ffaa8556ed3f4 758ec068bf5b1221c0f87396ea9ffaa8556ed3f4 lib/features/transactions/domain/usecases/delete_transaction.dart
+1 .M N... 100644 100644 100644 93ea70fc52113e1b24e5f17c308deff8a6899bae 93ea70fc52113e1b24e5f17c308deff8a6899bae lib/features/transactions/domain/usecases/search_transactions.dart
+1 .M N... 100644 100644 100644 34300cf7db673425cdd091e74e45ceaafafa121d 34300cf7db673425cdd091e74e45ceaafafa121d lib/features/transactions/domain/usecases/update_transaction.dart
+1 .M N... 100644 100644 100644 c7f3dacabe3a82e97bb4de326b35d315b1cfba7d c7f3dacabe3a82e97bb4de326b35d315b1cfba7d lib/features/transactions/domain/usecases/update_transaction_status.dart
+1 .M N... 100644 100644 100644 d9dbfd8ae8aa6e0e6422a1a61f729e3b2bebf4eb d9dbfd8ae8aa6e0e6422a1a61f729e3b2bebf4eb lib/features/transactions/presentation/pages/transaction_details_screen.dart
+1 .M N... 100644 100644 100644 d7524804637d9103242a9b5d5c56e93ed773ec4b d7524804637d9103242a9b5d5c56e93ed773ec4b lib/features/transactions/presentation/pages/transactions_screen.dart
+1 .M N... 100644 100644 100644 a835dd260d51f0a3be063dd5efa2236a37c1345b a835dd260d51f0a3be063dd5efa2236a37c1345b lib/features/transactions/presentation/pages/transfer_screen.dart
+1 .M N... 100644 100644 100644 29364333880f64e39c2011f6d7145135da66f16d 29364333880f64e39c2011f6d7145135da66f16d lib/features/transactions/presentation/support/transaction_ui_formatters.dart
+1 .M N... 100644 100644 100644 0b8eb01f530c45c9c647b41dd499347ea8d3791e 0b8eb01f530c45c9c647b41dd499347ea8d3791e lib/features/transactions/presentation/widgets/transaction_form_sheet.dart
+1 .M N... 100644 100644 100644 71786779f9be113df778a49ad9fdb80b78cf297f 71786779f9be113df778a49ad9fdb80b78cf297f lib/features/transactions/transactions.dart
+1 .M N... 100644 100644 100644 15891e9650506d31642b174bc54747a3e347a979 15891e9650506d31642b174bc54747a3e347a979 lib/firebase_options.dart
+1 .M N... 100644 100644 100644 e4333819e266b60b4ea62d5cc9e42fae5f1a6b5a e4333819e266b60b4ea62d5cc9e42fae5f1a6b5a lib/l10n/app_ar.arb
+1 .M N... 100644 100644 100644 00f1f7c58ab0f671a6b21faa47f574fd10ff7594 00f1f7c58ab0f671a6b21faa47f574fd10ff7594 lib/l10n/app_en.arb
+1 .M N... 100644 100644 100644 cc91af8ed2b58f97e6b9c70ceaf6494a29c2c2cb cc91af8ed2b58f97e6b9c70ceaf6494a29c2c2cb lib/l10n/app_localizations.dart
+1 .M N... 100644 100644 100644 ea9cb0da6476d7e867418c92c1114d8e8d1c93be ea9cb0da6476d7e867418c92c1114d8e8d1c93be lib/l10n/app_localizations_ar.dart
+1 .M N... 100644 100644 100644 c66d962e30b9bae0351d5fc8678039c8545184be c66d962e30b9bae0351d5fc8678039c8545184be lib/l10n/app_localizations_en.dart
+1 .M N... 100644 100644 100644 2f62cea666b5a1321aba25d309b33cacdfb942b3 2f62cea666b5a1321aba25d309b33cacdfb942b3 lib/shared/design_system/theme/cp_theme.dart
+1 .M N... 100644 100644 100644 ef2e5bda5b3736d6af3970a4876203f93810f186 ef2e5bda5b3736d6af3970a4876203f93810f186 lib/shared/design_system/tokens/cp_breakpoints.dart
+1 .M N... 100644 100644 100644 68014a73be9b6b021e5a3c1d5330a41b5cf53e60 68014a73be9b6b021e5a3c1d5330a41b5cf53e60 lib/shared/design_system/tokens/cp_colors.dart
+1 .M N... 100644 100644 100644 b0856ed1af4f7654b8965dac3dbeaa5edc973d35 b0856ed1af4f7654b8965dac3dbeaa5edc973d35 lib/shared/design_system/tokens/cp_radius.dart
+1 .M N... 100644 100644 100644 675956f35c0721fd1293246a5931c9d97ce84dbd 675956f35c0721fd1293246a5931c9d97ce84dbd lib/shared/design_system/tokens/cp_spacing.dart
+1 .M N... 100644 100644 100644 21fafa274ff84e395d8c3aeb8242f84bed2862a5 21fafa274ff84e395d8c3aeb8242f84bed2862a5 lib/shared/design_system/tokens/cp_typography.dart
+1 .M N... 100644 100644 100644 2b8a8dd17f4aaa7e0c8af95e5c320d46d3b8fab1 2b8a8dd17f4aaa7e0c8af95e5c320d46d3b8fab1 lib/shared/design_system/widgets/cp_adaptive_page.dart
+1 .M N... 100644 100644 100644 a84f2a8114fd0e59e16480bbad09a79edec7644c a84f2a8114fd0e59e16480bbad09a79edec7644c lib/shared/design_system/widgets/cp_app_bar.dart
+1 .M N... 100644 100644 100644 13d503c3fd6a86e361a03c8992b3782d78b94add 13d503c3fd6a86e361a03c8992b3782d78b94add lib/shared/design_system/widgets/cp_bottom_navigation.dart
+1 .M N... 100644 100644 100644 6b1d4ca63495311dfa5c8753693bd2d28d710cd3 6b1d4ca63495311dfa5c8753693bd2d28d710cd3 lib/shared/design_system/widgets/cp_button.dart
+1 .M N... 100644 100644 100644 199f2b4b128cee02fe67638522ca8e388f9c59c9 199f2b4b128cee02fe67638522ca8e388f9c59c9 lib/shared/design_system/widgets/cp_card.dart
+1 .M N... 100644 100644 100644 89e8251d4fcb3a2c8811e5f37da090a3c920e742 89e8251d4fcb3a2c8811e5f37da090a3c920e742 lib/shared/design_system/widgets/cp_empty_state.dart
+1 .M N... 100644 100644 100644 1f5b2377078f4cfdc5fd05ea5ca000b719ec9674 1f5b2377078f4cfdc5fd05ea5ca000b719ec9674 lib/shared/design_system/widgets/cp_list_tile.dart
+1 .M N... 100644 100644 100644 7c43d7e2ea82e3d134e2346bc4f1e03e33b85274 7c43d7e2ea82e3d134e2346bc4f1e03e33b85274 lib/shared/design_system/widgets/cp_skeleton.dart
+1 .M N... 100644 100644 100644 9e2d2254c521af7a87924a5ae4701d630ea9835b 9e2d2254c521af7a87924a5ae4701d630ea9835b lib/shared/design_system/widgets/cp_text_field.dart
+1 .M N... 100644 100644 100644 e5419fdaca6d56afb763cefb7be525d069fc9151 e5419fdaca6d56afb763cefb7be525d069fc9151 lib/shared/presentation/widgets/finance_ui_components.dart
+1 .M N... 100644 100644 100644 64a0ecea40dc5300640959f69629a6276d3b6931 64a0ecea40dc5300640959f69629a6276d3b6931 linux/flutter/generated_plugin_registrant.cc
+1 .M N... 100644 100644 100644 a630fa93c7ddefff958267f85e977bcc94196db6 a630fa93c7ddefff958267f85e977bcc94196db6 linux/flutter/generated_plugins.cmake
+1 .M N... 100644 100644 100644 f127661202b0930c097172e88f142b7330368585 f127661202b0930c097172e88f142b7330368585 macos/Flutter/GeneratedPluginRegistrant.swift
+1 .M N... 100644 100644 100644 dddb8a30c851e7ef5b16a9108934bd1217b6b43f dddb8a30c851e7ef5b16a9108934bd1217b6b43f macos/Runner/DebugProfile.entitlements
+1 .M N... 100644 100644 100644 852fa1a4728ae4789e3bca55dd07caef3b41f2a5 852fa1a4728ae4789e3bca55dd07caef3b41f2a5 macos/Runner/Release.entitlements
+1 .M N... 100644 100644 100644 582e7df6324bd6d549a6980e7bbe2bfced0148e6 582e7df6324bd6d549a6980e7bbe2bfced0148e6 package.json
+1 .M N... 100644 100644 100644 14a2de764aca544bc4a004b27d9e3de4bcd5f0f8 14a2de764aca544bc4a004b27d9e3de4bcd5f0f8 pubspec.lock
+1 .M N... 100644 100644 100644 b34361918f40903579b983678760a3f4ccb5218d b34361918f40903579b983678760a3f4ccb5218d pubspec.yaml
+1 .M N... 100644 100644 100644 2d3b6c0d6c6fad11d143438502f1276ef11d5799 2d3b6c0d6c6fad11d143438502f1276ef11d5799 test/core/database/app_database_migration_test.dart
+1 .M N... 100644 100644 100644 4e894b2dcd98c093c7f74ef1baca60aa8fa0c14a 4e894b2dcd98c093c7f74ef1baca60aa8fa0c14a test/core/logging/app_logger_test.dart
+1 .M N... 100644 100644 100644 971f1a9b3903849d4a2c87ecb67d23ead97088dc 971f1a9b3903849d4a2c87ecb67d23ead97088dc test/core/sync/sync_test.dart
+1 .M N... 100644 100644 100644 ad204c5109701d14e8d8f00dee46d1d7de56c68d ad204c5109701d14e8d8f00dee46d1d7de56c68d test/features/accounts/account_card_ui_test.dart
+1 .M N... 100644 100644 100644 8436d3e7aeb150eac04618ed8e0978b4057e8802 8436d3e7aeb150eac04618ed8e0978b4057e8802 test/features/ai_assistant/ai_action_test.dart
+1 .M N... 100644 100644 100644 b7e6732fa733721b440d55048e50561e7299ff07 b7e6732fa733721b440d55048e50561e7299ff07 test/features/ai_assistant/ai_assistant_send_test.dart
+1 .M N... 100644 100644 100644 80cc7e76124121bb5e6b1c3d0cbdb32da8ba33e8 80cc7e76124121bb5e6b1c3d0cbdb32da8ba33e8 test/features/ai_assistant/ai_connection_diagnostic_test.dart
+1 .M N... 100644 100644 100644 6db27fb625d391909d6cd432068ca239bed2c763 6db27fb625d391909d6cd432068ca239bed2c763 test/features/ai_assistant/ai_module_test.dart
+1 .M N... 100644 100644 100644 b66d2b343fb5bc6ad9335cf5bb10e95461cdc461 b66d2b343fb5bc6ad9335cf5bb10e95461cdc461 test/features/ai_assistant/ai_runtime_config_test.dart
+1 .M N... 100644 100644 100644 4b08d942b7301a1c08612169c83ad5a7f3b3459e 4b08d942b7301a1c08612169c83ad5a7f3b3459e test/features/ai_assistant/ai_understanding_expansion_test.dart
+1 .M N... 100644 100644 100644 6bb3badf0295733d4d4ccd4e420c02639814bf2c 6bb3badf0295733d4d4ccd4e420c02639814bf2c test/features/ai_assistant/financial_command_parser_test.dart
+1 .M N... 100644 100644 100644 5e7c06e70f90de9d6fae913fec57c10de52e1a77 5e7c06e70f90de9d6fae913fec57c10de52e1a77 test/features/ai_assistant/income_source_intelligence_test.dart
+1 .M N... 100644 100644 100644 5bd969b1ecacce7da741abe85140f83e66ed5792 5bd969b1ecacce7da741abe85140f83e66ed5792 test/features/budgets/budgets_test.dart
+1 .M N... 100644 100644 100644 7e7e9a975c0f1dd275c8b30da82b0c64b929de71 7e7e9a975c0f1dd275c8b30da82b0c64b929de71 test/features/budgets/budgets_ui_test.dart
+1 .M N... 100644 100644 100644 92970daef7129a2492691a820e3fe497dcc6e283 92970daef7129a2492691a820e3fe497dcc6e283 test/features/categories/categories_test.dart
+1 .M N... 100644 100644 100644 463f94813ffb36260293ba68a3b3aae38558cae2 463f94813ffb36260293ba68a3b3aae38558cae2 test/features/dashboard/dashboard_exchange_rate_test.dart
+1 .M N... 100644 100644 100644 a26a19ac135ed46fb734eefa0ca1ef780a5e9bc4 a26a19ac135ed46fb734eefa0ca1ef780a5e9bc4 test/features/dashboard/dashboard_warning_ui_test.dart
+1 .M N... 100644 100644 100644 ac51e52aa77095309ce38aeefbbbc23aa0fecb5b ac51e52aa77095309ce38aeefbbbc23aa0fecb5b test/features/data_deletion/data_deletion_test.dart
+1 .M N... 100644 100644 100644 9f77fc690a979969f2bf286136ddae13170d0d67 9f77fc690a979969f2bf286136ddae13170d0d67 test/features/exchange_rates/exchange_rates_test.dart
+1 .M N... 100644 100644 100644 cd37721c487a792f1e905c0e518aceb972630e1d cd37721c487a792f1e905c0e518aceb972630e1d test/features/exchange_rates/exchange_rates_ui_test.dart
+1 .M N... 100644 100644 100644 b87e71f33431115d5623541ac9feaeee9e150467 b87e71f33431115d5623541ac9feaeee9e150467 test/features/finance_engine/finance_engine_test.dart
+1 .M N... 100644 100644 100644 fe6c2fc40c7d3573fcd689c0787e8d219477f233 fe6c2fc40c7d3573fcd689c0787e8d219477f233 test/features/goals/goals_test.dart
+1 .M N... 100644 100644 100644 ab198fc1109d5898935d625cf41c776dc1ffc62a ab198fc1109d5898935d625cf41c776dc1ffc62a test/features/goals/goals_ui_test.dart
+1 .M N... 100644 100644 100644 caf274f0762511ea09e0d392fe99d5333a70a581 caf274f0762511ea09e0d392fe99d5333a70a581 test/features/insights/insights_test.dart
+1 .M N... 100644 100644 100644 723bab8cc3692c52f4ec09236c3ec478ec237166 723bab8cc3692c52f4ec09236c3ec478ec237166 test/features/insights/insights_ui_test.dart
+1 .M N... 100644 100644 100644 eeab1d69438535b0155ccee78468b8d958ef5098 eeab1d69438535b0155ccee78468b8d958ef5098 test/features/payees/payees_test.dart
+1 .M N... 100644 100644 100644 52631ade88e524a35328a894baf70e4cee86192d 52631ade88e524a35328a894baf70e4cee86192d test/features/receipts/firebase_receipt_analysis_provider_test.dart
+1 .M N... 100644 100644 100644 61961c05f89eb36e141626ba0f2a502697e0906e 61961c05f89eb36e141626ba0f2a502697e0906e test/features/receipts/receipt_capture_usecases_test.dart
+1 .M N... 100644 100644 100644 7b426ba7749ae75ab5b68582b970e160c2e997c3 7b426ba7749ae75ab5b68582b970e160c2e997c3 test/features/receipts/receipt_persistence_and_image_test.dart
+1 .M N... 100644 100644 100644 82066e43df1b3307b839e9500aa0a70a07199c72 82066e43df1b3307b839e9500aa0a70a07199c72 test/features/receipts/receipt_processing_test.dart
+1 .M N... 100644 100644 100644 5b51e3e990c35cd3c55dcc3b54ad06ee26de564f 5b51e3e990c35cd3c55dcc3b54ad06ee26de564f test/features/receipts/receipt_ui_test.dart
+1 .M N... 100644 100644 100644 58dc8679c4714c3b5e3187153189a0909add0305 58dc8679c4714c3b5e3187153189a0909add0305 test/features/settings/ai_diagnostics_settings_section_test.dart
+1 .M N... 100644 100644 100644 2181fbbf1f986650e1a2689ebef78749a3b6eaa7 2181fbbf1f986650e1a2689ebef78749a3b6eaa7 test/features/settings/base_currency_test.dart
+1 .M N... 100644 100644 100644 022fd25bd249c8aff2cc30e60910ce033aae06fb 022fd25bd249c8aff2cc30e60910ce033aae06fb test/features/settings/delete_all_user_data_dialog_test.dart
+1 .M N... 100644 100644 100644 3516a8c84c738fa0da60755b21ac1f88664ca12a 3516a8c84c738fa0da60755b21ac1f88664ca12a test/features/transactions/transactions_test.dart
+1 .M N... 100644 100644 100644 00c40cf979806ebd334263f2fe85d26bf1c62092 00c40cf979806ebd334263f2fe85d26bf1c62092 test/features/transactions/transactions_ui_test.dart
+1 .M N... 100644 100644 100644 34f8e08215a6afb7887e2abd2521a918a3b8b9a1 34f8e08215a6afb7887e2abd2521a918a3b8b9a1 test/firestore/firestore.rules.test.mjs
+1 .M N... 100644 100644 100644 c66c5bcec5781c7d30b5b7a52c6ea95d866c1c09 c66c5bcec5781c7d30b5b7a52c6ea95d866c1c09 test/shared/design_system/design_system_test.dart
+1 .M N... 100644 100644 100644 84ab551433fad600c2f08d551bbf59a1c8e3259b 84ab551433fad600c2f08d551bbf59a1c8e3259b test/widget_test.dart
+1 .M N... 100644 100644 100644 256b019b8379a4178288435c7b5637c767fd37bf 256b019b8379a4178288435c7b5637c767fd37bf windows/flutter/generated_plugin_registrant.cc
+1 .M N... 100644 100644 100644 7183207441e9b09f9f71de3c002e3821bbb668dd 7183207441e9b09f9f71de3c002e3821bbb668dd windows/flutter/generated_plugins.cmake
+? .vscode/tasks.json
+? AGENTS.md
+? cashpilot_ai_gateway.zip
+? cashpilot_ai_gateway_repaired.zip
+? config/groq_staging.json
+? docs/AI_ACTION_ARCHITECTURE.md
+? docs/IMPLEMENTATION_PLAN.md
+? docs/LIBYA_LOCALIZATION.md
+? docs/PERFORMANCE_REPORT.md
+? docs/PROJECT_AUDIT.md
+? docs/ai_agent_manual_qa_checklist.md
+? docs/ai_agent_privacy.md
+? docs/ai_app_capability_inventory.md
+? docs/ai_conversation_memory.md
+? docs/ai_financial_agent_architecture.md
+? docs/ai_financial_guidance_policy.md
+? docs/ai_financial_staging_activation.md
+? docs/ai_model_routing.md
+? docs/ai_tool_permission_policy.md
+? docs/ai_tool_registry.md
+? docs/architecture/clean_architecture_rules.md
+? docs/architecture/dependency_direction.md
+? docs/architecture/error_handling.md
+? docs/architecture/refactoring_decisions.md
+? docs/architecture/riverpod_conventions.md
+? docs/architecture/testing_strategy.md
+? docs/groq_gateway_architecture.md
+? docs/groq_gateway_deployment.md
+? docs/groq_gateway_security.md
+? docs/groq_live_acceptance.md
+? docs/groq_model_evaluation.md
+? docs/groq_privacy_data_flow.md
+? docs/groq_rollout_and_rollback.md
+? docs/local_owner_scope_architecture.md
+? docs/qa/CASHPILOT_FINDINGS.csv
+? docs/qa/CASHPILOT_FULL_QA_REPORT_AR.md
+? docs/qa/account_deletion_final/ACCOUNT_DELETION_FINAL_REPORT_AR.md
+? docs/qa/account_deletion_final/ACCOUNT_DELETION_TEST_MATRIX.csv
+? docs/qa/account_deletion_final/DATA_CLEANUP_VERIFICATION.csv
+? docs/qa/account_deletion_final/LIVE_ANDROID_ACCEPTANCE_AR.md
+? docs/qa/account_deletion_final/REMAINING_LIMITATIONS.csv
+? docs/qa/account_deletion_final/evidence/00_BASELINE.md
+? docs/qa/account_deletion_final/evidence/01_LIVE_REPRODUCTION.md
+? docs/qa/account_deletion_final/evidence/02_AUTOMATED_VALIDATION.md
+? docs/qa/account_deletion_final/evidence/03_CLEANUP.md
+? docs/qa/account_deletion_final/evidence/04_CHANGED_FILES.md
+? docs/qa/account_deletion_provider/CLOUD_DELETION_PROVIDER_REPORT_AR.md
+? docs/qa/account_deletion_provider/DATA_ZERO_VERIFICATION.csv
+? docs/qa/account_deletion_provider/DEPLOYMENT_CONFIG_AR.md
+? docs/qa/account_deletion_provider/LIVE_DELETION_ACCEPTANCE_AR.md
+? docs/qa/account_deletion_provider/REMAINING_BLOCKERS.csv
+? docs/qa/account_deletion_provider/SECURITY_TEST_MATRIX.csv
+? docs/qa/account_deletion_provider/evidence/00_WORKTREE_BASELINE_AR.md
+? docs/qa/account_deletion_provider/evidence/01_ROOT_CAUSE_AR.md
+? docs/qa/account_deletion_provider/evidence/02_DEPLOYMENT_AR.md
+? docs/qa/account_deletion_provider/evidence/03_HTTP_ACCEPTANCE_AR.md
+? docs/qa/account_deletion_provider/evidence/04_SAFE_LOGS_AR.md
+? docs/qa/account_deletion_provider/evidence/05_ANDROID_LIVE_AR.md
+? docs/qa/ai_transaction_mutations/AI_TRANSACTION_MUTATIONS_REPORT_AR.md
+? docs/qa/ai_transaction_mutations/AI_UPDATE_DELETE_UNDO_MATRIX.csv
+? docs/qa/ai_transaction_mutations/BEHAVIOR_PARITY_AR.md
+? docs/qa/ai_transaction_mutations/FINAL_ANDROID_ROLLOUT_AR.md
+? docs/qa/ai_transaction_mutations/LIVE_ACCEPTANCE_AR.md
+? docs/qa/ai_transaction_mutations/REMAINING_LIMITATIONS.csv
+? docs/qa/ai_transaction_mutations/evidence/device_inventory.md
+? docs/qa/ai_transaction_mutations/evidence/postchange_git_snapshot.md
+? docs/qa/ai_transaction_mutations/evidence/prechange_git_snapshot.md
+? docs/qa/ai_transaction_mutations/evidence/validation_summary.md
+? docs/qa/ai_transaction_mutations/final_live/evidence/00_baseline.md
+? docs/qa/ai_transaction_mutations/final_live/evidence/01_live_mutations.md
+? docs/qa/ai_transaction_mutations/final_live/evidence/02_owner_restart.md
+? docs/qa/ai_transaction_mutations/final_live/evidence/03_automated_gates.md
+? docs/qa/ai_transaction_mutations/final_live/evidence/04_rollout.md
+? docs/qa/ai_transaction_mutations/final_live/evidence/05_cleanup.md
+? docs/qa/ai_transaction_mutations/final_live/evidence/06_final_worktree.md
+? docs/qa/architecture_refactor/ARCHITECTURE_BASELINE_AR.md
+? docs/qa/architecture_refactor/BEHAVIOR_PARITY_REPORT_AR.md
+? docs/qa/architecture_refactor/CHARACTERIZATION_TEST_MATRIX.csv
+? docs/qa/architecture_refactor/DEFERRED_FUNCTIONAL_FINDINGS.csv
+? docs/qa/architecture_refactor/DEPENDENCY_MAP.md
+? docs/qa/architecture_refactor/FINAL_ARCHITECTURE_REPORT_AR.md
+? docs/qa/architecture_refactor/PERFORMANCE_PARITY.csv
+? docs/qa/architecture_refactor/REFACTORING_INVENTORY.csv
+? docs/qa/architecture_refactor/REFACTORING_LOG_AR.md
+? docs/qa/architecture_refactor/evidence/00_git_baseline.txt
+? docs/qa/architecture_refactor/evidence/01_gateway_tooling_sha256.txt
+? docs/qa/architecture_refactor/evidence/02_toolchain_baseline.txt
+? docs/qa/architecture_refactor/evidence/03_validation_baseline.txt
+? docs/qa/architecture_refactor/evidence/04_final_validation.txt
+? docs/qa/architecture_refactor/evidence/05_task_path_delta.txt
+? docs/qa/evidence/ai-behavior-probe-output.txt
+? docs/qa/evidence/ai-tests-summary.txt
+? docs/qa/evidence/ai_behavior_probe.dart
+? docs/qa/evidence/analyzer-summary.txt
+? docs/qa/evidence/build-summary.txt
+? docs/qa/evidence/environment-summary.txt
+? docs/qa/evidence/firestore-emulator-summary.txt
+? docs/qa/evidence/flutter-test-summary.txt
+? docs/qa/evidence/gateway-test-summary.txt
+? docs/qa/evidence/git-status-after.txt
+? docs/qa/evidence/git-status-before.txt
+? docs/qa/evidence/groq-evaluation-summary.txt
+? docs/qa/evidence/integration-test-summary.txt
+? docs/qa/evidence/rtl-responsive-summary.txt
+? docs/qa/evidence/source-audit-summary.txt
+? docs/qa/evidence/static-search-summary.txt
+? docs/qa/functionality/AI_AVAILABILITY_MATRIX_AR.md
+? docs/qa/functionality/ANDROID_LIVE_ACCEPTANCE_AR.md
+? docs/qa/functionality/DAILY_USE_FINAL_VERDICT_AR.md
+? docs/qa/functionality/FULL_FUNCTIONAL_READINESS_AR.md
+? docs/qa/functionality/FUNCTIONAL_BASELINE_AR.md
+? docs/qa/functionality/FUNCTIONAL_DEFECTS.csv
+? docs/qa/functionality/MANUAL_ACCEPTANCE_RESULTS_AR.md
+? docs/qa/functionality/PERFORMANCE_BEFORE_AFTER.csv
+? docs/qa/functionality/evidence/ai-focused-tests.txt
+? docs/qa/functionality/evidence/android-build-final.txt
+? docs/qa/functionality/evidence/android-device-final.txt
+? docs/qa/functionality/evidence/changed-files-final.txt
+? docs/qa/functionality/evidence/core-workflow-tests.txt
+? docs/qa/functionality/evidence/firestore-emulator-final.txt
+? docs/qa/functionality/evidence/flutter-analyze-baseline.txt
+? docs/qa/functionality/evidence/flutter-analyze-final.txt
+? docs/qa/functionality/evidence/flutter-test-baseline.txt
+? docs/qa/functionality/evidence/flutter-test-final.txt
+? docs/qa/functionality/evidence/gateway-final.txt
+? docs/qa/functionality/evidence/git-diff-stat-before.txt
+? docs/qa/functionality/evidence/git-status-after.txt
+? docs/qa/functionality/evidence/git-status-before.txt
+? docs/qa/functionality/evidence/live-android-closure-baseline.txt
+? docs/qa/functionality/evidence/performance-summary.txt
+? docs/qa/functionality/evidence/phase-0-environment.txt
+? docs/qa/functionality/evidence/secret-scan-final.txt
+? docs/qa/functionality/evidence/startup-profile.txt
+? docs/qa/functionality/evidence/web-build-final.txt
+? docs/qa/functionality/evidence/web-runtime-final.txt
+? docs/qa/groq_completion/APPCHECK_FINAL_LIVE_ACCEPTANCE_AR.md
+? docs/qa/groq_completion/APPCHECK_READINESS_AND_SMALL_TALK_FIX_AR.md
+? docs/qa/groq_completion/GROQ_BLOCKERS.csv
+? docs/qa/groq_completion/GROQ_DEPLOYMENT_CONFIG_AR.md
+? docs/qa/groq_completion/GROQ_LIVE_ACCEPTANCE_AR.md
+? docs/qa/groq_completion/GROQ_MODEL_EVALUATION.csv
+? docs/qa/groq_completion/GROQ_PERFORMANCE.csv
+? docs/qa/groq_completion/GROQ_PRIMARY_COMPLETION_AR.md
+? docs/qa/groq_completion/GROQ_ROLLBACK_AR.md
+? docs/qa/groq_completion/GROQ_SETTINGS_DIAGNOSTICS_FIX_AR.md
+? docs/qa/groq_completion/PLAIN_FLUTTER_RUN_GROQ_FIX_AR.md
+? docs/qa/groq_completion/evidence/android-live-acceptance.txt
+? docs/qa/groq_completion/evidence/cloud-baseline.txt
+? docs/qa/groq_completion/evidence/cloud-deployment.txt
+? docs/qa/groq_completion/evidence/force-stop-reopen.txt
+? docs/qa/groq_completion/evidence/http-security-matrix.txt
+? docs/qa/groq_completion/evidence/local-gates.txt
+? docs/qa/groq_completion/evidence/model-eval-120b-paced.csv
+? docs/qa/groq_completion/evidence/model-eval-120b.csv
+? docs/qa/groq_completion/evidence/model-eval-20b-paced.csv
+? docs/qa/groq_completion/evidence/model-eval-20b.csv
+? docs/qa/groq_completion/evidence/model-evaluation-summary.txt
+? docs/qa/groq_completion/evidence/model-verification.txt
+? docs/qa/groq_completion/evidence/offline-retry.txt
+? docs/qa/groq_completion/evidence/rate-limit.txt
+? docs/qa/groq_completion/evidence/worktree-baseline.txt
+? docs/qa/refinement/COMPREHENSIVE_REFINEMENT_REPORT_AR.md
+? docs/qa/refinement/MANUAL_ACCEPTANCE_AR.md
+? docs/qa/refinement/PERFORMANCE_REFINEMENT.csv
+? docs/qa/refinement/PRODUCT_LOGIC_CHANGES_AR.md
+? docs/qa/refinement/REFINEMENT_BASELINE_AR.md
+? docs/qa/refinement/REFINEMENT_DEFECTS.csv
+? docs/qa/refinement/RELEASE_CANDIDATE_GAPS_AR.md
+? docs/qa/refinement/TECHNICAL_CHANGES_AR.md
+? docs/qa/refinement/evidence/android-ai-baseline-safe.txt
+? docs/qa/refinement/evidence/android-runtime-final-safe.txt
+? docs/qa/refinement/evidence/changed-files-final.txt
+? docs/qa/refinement/evidence/final-validation.txt
+? docs/qa/refinement/evidence/flutter-analyze-baseline.txt
+? docs/qa/refinement/evidence/flutter-test-baseline.txt
+? docs/qa/refinement/evidence/git-baseline-metadata.txt
+? docs/qa/refinement/evidence/git-diff-names-before.txt
+? docs/qa/refinement/evidence/git-diff-stat-before.txt
+? docs/qa/refinement/evidence/git-status-before.txt
+? docs/qa/refinement/evidence/integration-final.txt
+? docs/qa/refinement/evidence/receipt-focused-gate.txt
+? docs/qa/refinement/evidence/refinement-focused-gate-1.txt
+? docs/qa/refinement/evidence/untracked-before.txt
+? docs/qa/refinement/evidence/web-interactive-final.txt
+? docs/qa/refinement/evidence/worktree-preservation-final.txt
+? docs/qa/release_testing/BASELINE_AR.md
+? docs/qa/release_testing/BLOCKERS.csv
+? docs/qa/release_testing/MANUAL_ACCEPTANCE_AR.md
+? docs/qa/release_testing/MASTER_TEST_REPORT_AR.md
+? docs/qa/release_testing/PERFORMANCE_RESULTS.csv
+? docs/qa/release_testing/RELEASE_GATE_MATRIX_AR.md
+? docs/qa/release_testing/TEST_CASES.csv
+? docs/qa/release_testing/TEST_EXECUTION.csv
+? docs/qa/release_testing/evidence/android-app-check-final.txt
+? docs/qa/release_testing/evidence/android-appbundle-build.txt
+? docs/qa/release_testing/evidence/android-debug-build.txt
+? docs/qa/release_testing/evidence/android-integration-composite.txt
+? docs/qa/release_testing/evidence/android-integration.txt
+? docs/qa/release_testing/evidence/android-release-build.txt
+? docs/qa/release_testing/evidence/changed-files-owned.txt
+? docs/qa/release_testing/evidence/firebase-ai-failure-recovery.txt
+? docs/qa/release_testing/evidence/firebase-ai-live.txt
+? docs/qa/release_testing/evidence/firestore-emulator.txt
+? docs/qa/release_testing/evidence/flutter-analyze-baseline.txt
+? docs/qa/release_testing/evidence/flutter-analyze.txt
+? docs/qa/release_testing/evidence/flutter-test-baseline.txt
+? docs/qa/release_testing/evidence/flutter-test-full.txt
+? docs/qa/release_testing/evidence/gateway-build.txt
+? docs/qa/release_testing/evidence/gateway-lint.txt
+? docs/qa/release_testing/evidence/gateway-secret-scan.txt
+? docs/qa/release_testing/evidence/gateway-tests.txt
+? docs/qa/release_testing/evidence/gateway-typecheck.txt
+? docs/qa/release_testing/evidence/git-branch-before.txt
+? docs/qa/release_testing/evidence/git-diff-names-before.txt
+? docs/qa/release_testing/evidence/git-diff-stat-before.txt
+? docs/qa/release_testing/evidence/git-head-before.txt
+? docs/qa/release_testing/evidence/git-root-before.txt
+? docs/qa/release_testing/evidence/git-status-after.txt
+? docs/qa/release_testing/evidence/git-status-before.txt
+? docs/qa/release_testing/evidence/manual-acceptance-summary.txt
+? docs/qa/release_testing/evidence/migration-tests.txt
+? docs/qa/release_testing/evidence/performance-summary.txt
+? docs/qa/release_testing/evidence/receipt-live.txt
+? docs/qa/release_testing/evidence/report-validation.txt
+? docs/qa/release_testing/evidence/secure-storage-upgrade.txt
+? docs/qa/release_testing/evidence/untracked-before.txt
+? docs/qa/release_testing/evidence/web-build.txt
+? docs/qa/remediation/CASHPILOT_DEFECT_STATUS.csv
+? docs/qa/remediation/CASHPILOT_LIVE_ACCEPTANCE_PLAN_AR.md
+? docs/qa/remediation/CASHPILOT_REMEDIATION_LOG_AR.md
+? docs/qa/remediation/CASHPILOT_REMEDIATION_PLAN_AR.md
+? docs/qa/remediation/CASHPILOT_RETEST_RESULTS_AR.md
+? docs/qa/remediation/CASHPILOT_ROOT_CAUSE_MAP_AR.md
+? docs/qa/remediation/P0_FAST_REMEDIATION_AR.md
+? docs/qa/remediation/P0_FAST_STATUS.csv
+? docs/qa/remediation/defect-OF-015-after.txt
+? docs/qa/remediation/defect-OF-015-before.txt
+? docs/qa/remediation/defect-OF-018-after.txt
+? docs/qa/remediation/defect-OF-018-before.txt
+? docs/qa/remediation/evidence/build-final.txt
+? docs/qa/remediation/evidence/defect-AI-001-owner-bound-gateway-after.txt
+? docs/qa/remediation/evidence/defect-AI-007-gateway-after.txt
+? docs/qa/remediation/evidence/defect-AI-007-gateway-before.txt
+? docs/qa/remediation/evidence/defect-AI-007-streaming-after.txt
+? docs/qa/remediation/evidence/defect-AI-007-streaming-before.txt
+? docs/qa/remediation/evidence/defect-AI-013-after.txt
+? docs/qa/remediation/evidence/defect-AI-013-before.txt
+? docs/qa/remediation/evidence/defect-GW-01-after.txt
+? docs/qa/remediation/evidence/defect-GW-01-typed-count-before.txt
+? docs/qa/remediation/evidence/defect-GW-02-after.txt
+? docs/qa/remediation/evidence/defect-GW-03-after.txt
+? docs/qa/remediation/evidence/defect-OF-005-after.txt
+? docs/qa/remediation/evidence/defect-OF-005-before.txt
+? docs/qa/remediation/evidence/defect-OF-011-after.txt
+? docs/qa/remediation/evidence/defect-OF-016-after.txt
+? docs/qa/remediation/evidence/defect-OF-017-after.txt
+? docs/qa/remediation/evidence/defect-OF-019-after.txt
+? docs/qa/remediation/evidence/defect-OF-019-before.txt
+? docs/qa/remediation/evidence/defect-OF-020-after.txt
+? docs/qa/remediation/evidence/defect-OF-020-before.txt
+? docs/qa/remediation/evidence/defect-OF-021-after.txt
+? docs/qa/remediation/evidence/defect-OF-021-before.txt
+? docs/qa/remediation/evidence/defect-OF-022-after.txt
+? docs/qa/remediation/evidence/defect-OF-023-after.txt
+? docs/qa/remediation/evidence/defect-OF-024-after.txt
+? docs/qa/remediation/evidence/defect-OF-025-after.txt
+? docs/qa/remediation/evidence/defect-OF-031-after.txt
+? docs/qa/remediation/evidence/defect-OF-031-before.txt
+? docs/qa/remediation/evidence/defect-OF-031-reference-guards-before.txt
+? docs/qa/remediation/evidence/defect-OF-032-after.txt
+? docs/qa/remediation/evidence/defect-OF-033-after.txt
+? docs/qa/remediation/evidence/defect-OF-033-repair-before.txt
+? docs/qa/remediation/evidence/defects-AI-003-AI-004-after.txt
+? docs/qa/remediation/evidence/defects-AI-003-AI-004-before.txt
+? docs/qa/remediation/evidence/firestore-rules-tests.txt
+? docs/qa/remediation/evidence/flutter-analyze-final.txt
+? docs/qa/remediation/evidence/flutter-analyze-phase-6.txt
+? docs/qa/remediation/evidence/flutter-test-final.txt
+? docs/qa/remediation/evidence/gateway-tests.txt
+? docs/qa/remediation/evidence/git-diff-check-final.txt
+? docs/qa/remediation/evidence/git-diff-stat-before.txt
+? docs/qa/remediation/evidence/git-status-after-phase-0.txt
+? docs/qa/remediation/evidence/git-status-after-phase-1-2.txt
+? docs/qa/remediation/evidence/git-status-before.txt
+? docs/qa/remediation/evidence/phase-0-validation.txt
+? docs/qa/remediation/evidence/phase-1-2-integration-gate.txt
+? docs/qa/remediation/evidence/phase-1-ai-001-of-009-focused-results.txt
+? docs/qa/remediation/evidence/phase-1-ai-001-of-009-red-test.txt
+? docs/qa/remediation/evidence/phase-1-ai-002-of-014-receipt-red-green.txt
+? docs/qa/remediation/evidence/phase-1-ai-memory-owner-detach-red-green.txt
+? docs/qa/remediation/evidence/phase-1-ai-settings-race-after.txt
+? docs/qa/remediation/evidence/phase-1-ai-settings-race-before.txt
+? docs/qa/remediation/evidence/phase-1-ai-ui-owner-race-focused-results.txt
+? docs/qa/remediation/evidence/phase-1-of-026-of-030-backup-privacy-red-green.txt
+? docs/qa/remediation/evidence/phase-1-stale-stream-after.txt
+? docs/qa/remediation/evidence/phase-1-stale-stream-before.txt
+? docs/qa/remediation/evidence/phase-1-tests.txt
+? docs/qa/remediation/evidence/phase-10-reporting-tests.txt
+? docs/qa/remediation/evidence/phase-11-gateway-and-emulator-tests.txt
+? docs/qa/remediation/evidence/phase-2-data-deletion-full-tests.txt
+? docs/qa/remediation/evidence/phase-2-deletion-failing-tests.txt
+? docs/qa/remediation/evidence/phase-2-deletion-lock-quarantine-red.txt
+? docs/qa/remediation/evidence/phase-2-deletion-resume-recursive-green.txt
+? docs/qa/remediation/evidence/phase-2-deletion-resume-recursive-red.txt
+? docs/qa/remediation/evidence/phase-2-deletion-validation.txt
+? docs/qa/remediation/evidence/phase-2-external-transient-compile-note.txt
+? docs/qa/remediation/evidence/phase-2-late-regression-tests.txt
+? docs/qa/remediation/evidence/phase-2-owner-operation-fence-focused-results.txt
+? docs/qa/remediation/evidence/phase-2-owner-operation-fence-red-test.txt
+? docs/qa/remediation/evidence/phase-3-financial-integrity-tests.txt
+? docs/qa/remediation/evidence/phase-5-confirmation-reconciliation-after.txt
+? docs/qa/remediation/evidence/phase-5-confirmation-reconciliation-before.txt
+? docs/qa/remediation/evidence/phase-5-confirmation-reconciliation-tests.txt
+? docs/qa/remediation/evidence/phase-6-flutter-ai-safety-tests.txt
+? docs/qa/remediation/evidence/phase-6-gateway-tests.txt
+? docs/qa/remediation/evidence/phase-7-owner-scope-tests.txt
+? docs/qa/remediation/evidence/phase-8-receipt-tests.txt
+? docs/qa/remediation/evidence/phase-9-backup-privacy-tests.txt
+? docs/qa/remediation/evidence/phase-final-ai-module-after.txt
+? docs/qa/remediation/evidence/phase-final-ai-module-before.txt
+? docs/qa/remediation/evidence/transfer-tests.txt
+? docs/qa/remediation/evidence/untracked-before.txt
+? docs/qa/ui_redesign/COMPLETE_UI_REDESIGN_AR.md
+? docs/qa/ui_redesign/DESIGN_SYSTEM_SPEC_AR.md
+? docs/qa/ui_redesign/RESPONSIVE_RTL_ACCEPTANCE_AR.md
+? docs/qa/ui_redesign/SCREEN_IMPLEMENTATION_STATUS.csv
+? docs/qa/ui_redesign/UI_REGRESSION_RESULTS_AR.md
+? docs/qa/ui_redesign/evidence/BASELINE.md
+? docs/qa/ui_redesign/evidence/after_pick.png
+? docs/qa/ui_redesign/evidence/after_pick.xml
+? docs/qa/ui_redesign/evidence/app_now.png
+? docs/qa/ui_redesign/evidence/black_window.xml
+? docs/qa/ui_redesign/evidence/cash_after_cold.png
+? docs/qa/ui_redesign/evidence/dashboard_ar_window.xml
+? docs/qa/ui_redesign/evidence/discarded_captures/receipt_review_system_picker.png
+? docs/qa/ui_redesign/evidence/discarded_captures/relaunch_duplicate.png
+? docs/qa/ui_redesign/evidence/final_welcome.xml
+? docs/qa/ui_redesign/evidence/picker.png
+? docs/qa/ui_redesign/evidence/picker.xml
+? docs/qa/ui_redesign/evidence/reboot_app.png
+? docs/qa/ui_redesign/evidence/receipt_review_window.xml
+? docs/qa/ui_redesign/evidence/receipt_window.xml
+? docs/qa/ui_redesign/evidence/reopen_receipt.png
+? docs/qa/ui_redesign/evidence/settings_after_black.png
+? docs/qa/ui_redesign/evidence/settings_after_black.xml
+? docs/qa/ui_redesign/evidence/settings_ar_window.xml
+? docs/qa/ui_redesign/evidence/settings_window.xml
+? docs/qa/ui_redesign/evidence/window.xml
+? docs/qa/ui_redesign/screenshots/after/dark_ar/accounts.png
+? docs/qa/ui_redesign/screenshots/after/dark_ar/ai_assistant.png
+? docs/qa/ui_redesign/screenshots/after/dark_ar/budgets.png
+? docs/qa/ui_redesign/screenshots/after/dark_ar/dashboard.png
+? docs/qa/ui_redesign/screenshots/after/dark_ar/receipt_capture.png
+? docs/qa/ui_redesign/screenshots/after/dark_ar/reports.png
+? docs/qa/ui_redesign/screenshots/after/dark_ar/settings.png
+? docs/qa/ui_redesign/screenshots/after/dark_ar/transactions.png
+? docs/qa/ui_redesign/screenshots/after/dark_en/accounts.png
+? docs/qa/ui_redesign/screenshots/after/dark_en/ai_assistant.png
+? docs/qa/ui_redesign/screenshots/after/dark_en/authentication.png
+? docs/qa/ui_redesign/screenshots/after/dark_en/dashboard.png
+? docs/qa/ui_redesign/screenshots/after/dark_en/receipt_capture.png
+? docs/qa/ui_redesign/screenshots/after/dark_en/reports.png
+? docs/qa/ui_redesign/screenshots/after/dark_en/settings.png
+? docs/qa/ui_redesign/screenshots/after/dark_en/transactions.png
+? docs/qa/ui_redesign/screenshots/after/light_ar/accounts.png
+? docs/qa/ui_redesign/screenshots/after/light_ar/ai_assistant.png
+? docs/qa/ui_redesign/screenshots/after/light_ar/budgets.png
+? docs/qa/ui_redesign/screenshots/after/light_ar/dashboard.png
+? docs/qa/ui_redesign/screenshots/after/light_ar/receipt_capture.png
+? docs/qa/ui_redesign/screenshots/after/light_ar/reports.png
+? docs/qa/ui_redesign/screenshots/after/light_ar/settings.png
+? docs/qa/ui_redesign/screenshots/after/light_ar/transactions.png
+? docs/qa/ui_redesign/screenshots/after/light_en/accounts.png
+? docs/qa/ui_redesign/screenshots/after/light_en/ai_assistant.png
+? docs/qa/ui_redesign/screenshots/after/light_en/budgets.png
+? docs/qa/ui_redesign/screenshots/after/light_en/dashboard.png
+? docs/qa/ui_redesign/screenshots/after/light_en/receipt_capture.png
+? docs/qa/ui_redesign/screenshots/after/light_en/reports.png
+? docs/qa/ui_redesign/screenshots/after/light_en/settings.png
+? docs/qa/ui_redesign/screenshots/after/light_en/transactions.png
+? docs/qa/ui_redesign/screenshots/before/accounts_dark_en.png
+? docs/qa/ui_redesign/screenshots/before/android_current.png
+? docs/qa/ui_redesign/screenshots/before/dashboard_dark_en.png
+? docs/qa/ui_redesign/screenshots/before/reports_dark_en.png
+? docs/qa/ui_redesign/screenshots/before/settings_dark_en.png
+? docs/qa/ui_redesign/screenshots/before/transactions_dark_en.png
+? firebase.ai_transaction_mutations.test.json
+? firebase.test.json
+? integration_test/ai_navigation_device_regression_test.dart
+? integration_test/ai_navigation_live_regression_test.dart
+? integration_test/android_live_ai_acceptance_test.dart
+? integration_test/android_live_ai_failure_recovery_test.dart
+? integration_test/android_live_groq_acceptance_test.dart
+? integration_test/android_live_groq_failure_recovery_test.dart
+? integration_test/android_live_groq_rate_limit_test.dart
+? integration_test/firebase_ai_agent_smoke_test.dart
+? integration_test/firebase_ai_general_assistant_smoke_test.dart
+? integration_test/support/android_live_groq_app_check.dart
+? ios/Runner/Runner.entitlements
+? ios/Runner/RunnerDebug.entitlements
+? ios/Runner/RunnerProfile.entitlements
+? lib/app/di/financial_insights_composition.dart
+? lib/app/di/goal_linked_accounts_composition.dart
+? lib/app/router/navigation_transition_diagnostics.dart
+? lib/app/startup_initializer.dart
+? lib/core/config/cash_pilot_app_version.dart
+? lib/core/database/app_database_account_balance_projection.dart
+? lib/core/database/app_database_account_lifecycle_guards.dart
+? lib/core/database/app_database_owner_data_deletion.dart
+? lib/core/database/app_database_owner_scope_guard_ddl.dart
+? lib/core/database/app_database_transfer_guard_ddl.dart
+? lib/core/database/app_database_transfer_pair_capability.dart
+? lib/core/firebase/firebase_ai_backend.dart
+? lib/core/firebase/firebase_app_check_activation.dart
+? lib/core/firebase/firebase_app_check_readiness.dart
+? lib/core/owner_scope/application/legacy_data_claim_service.dart
+? lib/core/owner_scope/application/owner_scope_health_service.dart
+? lib/core/owner_scope/application/owner_scope_providers.dart
+? lib/core/owner_scope/application/scoped_app_database_session.dart
+? lib/core/owner_scope/data/tables/owner_scope_migration_audits_table.dart
+? lib/core/owner_scope/domain/owner_scope.dart
+? lib/core/owner_scope/presentation/legacy_data_claim_dialog.dart
+? lib/core/security/app_check_activation_status.dart
+? lib/core/storage/owner_scoped_storage_keys.dart
+? lib/core/sync/application/backup_consent_lifecycle.dart
+? lib/core/sync/application/backup_operation_fence.dart
+? lib/core/sync/application/owner_deletion_quarantine_store.dart
+? lib/core/sync/data/legacy_sync_queue_migration.dart
+? lib/features/accounts/accounts_presentation.dart
+? lib/features/accounts/application/services/transactions_opening_balance_ledger.dart
+? lib/features/accounts/domain/failures/account_failure_codes.dart
+? lib/features/accounts/domain/repositories/opening_balance_ledger.dart
+? lib/features/ai_assistant/application/adapters/ai_repository_financial_insight_explanation_adapter.dart
+? lib/features/ai_assistant/application/agent/ai_agent_conversation_response_coordinator.dart
+? lib/features/ai_assistant/application/agent/ai_agent_local_plan_executor.dart
+? lib/features/ai_assistant/application/agent/ai_agent_memory.dart
+? lib/features/ai_assistant/application/agent/ai_agent_orchestrator_impl.dart
+? lib/features/ai_assistant/application/agent/ai_agent_provider_session_loop.dart
+? lib/features/ai_assistant/application/agent/ai_agent_response_stream_deadline.dart
+? lib/features/ai_assistant/application/agent/ai_agent_support.dart
+? lib/features/ai_assistant/application/agent/ai_provider_egress_guard.dart
+? lib/features/ai_assistant/application/agent/ai_provider_response_safety.dart
+? lib/features/ai_assistant/application/agent/financial_agent_tools.dart
+? lib/features/ai_assistant/application/agent/financial_response_grounding.dart
+? lib/features/ai_assistant/application/agent/general_assistant_policy.dart
+? lib/features/ai_assistant/application/agent/governed_ai_tool_registry.dart
+? lib/features/ai_assistant/application/agent/riverpod_financial_agent_data_gateway.dart
+? lib/features/ai_assistant/application/app_agent/ai_app_control_permission_resolver.dart
+? lib/features/ai_assistant/application/app_agent/app_agent_command_runtime.dart
+? lib/features/ai_assistant/application/app_agent/app_agent_reconciliation_service.dart
+? lib/features/ai_assistant/application/app_agent/durable_ai_action_bridge.dart
+? lib/features/ai_assistant/application/app_agent/effective_ai_app_control_policy.dart
+? lib/features/ai_assistant/application/app_agent/fenced_ai_action_durable_runtime.dart
+? lib/features/ai_assistant/application/controllers/ai_agent_conversation_controller.dart
+? lib/features/ai_assistant/application/providers/ai_agent_model_gateway_providers.dart
+? lib/features/ai_assistant/application/providers/ai_agent_providers.dart
+? lib/features/ai_assistant/application/providers/ai_agent_runtime_providers.dart
+? lib/features/ai_assistant/application/providers/ai_agent_scope_providers.dart
+? lib/features/ai_assistant/application/providers/ai_app_control_providers.dart
+? lib/features/ai_assistant/application/providers/ai_assistant_conversation_workflow_providers.dart
+? lib/features/ai_assistant/application/providers/ai_assistant_durable_draft_providers.dart
+? lib/features/ai_assistant/application/providers/ai_assistant_send_lifecycle_providers.dart
+? lib/features/ai_assistant/application/providers/ai_durable_action_providers.dart
+? lib/features/ai_assistant/application/providers/ai_financial_understanding_providers.dart
+? lib/features/ai_assistant/application/providers/ai_runtime_status_providers.dart
+? lib/features/ai_assistant/application/services/ai_assistant_conversation_workflow_controller.dart
+? lib/features/ai_assistant/application/services/ai_assistant_durable_draft_coordinator.dart
+? lib/features/ai_assistant/application/services/ai_assistant_send_lifecycle_coordinator.dart
+? lib/features/ai_assistant/application/services/ai_financial_understanding_coordinator.dart
+? lib/features/ai_assistant/application/services/ai_runtime_status_builder.dart
+? lib/features/ai_assistant/application/services/ai_runtime_status_probe.dart
+? lib/features/ai_assistant/application/services/ai_transaction_mutation_draft_service.dart
+? lib/features/ai_assistant/application/services/ai_transaction_mutation_executor.dart
+? lib/features/ai_assistant/data/agent/firebase_ai_agent_model_gateway.dart
+? lib/features/ai_assistant/data/app_agent/drift_app_agent_stores.dart
+? lib/features/ai_assistant/data/app_agent/hive_ai_app_control_settings_store.dart
+? lib/features/ai_assistant/data/app_agent/tables/ai_agent_tables.dart
+? lib/features/ai_assistant/data/config/ai_agent_feature_flags.dart
+? lib/features/ai_assistant/data/config/ai_app_control_feature_flags.dart
+? lib/features/ai_assistant/data/config/ai_environment_defaults.dart
+? lib/features/ai_assistant/data/config/ai_gateway_feature_flags.dart
+? lib/features/ai_assistant/data/gateway/buffered_sse_decoder.dart
+? lib/features/ai_assistant/data/gateway/firebase_gateway_token_provider.dart
+? lib/features/ai_assistant/data/gateway/groq_ai_agent_model_gateway.dart
+? lib/features/ai_assistant/data/gateway/groq_conversation_gateway.dart
+? lib/features/ai_assistant/data/gateway/groq_gateway_client.dart
+? lib/features/ai_assistant/data/gateway/groq_gateway_data_source.dart
+? lib/features/ai_assistant/data/gateway/routed_ai_agent_model_gateway.dart
+? lib/features/ai_assistant/domain/agent/ai_agent_contracts.dart
+? lib/features/ai_assistant/domain/agent/ai_agent_models.dart
+? lib/features/ai_assistant/domain/agent/ai_agent_safety_policy.dart
+? lib/features/ai_assistant/domain/agent/ai_tool_contracts.dart
+? lib/features/ai_assistant/domain/agent/assistant_navigation_policy.dart
+? lib/features/ai_assistant/domain/agent/financial_guidance_policy.dart
+? lib/features/ai_assistant/domain/agent/tool_relevance_policy.dart
+? lib/features/ai_assistant/domain/app_agent/ai_app_control_settings.dart
+? lib/features/ai_assistant/domain/app_agent/app_agent_contracts.dart
+? lib/features/ai_assistant/domain/app_agent/app_agent_models.dart
+? lib/features/ai_assistant/domain/app_agent/app_agent_policy.dart
+? lib/features/ai_assistant/domain/app_agent/app_agent_reconciliation.dart
+? lib/features/ai_assistant/domain/app_agent/canonical_app_tool_catalog.dart
+? lib/features/ai_assistant/domain/entities/ai_financial_record_offer.dart
+? lib/features/ai_assistant/domain/entities/ai_runtime_status.dart
+? lib/features/ai_assistant/domain/entities/ai_transaction_mutation_command.dart
+? lib/features/ai_assistant/domain/gateway/ai_conversation_gateway.dart
+? lib/features/ai_assistant/domain/repositories/ai_transaction_mutation_draft_repository.dart
+? lib/features/ai_assistant/domain/services/ai_provider_route_resolver.dart
+? lib/features/ai_assistant/domain/services/ai_transaction_mutation_parser.dart
+? lib/features/ai_assistant/domain/services/transaction_target_resolver.dart
+? lib/features/ai_assistant/presentation/support/ai_assistant_workflow_composition.dart
+? lib/features/ai_assistant/presentation/widgets/ai_verified_action_card.dart
+? lib/features/ai_assistant/presentation/widgets/google_search_entry_point.dart
+? lib/features/ai_assistant/presentation/widgets/google_search_entry_point_io.dart
+? lib/features/ai_assistant/presentation/widgets/google_search_entry_point_web.dart
+? lib/features/auth/auth_composition.dart
+? lib/features/auth/auth_contracts.dart
+? lib/features/auth/data/services/firebase_auth_operation_coordinator.dart
+? lib/features/auth/data/services/firebase_auth_session_guard.dart
+? lib/features/auth/data/services/firebase_oauth_credential_provider.dart
+? lib/features/auth/data/services/firebase_restricted_auth_session_restorer.dart
+? lib/features/auth/domain/services/account_deletion_completion_overlay.dart
+? lib/features/auth/domain/services/auth_oauth_credential_provider.dart
+? lib/features/auth/domain/services/auth_operation_coordinator.dart
+? lib/features/auth/domain/services/auth_performance_trace.dart
+? lib/features/auth/domain/services/auth_session_coordination.dart
+? lib/features/auth/domain/services/restricted_auth_session_restorer.dart
+? lib/features/budgets/data/budget_transactions_read_model.dart
+? lib/features/categories/categories_presentation.dart
+? lib/features/dashboard/data/dashboard_transactions_read_model.dart
+? lib/features/data_deletion/application/account_deletion_authenticated_continuation.dart
+? lib/features/data_deletion/application/account_deletion_execution_coordinator.dart
+? lib/features/data_deletion/application/account_deletion_restricted_auth.dart
+? lib/features/data_deletion/application/account_deletion_startup_recovery_coordinator.dart
+? lib/features/data_deletion/data/datasources/account_auth_deletion_data_source.dart
+? lib/features/data_deletion/data/datasources/account_deletion_scope_recovery_finalizer.dart
+? lib/features/data_deletion/data/datasources/account_deletion_session_proof_store.dart
+? lib/features/data_deletion/data/datasources/account_deletion_startup_recovery_gateway.dart
+? lib/features/data_deletion/data/datasources/data_deletion_operation_state_store.dart
+? lib/features/data_deletion/data/datasources/receipt_file_deletion_journal.dart
+? lib/features/data_deletion/data_deletion_presentation.dart
+? lib/features/data_deletion/domain/entities/data_deletion_operation_context.dart
+? lib/features/data_deletion/presentation/account_deletion_continuation_app.dart
+? lib/features/data_deletion/presentation/widgets/delete_all_user_data_dialog.dart
+? lib/features/exchange_rates/application/base_currency_provider.dart
+? lib/features/exchange_rates/exchange_rates_presentation.dart
+? lib/features/goals/application/models/goal_linked_account_option.dart
+? lib/features/goals/application/providers/goal_linked_account_options_provider.dart
+? lib/features/insights/application/providers/insight_use_case_providers.dart
+? lib/features/insights/domain/services/financial_insight_explanation_port.dart
+? lib/features/insights/insight_explanation.dart
+? lib/features/payees/payees_presentation.dart
+? lib/features/payment_methods/domain/defaults/libyan_bank_catalog.dart
+? lib/features/payment_methods/domain/entities/libyan_bank_definition.dart
+? lib/features/payment_methods/domain/enums/payment_method.dart
+? lib/features/payment_methods/payment_methods.dart
+? lib/features/receipts/application/receipt_capture_operation_lease.dart
+? lib/features/receipts/application/receipt_review_providers.dart
+? lib/features/receipts/application/receipt_review_workflow.dart
+? lib/features/receipts/data/services/isolate_receipt_image_preparation_worker.dart
+? lib/features/receipts/domain/services/receipt_image_cleanup_port.dart
+? lib/features/receipts/domain/services/receipt_image_preparation_worker.dart
+? lib/features/receipts/domain/services/receipt_transaction_identity.dart
+? lib/features/receipts/receipt_cleanup.dart
+? lib/features/settings/presentation/widgets/ai_app_control_settings_section.dart
+? lib/features/settings/presentation/widgets/legacy_data_claim_section.dart
+? lib/features/settings/settings_presentation.dart
+? lib/features/transactions/data/services/local_transfer_creation_workflow.dart
+? lib/features/transactions/data/services/local_transfer_pair_lifecycle.dart
+? lib/features/transactions/data/transaction_history_read_model.dart
+? lib/features/transactions/domain/entities/transaction_history_page.dart
+? lib/features/transactions/domain/services/transaction_content_comparator.dart
+? lib/features/transactions/domain/services/transaction_status_transition_policy.dart
+? lib/features/transactions/domain/services/transfer_creation_workflow.dart
+? lib/features/transactions/domain/services/transfer_pair_lifecycle.dart
+? lib/features/transactions/transaction_row_domain_mapper.dart
+? lib/features/transactions/transactions_presentation.dart
+? lib/shared/accessibility/acceptance_semantics.dart
+? lib/shared/domain/currency/localized_decimal_parser.dart
+? services/cashpilot_account_deletion/.dockerignore
+? services/cashpilot_account_deletion/.gitignore
+? services/cashpilot_account_deletion/Dockerfile
+? services/cashpilot_account_deletion/eslint.config.js
+? services/cashpilot_account_deletion/package-lock.json
+? services/cashpilot_account_deletion/package.json
+? services/cashpilot_account_deletion/scripts/secret_scan.ts
+? services/cashpilot_account_deletion/src/account_deletion/account_auth_deletion_store.ts
+? services/cashpilot_account_deletion/src/account_deletion/account_deletion_ports.ts
+? services/cashpilot_account_deletion/src/account_deletion/admin_error_classifier.ts
+? services/cashpilot_account_deletion/src/account_deletion/auth_session_commitment.ts
+? services/cashpilot_account_deletion/src/account_deletion/firebase_user_tree.ts
+? services/cashpilot_account_deletion/src/account_deletion/owner_scope_commitment.ts
+? services/cashpilot_account_deletion/src/account_deletion/recursive_account_deletion_store.ts
+? services/cashpilot_account_deletion/src/app.ts
+? services/cashpilot_account_deletion/src/auth/request_verifier.ts
+? services/cashpilot_account_deletion/src/auth/request_verifier_port.ts
+? services/cashpilot_account_deletion/src/config.ts
+? services/cashpilot_account_deletion/src/errors.ts
+? services/cashpilot_account_deletion/src/firebase/firebase_admin_app.ts
+? services/cashpilot_account_deletion/src/index.ts
+? services/cashpilot_account_deletion/src/observability.ts
+? services/cashpilot_account_deletion/src/routes/account_deletion.ts
+? services/cashpilot_account_deletion/src/routes/account_deletion_failure_mapping.ts
+? services/cashpilot_account_deletion/src/routes/account_deletion_request.ts
+? services/cashpilot_account_deletion/src/routes/account_deletion_verification.ts
+? services/cashpilot_account_deletion/src/routes/dependencies.ts
+? services/cashpilot_account_deletion/src/routes/health.ts
+? services/cashpilot_account_deletion/src/security/cors_policy.ts
+? services/cashpilot_account_deletion/src/security/rate_limit.ts
+? services/cashpilot_account_deletion/src/security/rate_limiter.ts
+? services/cashpilot_account_deletion/src/security/request_limits.ts
+? services/cashpilot_account_deletion/src/server.ts
+? services/cashpilot_account_deletion/tests/account_deletion_emulator.test.ts
+? services/cashpilot_account_deletion/tests/account_deletion_store.test.ts
+? services/cashpilot_account_deletion/tests/app.test.ts
+? services/cashpilot_account_deletion/tests/observability.test.ts
+? services/cashpilot_account_deletion/tests/security.test.ts
+? services/cashpilot_account_deletion/tests/test_support.ts
+? services/cashpilot_account_deletion/tsconfig.json
+? services/cashpilot_ai_gateway/.dev.vars.example
+? services/cashpilot_ai_gateway/.dockerignore
+? services/cashpilot_ai_gateway/.gcloudignore
+? services/cashpilot_ai_gateway/Dockerfile
+? services/cashpilot_ai_gateway/README.md
+? services/cashpilot_ai_gateway/eslint.config.js
+? services/cashpilot_ai_gateway/package-lock.json
+? services/cashpilot_ai_gateway/package.json
+? services/cashpilot_ai_gateway/scripts/secret_scan.ts
+? services/cashpilot_ai_gateway/scripts/verify-groq-models.ts
+? services/cashpilot_ai_gateway/src/account_deletion/account_auth_deletion_store.ts
+? services/cashpilot_ai_gateway/src/account_deletion/account_deletion_ports.ts
+? services/cashpilot_ai_gateway/src/account_deletion/auth_session_commitment.ts
+? services/cashpilot_ai_gateway/src/account_deletion/firebase_user_tree.ts
+? services/cashpilot_ai_gateway/src/account_deletion/owner_scope_commitment.ts
+? services/cashpilot_ai_gateway/src/account_deletion/recursive_account_deletion_store.ts
+? services/cashpilot_ai_gateway/src/app.ts
+? services/cashpilot_ai_gateway/src/auth/request_verifier.ts
+? services/cashpilot_ai_gateway/src/auth/request_verifier_port.ts
+? services/cashpilot_ai_gateway/src/config.ts
+? services/cashpilot_ai_gateway/src/contracts/ai_gateway_event.ts
+? services/cashpilot_ai_gateway/src/contracts/ai_gateway_request.ts
+? services/cashpilot_ai_gateway/src/contracts/financial_context.ts
+? services/cashpilot_ai_gateway/src/contracts/gateway.ts
+? services/cashpilot_ai_gateway/src/contracts/tool_selection.ts
+? services/cashpilot_ai_gateway/src/errors.ts
+? services/cashpilot_ai_gateway/src/firebase/firebase_admin_app.ts
+? services/cashpilot_ai_gateway/src/groq/financial_figure_contracts.ts
+? services/cashpilot_ai_gateway/src/groq/financial_figure_normalization.ts
+? services/cashpilot_ai_gateway/src/groq/financial_grounding_catalog.ts
+? services/cashpilot_ai_gateway/src/groq/financial_response_grounding.ts
+? services/cashpilot_ai_gateway/src/groq/groq_client.ts
+? services/cashpilot_ai_gateway/src/groq/groq_response_contracts.ts
+? services/cashpilot_ai_gateway/src/groq/groq_transport.ts
+? services/cashpilot_ai_gateway/src/groq/groq_transport_support.ts
+? services/cashpilot_ai_gateway/src/groq/model_router.ts
+? services/cashpilot_ai_gateway/src/groq/prompts.ts
+? services/cashpilot_ai_gateway/src/groq/provider_sse_decoder.ts
+? services/cashpilot_ai_gateway/src/groq/response_parser.ts
+? services/cashpilot_ai_gateway/src/groq/text_chunking.ts
+? services/cashpilot_ai_gateway/src/groq/tool_selection_parser.ts
+? services/cashpilot_ai_gateway/src/index.ts
+? services/cashpilot_ai_gateway/src/routes/account_deletion.ts
+? services/cashpilot_ai_gateway/src/routes/account_deletion_failure_mapping.ts
+? services/cashpilot_ai_gateway/src/routes/account_deletion_request.ts
+? services/cashpilot_ai_gateway/src/routes/account_deletion_verification.ts
+? services/cashpilot_ai_gateway/src/routes/ai_request_lifecycle.ts
+? services/cashpilot_ai_gateway/src/routes/ai_request_validation.ts
+? services/cashpilot_ai_gateway/src/routes/dependencies.ts
+? services/cashpilot_ai_gateway/src/routes/diagnostics.ts
+? services/cashpilot_ai_gateway/src/routes/financial_explanation.ts
+? services/cashpilot_ai_gateway/src/routes/general_chat.ts
+? services/cashpilot_ai_gateway/src/routes/health.ts
+? services/cashpilot_ai_gateway/src/routes/request_abort.ts
+? services/cashpilot_ai_gateway/src/routes/shared.ts
+? services/cashpilot_ai_gateway/src/routes/sse_channel.ts
+? services/cashpilot_ai_gateway/src/routes/tool_selection.ts
+? services/cashpilot_ai_gateway/src/security/cors_policy.ts
+? services/cashpilot_ai_gateway/src/security/provider_output_safety.ts
+? services/cashpilot_ai_gateway/src/security/rate_limit.ts
+? services/cashpilot_ai_gateway/src/security/rate_limiter.ts
+? services/cashpilot_ai_gateway/src/security/redaction.ts
+? services/cashpilot_ai_gateway/src/security/request_limits.ts
+? services/cashpilot_ai_gateway/src/security/safe_stream_trace.ts
+? services/cashpilot_ai_gateway/src/server.ts
+? services/cashpilot_ai_gateway/src/tools/allowlist.ts
+? services/cashpilot_ai_gateway/src/tools/tool_definitions.ts
+? services/cashpilot_ai_gateway/src/types.ts
+? services/cashpilot_ai_gateway/tests/account_deletion_emulator.test.ts
+? services/cashpilot_ai_gateway/tests/account_deletion_store.test.ts
+? services/cashpilot_ai_gateway/tests/architecture.test.ts
+? services/cashpilot_ai_gateway/tests/financial_context_contract.test.ts
+? services/cashpilot_ai_gateway/tests/gateway.test.ts
+? services/cashpilot_ai_gateway/tests/general_chat_safety.test.ts
+? services/cashpilot_ai_gateway/tests/groq_completion.test.ts
+? services/cashpilot_ai_gateway/tests/groq_response_contracts.test.ts
+? services/cashpilot_ai_gateway/tests/provider_output_safety.test.ts
+? services/cashpilot_ai_gateway/tests/response_parser.test.ts
+? services/cashpilot_ai_gateway/tests/security.test.ts
+? services/cashpilot_ai_gateway/tests/tool_schema_contract.test.ts
+? services/cashpilot_ai_gateway/tests/tool_selection_response_safety.test.ts
+? services/cashpilot_ai_gateway/tsconfig.json
+? test/app/account_deletion_startup_gate_test.dart
+? test/app/router/app_router_stability_test.dart
+? test/app/startup_initializer_test.dart
+? test/architecture/dart_dependency_rules_test.dart
+? test/architecture/feature_dependency_cycle_test.dart
+? test/architecture/localization_contract_test.dart
+? test/architecture/public_presentation_facades_test.dart
+? test/architecture/responsive_breakpoint_compatibility_test.dart
+? test/architecture/route_contract_test.dart
+? test/core/firebase/firebase_ai_backend_test.dart
+? test/core/firebase/firebase_app_check_activation_test.dart
+? test/core/firebase/firebase_app_check_readiness_test.dart
+? test/core/owner_scope/legacy_data_claim_controller_race_test.dart
+? test/core/owner_scope/legacy_data_claim_refresh_test.dart
+? test/core/owner_scope/legacy_data_claim_sync_queue_test.dart
+? test/core/owner_scope/owner_scope_database_test.dart
+? test/core/owner_scope/owner_scope_detach_race_test.dart
+? test/core/owner_scope/owner_scope_health_reference_matrix_test.dart
+? test/core/owner_scope/owner_scope_reference_guard_matrix_test.dart
+? test/core/owner_scope/owner_scoped_drift_writer_guard_test.dart
+? test/core/owner_scope/scoped_session_stream_test.dart
+? test/core/security/app_check_activation_status_compatibility_test.dart
+? test/core/sync/backup_privacy_regression_test.dart
+? test/core/sync/owner_deletion_quarantine_store_test.dart
+? test/core/sync/sync_controller_epoch_test.dart
+? test/core/sync/sync_startup_repair_provider_test.dart
+? test/features/accounts/accounts_financial_integrity_test.dart
+? test/features/ai_assistant/ai_agent_controller_capability_contract_test.dart
+? test/features/ai_assistant/ai_agent_controller_policy_change_test.dart
+? test/features/ai_assistant/ai_agent_conversation_response_characterization_test.dart
+? test/features/ai_assistant/ai_agent_memory_late_write_test.dart
+? test/features/ai_assistant/ai_agent_memory_scope_test.dart
+? test/features/ai_assistant/ai_agent_provider_composition_test.dart
+? test/features/ai_assistant/ai_agent_provider_lifecycle_contract_test.dart
+? test/features/ai_assistant/ai_agent_provider_session_characterization_test.dart
+? test/features/ai_assistant/ai_agent_scope_generation_test.dart
+? test/features/ai_assistant/ai_agent_streaming_safety_test.dart
+? test/features/ai_assistant/ai_agent_test.dart
+? test/features/ai_assistant/ai_agent_ui_test.dart
+? test/features/ai_assistant/ai_app_check_failure_ux_test.dart
+? test/features/ai_assistant/ai_app_check_readiness_provider_test.dart
+? test/features/ai_assistant/ai_app_control_feature_flags_test.dart
+? test/features/ai_assistant/ai_app_control_permission_resolver_test.dart
+? test/features/ai_assistant/ai_app_control_policy_modes_test.dart
+? test/features/ai_assistant/ai_app_control_scope_race_test.dart
+? test/features/ai_assistant/ai_assistant_durable_draft_coordinator_test.dart
+? test/features/ai_assistant/ai_assistant_send_lifecycle_coordinator_test.dart
+? test/features/ai_assistant/ai_availability_test.dart
+? test/features/ai_assistant/ai_conversation_controller_owner_race_test.dart
+? test/features/ai_assistant/ai_deletion_operation_fence_test.dart
+? test/features/ai_assistant/ai_environment_defaults_test.dart
+? test/features/ai_assistant/ai_gateway_feature_flags_test.dart
+? test/features/ai_assistant/ai_income_finance_engine_integration_test.dart
+? test/features/ai_assistant/ai_navigation_regression_test.dart
+? test/features/ai_assistant/ai_owner_scope_epoch_test.dart
+? test/features/ai_assistant/ai_provider_egress_owner_race_test.dart
+? test/features/ai_assistant/ai_provider_response_safety_test.dart
+? test/features/ai_assistant/ai_provider_route_resolver_test.dart
+? test/features/ai_assistant/ai_response_grounding_test.dart
+? test/features/ai_assistant/ai_runtime_status_probe_test.dart
+? test/features/ai_assistant/ai_runtime_status_provider_test.dart
+? test/features/ai_assistant/ai_small_talk_routing_test.dart
+? test/features/ai_assistant/ai_transaction_mutation_cards_test.dart
+? test/features/ai_assistant/ai_transaction_mutation_draft_service_test.dart
+? test/features/ai_assistant/ai_transaction_mutation_durable_runtime_test.dart
+? test/features/ai_assistant/ai_transaction_mutation_parser_test.dart
+? test/features/ai_assistant/app_agent_command_runtime_test.dart
+? test/features/ai_assistant/app_agent_missing_correlation_recovery_test.dart
+? test/features/ai_assistant/app_agent_reconciliation_test.dart
+? test/features/ai_assistant/assistant_navigation_policy_test.dart
+? test/features/ai_assistant/assistant_routing_regression_test.dart
+? test/features/ai_assistant/buffered_sse_decoder_test.dart
+? test/features/ai_assistant/category_spending_schema_parity_test.dart
+? test/features/ai_assistant/durable_app_agent_store_test.dart
+? test/features/ai_assistant/financial_record_offer_routing_test.dart
+? test/features/ai_assistant/firebase_ai_agent_model_gateway_test.dart
+? test/features/ai_assistant/firebase_gateway_token_provider_test.dart
+? test/features/ai_assistant/general_assistant_policy_characterization_test.dart
+? test/features/ai_assistant/groq_ai_agent_model_gateway_test.dart
+? test/features/ai_assistant/groq_gateway_client_test.dart
+? test/features/ai_assistant/libyan_ai_action_corpus_test.dart
+? test/features/ai_assistant/phase1_owner_transition_regression_test.dart
+? test/features/ai_assistant/routed_ai_agent_model_gateway_test.dart
+? test/features/app_shell_acceptance_semantics_test.dart
+? test/features/auth/auth_controller_transition_test.dart
+? test/features/auth/auth_performance_trace_test.dart
+? test/features/auth/firebase_auth_operation_coordinator_test.dart
+? test/features/auth/firebase_oauth_security_race_test.dart
+? test/features/auth/login_acceptance_semantics_test.dart
+? test/features/auth/profile_completion_session_test.dart
+? test/features/budgets/budget_transactions_read_model_test.dart
+? test/features/categories/category_delete_integrity_guard_test.dart
+? test/features/dashboard/dashboard_transactions_read_model_test.dart
+? test/features/data_deletion/account_deletion_authenticated_continuation_test.dart
+? test/features/data_deletion/account_deletion_confirmation_lease_tamper_test.dart
+? test/features/data_deletion/account_deletion_continuation_app_test.dart
+? test/features/data_deletion/account_deletion_gateway_proof_transport_test.dart
+? test/features/data_deletion/account_deletion_scope_recovery_finalizer_integration_test.dart
+? test/features/data_deletion/account_deletion_secure_storage_architecture_test.dart
+? test/features/data_deletion/account_deletion_secure_storage_upgrade_compatibility_test.dart
+? test/features/data_deletion/account_deletion_session_proof_store_test.dart
+? test/features/data_deletion/account_deletion_startup_recovery_coordinator_test.dart
+? test/features/data_deletion/account_deletion_startup_recovery_gateway_test.dart
+? test/features/data_deletion/data_deletion_architecture_test.dart
+? test/features/data_deletion/data_deletion_controller_epoch_test.dart
+? test/features/data_deletion/data_deletion_repository_restart_integration_test.dart
+? test/features/data_deletion/phase2_data_deletion_safety_test.dart
+? test/features/exchange_rates/base_currency_provider_compatibility_test.dart
+? test/features/insights/insights_dependency_contract_test.dart
+? test/features/payment_methods/libyan_financial_entity_catalog_test.dart
+? test/features/payment_methods/payment_method_contract_test.dart
+? test/features/receipts/receipt_aggregate_persistence_test.dart
+? test/features/receipts/receipt_capture_operation_lease_test.dart
+? test/features/receipts/receipt_confirmation_state_machine_test.dart
+? test/features/receipts/receipt_image_preparation_worker_test.dart
+? test/features/receipts/receipt_owner_scope_isolation_test.dart
+? test/features/receipts/receipt_review_screen_characterization_test.dart
+? test/features/receipts/receipt_review_workflow_test.dart
+? test/features/reports/financial_reporting_policy_test.dart
+? test/features/reports/reporting_integrity_regression_test.dart
+? test/features/reports/reports_period_labels_test.dart
+? test/features/settings/ai_app_control_settings_section_race_test.dart
+? test/features/settings/legacy_data_claim_dialog_test.dart
+? test/features/transactions/manual_income_classification_test.dart
+? test/features/transactions/transaction_history_pagination_test.dart
+? test/features/transactions/transaction_row_domain_mapper_test.dart
+? test/features/transactions/transfer_group_adversarial_test.dart
+? test/features/transactions/transfer_group_idempotency_test.dart
+? test/features/transactions/transfer_group_owner_scope_update_guard_test.dart
+? test/firestore/run_emulator_suites.mjs
+? test/fixtures/libyan_ai_action_corpus.v1.json
+? test/helpers/ai_provider_egress_test_guard.dart
+? test/helpers/scoped_database_test_helper.dart
+? test/platform/platform_readiness_test.dart
+? test/shared/domain/localized_decimal_parser_test.dart
+? tool/account_deletion_provider_cleanup.cjs
+? tool/account_deletion_provider_live_acceptance.cjs
+? tool/account_deletion_provider_stale_session_recovery.cjs
+? tool/account_deletion_provider_vm_signout.cjs
+? tool/android_adb_ui_primitives.cjs
+? tool/android_ai_question_acceptance_support.cjs
+? tool/android_app_check_probe.dart
+? tool/android_appcheck_smalltalk_acceptance_support.cjs
+? tool/android_appcheck_smalltalk_acceptance_support.test.cjs
+? tool/android_auth_acceptance_support.cjs
+? tool/android_cashpilot_acceptance_support.cjs
+? tool/android_device_lifecycle_support.cjs
+? tool/android_external_process_wait_primitives.cjs
+? tool/android_firebase_acceptance_fixtures.cjs
+? tool/android_groq_staging_scenario.ps1
+? tool/android_live_ai_acceptance_scenario.cjs
+? tool/android_live_ai_failure_recovery_scenario.cjs
+? tool/android_live_groq_force_stop_support.cjs
+? tool/android_live_groq_force_stop_support.test.cjs
+? tool/android_live_groq_runner_support.cjs
+? tool/android_live_groq_runner_support.test.cjs
+? tool/android_network_control_primitives.cjs
+? tool/android_plain_flutter_run_acceptance_support.cjs
+? tool/android_plain_flutter_run_acceptance_support.test.cjs
+? tool/android_safe_output_primitives.cjs
+? tool/android_settings_acceptance_support.cjs
+? tool/android_uiautomator_xml_primitives.cjs
+? tool/android_unicode_ime/.gradle/8.14/checksums/checksums.lock
+? tool/android_unicode_ime/.gradle/8.14/executionHistory/executionHistory.bin
+? tool/android_unicode_ime/.gradle/8.14/executionHistory/executionHistory.lock
+? tool/android_unicode_ime/.gradle/8.14/fileChanges/last-build.bin
+? tool/android_unicode_ime/.gradle/8.14/fileHashes/fileHashes.bin
+? tool/android_unicode_ime/.gradle/8.14/fileHashes/fileHashes.lock
+? tool/android_unicode_ime/.gradle/8.14/fileHashes/resourceHashesCache.bin
+? tool/android_unicode_ime/.gradle/8.14/gc.properties
+? tool/android_unicode_ime/.gradle/9.2.0/checksums/checksums.lock
+? tool/android_unicode_ime/.gradle/9.2.0/checksums/md5-checksums.bin
+? tool/android_unicode_ime/.gradle/9.2.0/checksums/sha1-checksums.bin
+? tool/android_unicode_ime/.gradle/9.2.0/fileChanges/last-build.bin
+? tool/android_unicode_ime/.gradle/9.2.0/fileHashes/fileHashes.bin
+? tool/android_unicode_ime/.gradle/9.2.0/fileHashes/fileHashes.lock
+? tool/android_unicode_ime/.gradle/9.2.0/gc.properties
+? tool/android_unicode_ime/.gradle/buildOutputCleanup/buildOutputCleanup.lock
+? tool/android_unicode_ime/.gradle/buildOutputCleanup/cache.properties
+? tool/android_unicode_ime/.gradle/file-system.probe
+? tool/android_unicode_ime/.gradle/vcs-1/gc.properties
+? tool/android_unicode_ime/app/build.gradle.kts
+? tool/android_unicode_ime/app/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+? tool/android_unicode_ime/app/build/intermediates/apk_ide_redirect_file/debug/createDebugApkListingFileRedirect/redirect.txt
+? tool/android_unicode_ime/app/build/intermediates/app_metadata/debug/writeDebugAppMetadata/app-metadata.properties
+? tool/android_unicode_ime/app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests/output-metadata.json
+? tool/android_unicode_ime/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_0/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_1/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_2/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_3/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_4/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_5/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_6/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/dirs_bucket_7/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_13aa7335e6aaad4c7ac84a92184838ec00409c0222bdbff69ae801f526f8c9c3_bucket_0/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_13aa7335e6aaad4c7ac84a92184838ec00409c0222bdbff69ae801f526f8c9c3_bucket_1/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_13aa7335e6aaad4c7ac84a92184838ec00409c0222bdbff69ae801f526f8c9c3_bucket_2/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_13aa7335e6aaad4c7ac84a92184838ec00409c0222bdbff69ae801f526f8c9c3_bucket_3/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_13aa7335e6aaad4c7ac84a92184838ec00409c0222bdbff69ae801f526f8c9c3_bucket_4/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_13aa7335e6aaad4c7ac84a92184838ec00409c0222bdbff69ae801f526f8c9c3_bucket_5/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_13aa7335e6aaad4c7ac84a92184838ec00409c0222bdbff69ae801f526f8c9c3_bucket_6/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_13aa7335e6aaad4c7ac84a92184838ec00409c0222bdbff69ae801f526f8c9c3_bucket_7/graph.bin
+? tool/android_unicode_ime/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+? tool/android_unicode_ime/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+? tool/android_unicode_ime/app/build/intermediates/dex_archive_input_jar_hashes/debug/dexBuilderDebug/out
+? tool/android_unicode_ime/app/build/intermediates/dex_number_of_buckets_file/debug/dexBuilderDebug/out
+? tool/android_unicode_ime/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state
+? tool/android_unicode_ime/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties
+? tool/android_unicode_ime/app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml
+? tool/android_unicode_ime/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+? tool/android_unicode_ime/app/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+? tool/android_unicode_ime/app/build/intermediates/incremental/mergeDebugAssets/merger.xml
+? tool/android_unicode_ime/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+? tool/android_unicode_ime/app/build/intermediates/incremental/mergeDebugShaders/merger.xml
+? tool/android_unicode_ime/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt
+? tool/android_unicode_ime/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources
+? tool/android_unicode_ime/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0
+? tool/android_unicode_ime/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_
+? tool/android_unicode_ime/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/output-metadata.json
+? tool/android_unicode_ime/app/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+? tool/android_unicode_ime/app/build/intermediates/manifest_merge_blame_file/debug/processDebugMainManifest/manifest-merger-blame-debug-report.txt
+? tool/android_unicode_ime/app/build/intermediates/merged_java_res/debug/mergeDebugJavaResource/base.jar
+? tool/android_unicode_ime/app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml
+? tool/android_unicode_ime/app/build/intermediates/merged_manifests/debug/processDebugManifest/AndroidManifest.xml
+? tool/android_unicode_ime/app/build/intermediates/merged_manifests/debug/processDebugManifest/output-metadata.json
+? tool/android_unicode_ime/app/build/intermediates/merged_res/debug/mergeDebugResources/xml_input_method.xml.flat
+? tool/android_unicode_ime/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/single/mergeDebugResources.json
+? tool/android_unicode_ime/app/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json
+? tool/android_unicode_ime/app/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+? tool/android_unicode_ime/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/AndroidManifest.xml
+? tool/android_unicode_ime/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/output-metadata.json
+? tool/android_unicode_ime/app/build/intermediates/packaged_res/debug/packageDebugResources/xml/input_method.xml
+? tool/android_unicode_ime/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/9169b50d3f6c56d39519f349ffc63f0eca10f65f69a13c7ac8c7fbd503f122f2_3.jar
+? tool/android_unicode_ime/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/cashpilot/qa/unicodeime/UnicodeImeService.dex
+? tool/android_unicode_ime/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/cashpilot/qa/unicodeime/UnicodeTextReceiver.dex
+? tool/android_unicode_ime/app/build/intermediates/runtime_symbol_list/debug/processDebugResources/R.txt
+? tool/android_unicode_ime/app/build/intermediates/signing_config_versions/debug/writeDebugSigningConfigVersions/signing-config-versions.json
+? tool/android_unicode_ime/app/build/intermediates/source_set_path_map/debug/mapDebugSourceSetPaths/file-map.txt
+? tool/android_unicode_ime/app/build/intermediates/stable_resource_ids_file/debug/processDebugResources/stableIds.txt
+? tool/android_unicode_ime/app/build/outputs/apk/debug/app-debug.apk
+? tool/android_unicode_ime/app/build/outputs/apk/debug/output-metadata.json
+? tool/android_unicode_ime/app/build/outputs/logs/manifest-merger-debug-report.txt
+? tool/android_unicode_ime/app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/UnicodeImeService.class.uniqueId1
+? tool/android_unicode_ime/app/build/tmp/compileDebugJavaWithJavac/compileTransaction/stash-dir/UnicodeTextReceiver.class.uniqueId0
+? tool/android_unicode_ime/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin
+? tool/android_unicode_ime/app/src/main/AndroidManifest.xml
+? tool/android_unicode_ime/app/src/main/java/com/cashpilot/qa/unicodeime/UnicodeImeService.java
+? tool/android_unicode_ime/app/src/main/java/com/cashpilot/qa/unicodeime/UnicodeTextReceiver.java
+? tool/android_unicode_ime/app/src/main/res/xml/input_method.xml
+? tool/android_unicode_ime/build.gradle.kts
+? tool/android_unicode_ime/build/reports/problems/problems-report.html
+? tool/android_unicode_ime/settings.gradle.kts
+? tool/final_android_hive_cleanup.dart
+? tool/final_android_mutation_auth_session.cjs
+? tool/final_android_synthetic_cleanup.cjs
+? tool/groq_primary_text_evaluation_support.cjs
+? tool/hive_owner_zero_probe.dart
+? tool/prepare_web_app_check_debug.cjs
+? tool/register_android_app_check_debug.cjs
+? tool/run_android_appcheck_smalltalk_acceptance.cjs
+? tool/run_android_groq_staging.ps1
+? tool/run_android_groq_staging.test.cjs
+? tool/run_android_live_ai_acceptance.cjs
+? tool/run_android_live_ai_failure_recovery.cjs
+? tool/run_android_live_groq_acceptance.cjs
+? tool/run_android_live_groq_failure_recovery.cjs
+? tool/run_android_live_groq_force_stop_reopen.cjs
+? tool/run_android_live_groq_rate_limit.cjs
+? tool/run_android_plain_flutter_acceptance.cjs
+? tool/run_groq_primary_text_evaluation.cjs
+? tool/run_groq_primary_text_evaluation.test.cjs
+? tool/web_app_check_debug_support.cjs
+? tool/web_app_check_debug_support.test.cjs
+? tools/groq_evaluation/README.md
+? tools/groq_evaluation/package-lock.json
+? tools/groq_evaluation/package.json
+? tools/groq_evaluation/results/checkpoint.json
+? tools/groq_evaluation/results/manual_review.md
+? tools/groq_evaluation/results/objective_results.json
+? tools/groq_evaluation/results/summary.json
+? tools/groq_evaluation/src/benchmark_runner.ts
+? tools/groq_evaluation/src/evaluators.ts
+? tools/groq_evaluation/src/groq_client.ts
+? tools/groq_evaluation/src/prompt_matrix.ts
+? tools/groq_evaluation/src/report_writer.ts
+? tools/groq_evaluation/src/schemas.ts
+? tools/groq_evaluation/tests/benchmark_repair.test.ts
+? tools/groq_evaluation/tests/checkpoint_and_reports.test.ts
+? tools/groq_evaluation/tests/groq_client.test.ts
+? tools/groq_evaluation/tests/prompt_matrix.test.ts
+? tools/groq_evaluation/tests/schemas_and_scoring.test.ts
+? web/drift_worker.js
+? web/sqlite3.wasm

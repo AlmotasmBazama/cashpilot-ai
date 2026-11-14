@@ -1,0 +1,21 @@
+Command:
+flutter test --no-pub -r compact --concurrency=1 test/features/receipts/receipt_image_preparation_worker_test.dart test/features/receipts/receipt_capture_usecases_test.dart test/features/receipts/receipt_persistence_and_image_test.dart test/features/receipts/receipt_owner_scope_isolation_test.dart test/features/receipts/receipt_ui_test.dart
+
+Result: PASS
+Passed: 29
+Failed: 0
+Exit code: 0
+Wall time: 13.8 seconds
+
+Scope:
+- isolated receipt image preparation and metadata removal
+- immediate cancellation and late-byte purge
+- owner/session switching fences
+- private persistence boundaries
+- staged capture UI and consent-to-analysis path
+
+An earlier exploratory run exposed an indeterminate-animation wait and a
+theme-dependent cancel-button fixture failure. The button now uses the same
+Material outline family as the capture/import controls, the widget test scrolls
+the lazy list before interacting, and the identical five-file gate above is the
+authoritative final result.

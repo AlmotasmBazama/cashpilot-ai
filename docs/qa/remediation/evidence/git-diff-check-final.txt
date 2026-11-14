@@ -1,0 +1,8 @@
+Final patch whitespace gate
+Date: 2026-08-10
+Command: git diff --check
+Exit code: 0
+Result: no whitespace errors.
+
+Git printed only the existing Windows line-ending conversion warnings. No file was
+rewritten to silence those warnings.

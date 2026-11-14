@@ -1,0 +1,52 @@
+CashPilot AI Flutter test evidence (sanitized)
+Working directory: <REPOSITORY_ROOT>
+
+Complete suite
+Command: flutter test --no-pub -r expanded
+Exit code: 0
+Wall time: 47 seconds
+Result: PASSED — 517 passed, 0 failed, 0 skipped reported.
+Final output: 00:30 +517: All tests passed!
+
+Focused owner scope
+Command: flutter test --no-pub -r expanded test/core/owner_scope
+Exit code: 0
+Result: PASSED — 3 passed.
+
+Focused finance, transactions, transfers, and reports
+Command: flutter test --no-pub -r expanded test/features/finance_engine test/features/transactions test/features/reports
+Exit code: 0
+Result: PASSED — 44 passed.
+
+Focused receipts
+Command: flutter test --no-pub -r expanded test/features/receipts
+Exit code: 0
+Result: PASSED — 34 passed.
+
+Focused database migrations
+Command: flutter test --no-pub -r expanded test/core/database/app_database_migration_test.dart
+Exit code: 0
+Result: PASSED — 11 passed (fresh v16 plus v8-v15 and legacy migration coverage).
+
+Focused data deletion
+Command: flutter test --no-pub -r expanded test/features/data_deletion test/features/settings/delete_all_user_data_dialog_test.dart
+Exit code: 0
+Result: PASSED — 10 passed.
+
+Focused backup/sync
+Command: flutter test --no-pub -r expanded test/core/sync test/features/settings/backup_sync_settings_ui_test.dart
+Exit code: 0
+Result: PASSED — 15 passed.
+
+Focused authentication domain
+Command: flutter test --no-pub -r expanded test/features/auth
+Exit code: 0
+Result: PASSED — 3 passed. This is not a live Firebase authentication acceptance test.
+
+Observed non-failing diagnostics:
+- Several expected negative-path tests emitted redacted FinanceException/AppException/StateError logs while their assertions passed.
+- Drift emitted a multiple-AppDatabase-instance warning in owner-scope tests and one widget test. The warning states that sharing a QueryExecutor across instances may race/corrupt; no assertion failed. It is reviewed separately as test-lifecycle/architecture evidence rather than counted as a failed test.
+
+Counting note:
+- The complete suite establishes 517 distinct passing Flutter tests.
+- Focused reruns are counted separately as test invocations, not as additional distinct test cases.

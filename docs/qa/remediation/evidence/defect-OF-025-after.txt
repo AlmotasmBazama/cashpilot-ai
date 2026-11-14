@@ -1,0 +1,6 @@
+Defect: OF-025 mutable current FX in historical reports (GREEN)
+Dashboard related gate: 28 passed, 0 failed, 0 skipped.
+Reporting regression gate: 23 passed, 0 failed, 0 skipped.
+Persisted direct or inverse transaction FX remains authoritative. A cross-currency
+historical transaction without embedded FX is partial/missing instead of silently
+using the mutable latest provider; net-worth conversion still uses latest rates.

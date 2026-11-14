@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "CashPilot Android — Groq Staging",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "toolArgs": [
+        "--dart-define-from-file=${workspaceFolder}/config/groq_staging.json"
+      ]
+    },
+    {
+      "name": "CashPilot Android — Local Debug",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "toolArgs": [
+        "--dart-define=CASH_PILOT_ENVIRONMENT=local",
+        "--dart-define=CASH_PILOT_AI_PROVIDER=localParserOnly",
+        "--dart-define=CASH_PILOT_AI_FIREBASE_TEXT_FALLBACK_ENABLED=false"
+      ]
+    },
+    {
+      "name": "CashPilot Web — Staging",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "deviceId": "chrome",
+      "flutterMode": "debug",
+      "preLaunchTask": "CashPilot: Prepare Web App Check",
+      "toolArgs": [
+        "--dart-define-from-file=${workspaceFolder}/.dart-define.groq-staging.local.json"
+      ]
+    }
+  ]
+}

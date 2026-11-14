@@ -1,0 +1,30 @@
+CashPilot AI build evidence (sanitized)
+Working directory: <REPOSITORY_ROOT>
+
+Web
+Command: flutter build web --no-pub
+Exit code: 0
+Wall time: 88.9 seconds
+Result: PASSED — build/web created; compiler reported 85.4 seconds and a successful Wasm dry run.
+
+Android
+Command: flutter build apk --debug --no-pub
+Exit code: 0
+Wall time: 85.4 seconds
+Result: PASSED — build/app/outputs/flutter-apk/app-debug.apk created; Gradle assembleDebug reported 77.2 seconds.
+
+Windows
+Command: flutter build windows --debug --no-pub
+Exit code: 1
+Wall time: 4.1 seconds
+Result: BLOCKED BY ENVIRONMENT.
+Sanitized output: Unable to find suitable Visual Studio toolchain. Please run `flutter doctor` for more details.
+Required prerequisite: install the Visual Studio Desktop development with C++ workload, CMake tools, MSVC build tools, and Windows SDK identified by flutter doctor.
+
+iOS
+Result: NOT EXECUTED / BLOCKED because the audit host is Windows and no separate macOS/iOS environment is available.
+
+Incidental outputs:
+- The allowed build commands updated ignored/generated files below build/.
+- Gateway TypeScript build outputs under services/cashpilot_ai_gateway/dist are assessed in gateway-test-summary.txt.
+- No build was deployed.

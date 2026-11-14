@@ -1,0 +1,7 @@
+Command: npm run test:firestore-rules:emulator
+Date: 2026-08-13
+Result: PASS after stopping one stale same-project Firestore emulator that owned port 8180.
+Firestore/Auth rules: 42/42 passed.
+Gateway account-deletion emulator: 2/2 passed.
+Exit code: 0
+Elapsed seconds: 40.564

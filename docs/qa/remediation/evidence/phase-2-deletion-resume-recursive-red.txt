@@ -1,0 +1,15 @@
+Phase 2 red-test evidence (sanitized)
+Date: 2026-08-10
+
+Command:
+flutter test --no-pub test/features/data_deletion/data_deletion_architecture_test.dart test/features/data_deletion/phase2_data_deletion_safety_test.dart -r expanded
+
+Result: exit 1, 0 passed / 4 reported failures before implementation.
+
+Expected red failures:
+- legacy AuthController/AuthRepository/AuthRemoteDataSource deleteAccount path still existed;
+- client Firestore deletion still used the fixed backupCollections allowlist;
+- typed owner-scoped key derivation was absent;
+- durable operation state, receipt-file journal/retry, and verified recursive gateway contracts were absent.
+
+No Firebase UID, token, file path, or production identifier is included in this evidence.

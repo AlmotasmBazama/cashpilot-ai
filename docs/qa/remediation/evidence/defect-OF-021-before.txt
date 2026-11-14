@@ -1,0 +1,10 @@
+CashPilot AI remediation evidence (sanitized)
+Defect: OF-021
+Phase: 1 - cross-user isolation
+Command: flutter test --no-pub -r expanded test/features/categories/categories_test.dart
+Pre-fix exit code: 1
+Result: 4 passed, 2 failed.
+Expected failures:
+- Repository accepted an update to a shared built-in default category.
+- Database accepted a direct UPDATE to the same shared default row.
+Privacy: synthetic owner identities only; no raw UID, owner-scope value, token, secret, or financial data recorded.

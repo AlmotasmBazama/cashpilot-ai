@@ -1,0 +1,19 @@
+Phase 3 financial-integrity focused gates
+Date: 2026-08-10
+
+Account/category command:
+flutter test test/features/categories test/features/accounts/accounts_financial_integrity_test.dart --reporter expanded
+Result: 47 passed, 0 failed, 0 skipped.
+Covered OF-001, OF-002, OF-003, OF-021, OF-022, and the initial OF-033 matrix.
+
+Transfer/Finance command after canonical-fixture repair:
+flutter test test/features/finance_engine/finance_engine_test.dart test/features/transactions/transfer_group_idempotency_test.dart test/features/transactions/transfer_group_adversarial_test.dart --reporter compact
+Result: 68 passed, 0 failed, 0 skipped.
+Covered OF-004 exact Decimal FX validation and OF-005 transfer-group atomicity,
+idempotency, restart/concurrency reconciliation, persistent guards, and legacy
+corruption quarantine.
+
+One first rerun exposed three stale tests that forged a noncanonical global
+default transfer category. The production guard correctly rejected the rows;
+the fixture now seeds the exact canonical default definition. The repeated gate
+then passed 68/68.

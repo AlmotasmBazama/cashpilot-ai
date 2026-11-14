@@ -1,0 +1,10 @@
+node_modules
+dist
+.dev.vars
+.env
+.env.*
+.secrets
+tests
+coverage
+*.log
+npm-debug.log*

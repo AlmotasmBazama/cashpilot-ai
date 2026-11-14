@@ -1,0 +1,26 @@
+Date: 2026-08-13 (Africa/Tripoli)
+Device: emulator-5554; Android 17; API 37
+Platform: Android
+applicationId: com.example.cashpilot_ai
+versionName/versionCode: 1.0.0 / 1
+minSdk/targetSdk: 24 / 36
+Installed package count matching CashPilot: 1
+Installed APK matches current local debug APK: true
+Installed/local APK SHA-256: dcf0d41938113c0c1a9a76a4f20a99dde967986a501eccfde9f7197e1ba82ad2
+Firebase project: cashpilot-ai-a6b49
+Firebase initialization source: DefaultFirebaseOptions.currentPlatform
+Conversation preference: auto
+Selected provider: firebase
+Selected model: gemini-3.6-flash
+App Check debug secret retrieved without printing: true
+App Check registration result: created
+App Check registration preserved: true
+Live request started: true
+Live request completed: true
+Live request failed: false
+Exact synthetic Arabic UI input matched: true
+Exact synthetic Arabic remote completion: true
+Arabic completion elapsed: approximately 5.5 seconds
+Synthetic English remote completion: true
+Prompt or response content retained: false
+Token, UID, owner scope, or financial data retained: false

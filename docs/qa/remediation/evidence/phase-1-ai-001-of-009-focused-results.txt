@@ -1,0 +1,37 @@
+Phase 1 focused remediation results: AI-001 and OF-009
+Date: 2026-08-10
+Environment: local Windows / Flutter test runner
+Private data: none; all owner scopes and financial values are synthetic.
+
+1) New deterministic regression
+Command:
+flutter test --no-pub test/features/ai_assistant/ai_owner_scope_epoch_test.dart
+Result: exit 0; 5 tests passed.
+Coverage:
+- A permissive/safe -> B conservative/loading fails closed.
+- Tool started under A aborts after an A-to-B await boundary.
+- Stale A context performs zero provider reads under B.
+- Same opaque owner with a newer session epoch is rejected before the handler.
+- Unverified financial scope is denied before the handler.
+
+2) Focused AI compatibility suite
+Command:
+flutter test --no-pub test/features/ai_assistant/ai_owner_scope_epoch_test.dart test/features/ai_assistant/ai_agent_test.dart test/features/ai_assistant/category_spending_schema_parity_test.dart test/features/ai_assistant/ai_agent_provider_composition_test.dart test/features/ai_assistant/ai_app_control_feature_flags_test.dart
+Result: exit 0; 37 tests passed (the owner-scope file had 3 tests at this
+point; its two added epoch/verification tests passed separately in command 1).
+
+3) Reconciliation and UI/navigation compatibility suite
+Command:
+flutter test --no-pub test/features/ai_assistant/app_agent_reconciliation_test.dart test/features/ai_assistant/ai_assistant_send_test.dart test/features/ai_assistant/ai_agent_ui_test.dart test/features/ai_assistant/ai_navigation_regression_test.dart test/features/ai_assistant/assistant_navigation_policy_test.dart
+Result: exit 0; 27 tests passed.
+
+4) Analyzer
+Command:
+flutter analyze --no-pub
+Result: exit 1; 2 warnings after 174.5 seconds.
+Both warnings are unrelated concurrent-worktree warnings in
+test/features/receipts/receipt_owner_scope_isolation_test.dart at lines 6 and
+28 (unused imports). No issue was reported in an AI-001/OF-009 changed file.
+
+No feature flag was changed. No external provider, staging, or production
+mutation was performed.

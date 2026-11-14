@@ -1,0 +1,27 @@
+Command: dart run docs/qa/evidence/ai_behavior_probe.dart
+Exit code: 0
+Observed at: 2026-08-09 (Africa/Tripoli)
+
+{
+  "routing": [
+    {"input":"مرحبا","intent":"greeting","target":"directConversation","deterministic":true,"financialPipeline":false},
+    {"input":"What can you do?","intent":"supportedCapabilities","target":"directConversation","deterministic":true,"financialPipeline":false},
+    {"input":"Explain compound interest","intent":"unknown","target":"generalConversation","deterministic":false,"financialPipeline":false},
+    {"input":"What is cash flow?","intent":"askFinancialQuestion","target":"personalFinancialAnalysis","deterministic":false,"financialPipeline":true},
+    {"input":"ما هو سعر الدولار اليوم؟","intent":"unknown","target":"groundedCurrentKnowledge","deterministic":false,"financialPipeline":false},
+    {"input":"كم صرفت على الطعام هذا الشهر؟","intent":"askFinancialQuestion","target":"personalFinancialAnalysis","deterministic":false,"financialPipeline":true},
+    {"input":"سجللي مصروف 25.50 دينار على القهوة من حساب الكاش","intent":"createExpense","target":"financialAction","deterministic":false,"financialPipeline":true},
+    {"input":"Scan this receipt","intent":"unknown","target":"generalConversation","deterministic":false,"financialPipeline":false},
+    {"input":"امسح هذه الفاتورة","intent":"unknown","target":"generalConversation","deterministic":false,"financialPipeline":false},
+    {"input":"Go to reports","intent":"unknown","target":"appNavigation","deterministic":true,"financialPipeline":false,"navigationToolId":"navigate_reports"},
+    {"input":"افتحلي التقارير","intent":"unknown","target":"generalConversation","deterministic":false,"financialPipeline":false},
+    {"input":"احذف كل معاملاتي","intent":"bulkDelete","target":"blocked","deterministic":true,"financialPipeline":false,"blockedIntent":"bulkDelete"}
+  ],
+  "parsing": [
+    {"input":"سجللي مصروف ١٢٫٥٠ دينار من حساب الكاش","result":"draft","type":"income","amount":"12","currencyCode":"LYD","accountId":"probe-cash"},
+    {"input":"ديرلي مصروف خمسة وعشرين دينار من حساب الكاش","result":"draft","type":"income","amount":"5","currencyCode":"LYD","accountId":"probe-cash"},
+    {"input":"سجللي مصروف 25.50 دينار من حساب الكاش","result":"draft","type":"income","amount":"25.5","currencyCode":"LYD","accountId":"probe-cash"}
+  ]
+}
+
+Interpretation is documented in CASHPILOT_FULL_QA_REPORT_AR.md; this file records observations only.

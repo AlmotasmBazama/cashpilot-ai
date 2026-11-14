@@ -1,0 +1,4 @@
+Defect: OF-032 transfer-group owner UPDATE guard (GREEN)
+Focused tests: 3 passed, 0 failed, 0 skipped.
+Cross-owner group UPDATE aborts atomically with owner guards on and financial guards
+off; same-owner UPDATE succeeds; a legacy claim collision leaves every row unchanged.

@@ -1,0 +1,13 @@
+OF-018 GREEN evidence - retryable receipt deletion
+Date: 2026-08-10
+Command: flutter test test/features/receipts/receipt_aggregate_persistence_test.dart --reporter expanded
+Result: PASSED
+
+Verified behaviors:
+- The private local image is deleted before its durable receipt reference.
+- An injected image deletion failure preserves the receipt, line items, splits,
+  local file, and database reference.
+- Retrying deletion removes the image and then deletes the full database aggregate.
+
+Focused deletion suite contribution: 1 passed.
+Combined aggregate/deletion suite: 7 passed, 0 failed, 0 skipped.

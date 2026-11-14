@@ -1,0 +1,23 @@
+Phase 5 validation
+Date: 2026-08-10
+
+Command:
+flutter test test/features/ai_assistant/app_agent_command_runtime_test.dart test/features/ai_assistant/durable_app_agent_store_test.dart test/features/ai_assistant/app_agent_reconciliation_test.dart test/features/ai_assistant/app_agent_missing_correlation_recovery_test.dart test/features/ai_assistant/ai_app_control_feature_flags_test.dart test/features/ai_assistant/ai_assistant_send_test.dart
+
+Result:
+- Passed: 80
+- Failed: 0
+- Skipped: 0
+- Exit code: 0
+
+Static analysis:
+flutter analyze --no-pub
+- No issues found
+- Exit code: 0
+
+Focused gates also passed:
+- durable_app_agent_store_test.dart: 14 tests before the final batch, followed
+  by the complete combined gate above
+- app_agent_reconciliation_test.dart: 15/15 before the contribution-race case
+- app_agent_missing_correlation_recovery_test.dart: 1/1
+- manual-review UI recovery focused test: 1/1

@@ -1,0 +1,9 @@
+run,model,language,cases,ok,reliability_pct,nonempty_pass,language_match_pass,relevance_pass,bounded_pass,median_ttfc_ms,p95_ttfc_ms,median_completion_ms,p95_completion_ms,http_429,empty_response,selected_role,selection_reason
+initial,openai/gpt-oss-20b,all,25,15,60,15,15,15,15,557,1708,894,2019,8,2,none,"Unpaced run retained as rate-limit and empty-response diagnostic evidence"
+initial,openai/gpt-oss-120b,all,25,19,76,19,19,19,19,557,1584,1379,2386,6,0,none,"Unpaced run retained as rate-limit diagnostic evidence"
+paced,openai/gpt-oss-20b,all,25,25,100,25,25,25,25,332,482,834,1029,0,0,general,"Equal deterministic rubric and reliability result with lower median TTFC and completion"
+paced,openai/gpt-oss-20b,ar,15,15,100,15,15,15,15,331,449,858,1148,0,0,general,"Arabic subset including Libyan wording and mixed/financial categories"
+paced,openai/gpt-oss-20b,en,10,10,100,10,10,10,10,370,495,790.5,1029,0,0,general,"English subset"
+paced,openai/gpt-oss-120b,all,25,25,100,25,25,25,25,367,457,1370,1493,0,0,financial_explanation,"Reserved for bounded financial explanation; equal proxy quality but slower general completion"
+paced,openai/gpt-oss-120b,ar,15,15,100,15,15,15,15,372,481,1370,1493,0,0,financial_explanation,"Arabic subset"
+paced,openai/gpt-oss-120b,en,10,10,100,10,10,10,10,364,430,1367.5,1502,0,0,financial_explanation,"English subset"

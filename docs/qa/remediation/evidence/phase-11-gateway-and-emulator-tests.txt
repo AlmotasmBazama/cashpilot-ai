@@ -1,0 +1,48 @@
+Phase 11 gateway and Firebase emulator gate
+Date: 2026-08-10
+
+Gateway unit/security command:
+npm.cmd test (services/cashpilot_ai_gateway)
+Result: 109 passed, 0 failed, 0 skipped.
+
+Static gateway commands:
+npm.cmd run lint       -> exit 0
+npm.cmd run typecheck  -> exit 0
+npm.cmd run build      -> exit 0
+npm.cmd run secret-scan -> exit 0
+
+Firebase emulator execution:
+- The first standard command could not start because port 8080 already hosted
+  the same local demo Firestore emulator.
+- A second attempted Firestore process on 8180 was rejected by the emulator
+  runtime because the same demo project was already active; it shut down.
+- The final gate reused the confirmed local demo Firestore process at
+  127.0.0.1:8080 (the rules harness dynamically loaded the current rules) and
+  launched a fresh Auth emulator at 127.0.0.1:9199:
+
+  FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+  firebase emulators:exec --config firebase.test.json --only auth
+    --project demo-cashpilot-ai "npm run test:firestore-rules:all"
+
+Final emulator result:
+- Firestore rules: 42 passed, 0 failed, 0 skipped.
+- Account deletion Admin/Auth emulator: 2 passed, 0 failed, 0 skipped.
+
+Verified locally with synthetic data:
+- permanent server deletion lock blocks every client write;
+- lock documents are client-inaccessible;
+- hard deletion leaves no tombstone fields;
+- unknown and deeply nested descendants are recursively deleted;
+- conflicting operation/session proof is rejected;
+- cloud proof and empty-tree verification precede Auth deletion;
+- Auth deletion is idempotent only after the verified cloud marker.
+
+No production Firebase project, credential, or user data was accessed.
+
+Final rerun after all source/test remediation:
+- gateway tests: 109/109; lint/typecheck/build/secret-scan all exit 0;
+- Firestore rules: 42/42;
+- account-deletion Auth/Admin emulator: 2/2;
+- both wrappers exited 0.
+
+See gateway-tests.txt and firestore-rules-tests.txt for the final sanitized records.

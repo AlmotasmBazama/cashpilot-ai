@@ -1,0 +1,16 @@
+CashPilot AI core workflow validation summary
+Date: 2026-08-11
+
+- Final Flutter repository gate: 1158 passed / 0 failed
+- Platform/startup/App Check focused gate: 21 passed / 0 failed
+- Finance/performance broad focused gate: 84 passed / 0 failed
+- Transaction search/UI focused gate: 37 passed / 0 failed
+- Dashboard/report/widget final gate: 33 passed / 0 failed
+- Localized Decimal parser final gate: 14 passed / 0 failed
+- Gateway Node tests: 109 passed / 0 failed
+- Gateway lint, typecheck, build, secret-scan: all exit 0
+- Firestore/Auth emulator rules command: exit 0
+- Android synthetic navigation integration: 1 passed / 0 failed
+
+These counts are overlapping focused gates and must not be summed as unique tests.
+The authoritative unique Flutter repository count is 1158.

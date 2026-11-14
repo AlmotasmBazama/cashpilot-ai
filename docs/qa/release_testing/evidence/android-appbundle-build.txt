@@ -1,0 +1,5 @@
+Date: 2026-08-13
+Command: flutter build appbundle --release
+Status: BLOCKED / NOT EXECUTED
+Reason: no approved final package ID, release signing, Play Integrity acceptance, or Internal Testing target.
+Decision: no AAB was produced or uploaded.

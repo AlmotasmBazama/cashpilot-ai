@@ -1,0 +1,19 @@
+Command: flutter build apk --debug --no-pub
+Date: 2026-08-13
+Result: PASS
+Exit code: 0
+Elapsed seconds: 39.3
+Output: <REPOSITORY_ROOT>\build\app\outputs\flutter-apk\app-debug.apk
+Size bytes: 205007951
+SHA-256: 8D8097162CE3B45EBFDCAB3B786B82D4B1C64FB46A673516B804CA2E4C216C36
+Application ID: com.example.cashpilot_ai
+Version: 1.0.0+1
+Build mode: Debug
+Signing: Debug/development signing; not a release candidate.
+App Check provider: AndroidProvider.debug in non-release builds.
+Install: adb install -r PASS on emulator-5554.
+Cold start measurement: am start -W timed out at 13997ms; the process then remained alive and MainActivity was top-resumed. This is a performance FAIL against the 5s target, not a crash.
+Launcher reopen: PASS after force-stop; PID 31802, MainActivity top-resumed, safe fatal count 0.
+Installed package: ordinary Debug application, not an integration-test package.
+Installed base.apk SHA-256: 8D8097162CE3B45EBFDCAB3B786B82D4B1C64FB46A673516B804CA2E4C216C36 (exact match to local final artifact).
+Matching CashPilot package count: 1; no second/old CashPilot package detected.

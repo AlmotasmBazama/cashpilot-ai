@@ -1,0 +1,24 @@
+Final AI module repair and regression gate
+Date: 2026-08-10
+
+Focused command:
+flutter test --no-pub test/features/ai_assistant/app_agent_reconciliation_test.dart test/features/ai_assistant/ai_understanding_expansion_test.dart --reporter expanded
+Result: 33 passed, 0 failed, 0 skipped.
+
+Full module command:
+flutter test --no-pub test/features/ai_assistant --reporter compact
+Result: 401 passed, 0 failed, 0 skipped.
+
+The 16 failures recorded in phase-final-ai-module-before.txt were resolved without
+weakening production guards:
+- the reconciliation fixture now seeds the exact canonical Transfer category;
+- goal-contribution fixtures seed their valid same-owner linked transaction, including
+  a valid alternate ID when testing a command-bound mismatch;
+- Arabic personal-finance markers remain whole-token gated, while Arabic comma,
+  semicolon, question mark, and full stop are normalized as punctuation so a terminal
+  token such as "عندي؟" is recognized correctly;
+- the Libyan/Arabic question regression explicitly requires the personal financial
+  analysis route and forbids transaction routing.
+
+Expected fail-closed provider logs used synthetic content only. No secrets, raw owner
+identifiers, real finance records, or private conversations were recorded.

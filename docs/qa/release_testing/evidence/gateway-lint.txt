@@ -1,0 +1,3 @@
+Command: npm run lint
+Result: PASS
+Exit code: 0

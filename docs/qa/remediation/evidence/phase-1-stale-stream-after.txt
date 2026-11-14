@@ -1,0 +1,9 @@
+CashPilot AI remediation evidence (sanitized)
+Phase: 1 - provider/database stream isolation
+Command: flutter test --no-pub -r expanded test/core/owner_scope/scoped_session_stream_test.dart
+Post-fix exit code: 0
+Result: 1 passed, 0 failed, 0 skipped.
+Verified: invalidating a scoped database session closes its already-subscribed stream and discards a deterministic late old-owner event.
+Production wiring: budgets, payees, exchange rates, goals, goal contributions, and sync-queue watch streams now use the session guard.
+Targeted analyzer: 7 changed production/test files analyzed; 0 issues.
+Privacy: synthetic owner label only; no raw UID, owner-scope value, token, secret, or financial data recorded.

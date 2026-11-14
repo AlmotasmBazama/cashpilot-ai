@@ -1,0 +1,61 @@
+Phase 1 owner-transition regression evidence
+Date: 2026-08-10
+Sanitization: synthetic opaque scopes only; scope values, UIDs, local absolute
+paths, prompts, and financial data are omitted.
+
+Coverage reviewed
+-----------------
+- AI policy/tool leases: delayed A-to-B, stale context, session epoch, and
+  missing verified scope.
+- AI UI responses: A-to-B reset plus new streaming A-to-B-to-A and
+  logout-to-new-A late-result rejection.
+- Durable commands: drafts, previews, confirmation proofs, execution results,
+  reconciliation, UI acknowledgement, audit, restart, and fixed A/B isolation.
+- AI memory: owner-key isolation plus live A-to-B-to-logout-to-A provider
+  lifecycle.
+- Scoped Drift: fixed A/B row isolation plus stale-session invalidation and a
+  new A session after logout.
+- Receipts: owner-scoped consent, stale-consent zero-byte upload, A-to-B at
+  image acquisition and local-image storage awaits, byte/reference cleanup,
+  and analysis guard before provider upload.
+
+New red regression
+------------------
+Command:
+  flutter test test/features/ai_assistant/phase1_owner_transition_regression_test.dart --reporter expanded
+
+Pre-fix result:
+  +2 -1
+  recovery UI result consumption resets for B and a new A session [E]
+  Expected: true
+    Actual: false
+
+Root cause exposed:
+  appAgentRecoveryUiCoordinatorProvider reused one consumed-command set across
+  owner/session transitions. No identifiers are included in this evidence.
+
+New green regressions already verified
+--------------------------------------
+- AI stream A-to-B-to-A: passed.
+- Logout then same-owner login rejects the pre-logout result: passed.
+- AI memory A-to-B-to-logout-to-A lifecycle: 3/3 file tests passed.
+- Scoped DB logout/new-session isolation: 4/4 file tests passed.
+
+Known remaining test-depth gaps (not production changes in this batch)
+---------------------------------------------------------------------
+- Full UI draft/preview/proof/result/ack transition matrices are currently
+  covered primarily at runtime/store boundaries, not every widget await.
+- Receipt A-to-B coverage is deterministic at the highest-risk acquisition,
+  storage, consent, and pre-upload boundaries; the complete per-await matrix
+  remains broader than this Phase 1 verification batch.
+
+Post-fix verification
+---------------------
+- The scope-bound recovery coordinator provider landed after the red
+  regression was reported.
+- New owner-transition regression file: 3/3 passed.
+- Combined focused suite (AI owner/session state, durable state, memory,
+  scoped DB, and receipt owner isolation): 61/61 passed.
+- Focused static analysis of the three changed test files: no issues found.
+- Existing Drift multiple-AppDatabase warnings were emitted by pre-existing
+  legacy-row tests; no test failed.

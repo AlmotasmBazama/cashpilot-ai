@@ -1,0 +1,30 @@
+CashPilot AI Groq Android live acceptance - sanitized evidence
+Date: 2026-08-14 (Africa/Tripoli)
+Device: Pixel_6 Android emulator, Android 17/API 37
+Candidate revision: cashpilot-ai-gateway-staging-00005-civ (0% traffic during test)
+
+Authentication and attestation
+- Synthetic Firebase Auth user created: PASS
+- Android App Check Debug token registered/preserved and accepted: PASS
+- Missing App Check with valid ID token: HTTP 401/gatewayAppCheckRequired, PASS
+- Invalid App Check with valid ID token: HTTP 401/gatewayAppCheckRequired, PASS
+- Synthetic user deletion/sign-out: PASS
+
+Real Groq general conversation via Android
+- Arabic: PASS; first content 1,657ms; completion 2,113ms; 240 text-delta
+  events; 8 Flutter partials; 1,471 UTF-8 response bytes; completed once.
+- English: PASS; first content 1,430ms; completion 1,435ms; 21 text-delta
+  events; 1 Flutter partial; 300 UTF-8 response bytes; completed once.
+- Gateway sessions: 2; completed prompts: 2; duplicates: 0.
+- Cloud safe trace selected openai/gpt-oss-20b with upstream success.
+
+Live generic stream cancellation
+- First content: 1,246ms
+- Subscription cancellation completion: 9ms
+- Text deltas before cancel: 1; bytes before cancel: 4
+- Completed events after cancel: 0; failure events after cancel: 0; late events: 0
+
+Firebase AI text backend was not instantiated by this live harness. Groq was the only
+remote conversation gateway and Firebase was used only for Auth/App Check.
+
+No credential, token, raw UID, prompt, or response is included in this evidence.

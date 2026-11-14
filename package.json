@@ -1,0 +1,16 @@
+{
+  "name": "cashpilot-ai-security-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare:web-app-check": "node tool/prepare_web_app_check_debug.cjs",
+    "test:tools": "node --test --test-concurrency=1 tool/android_appcheck_smalltalk_acceptance_support.test.cjs tool/android_live_groq_force_stop_support.test.cjs tool/android_live_groq_runner_support.test.cjs tool/android_plain_flutter_run_acceptance_support.test.cjs tool/run_android_groq_staging.test.cjs tool/run_groq_primary_text_evaluation.test.cjs tool/web_app_check_debug_support.test.cjs",
+    "test:firestore-rules": "node --test test/firestore/firestore.rules.test.mjs",
+    "test:firestore-rules:all": "node test/firestore/run_emulator_suites.mjs",
+    "test:firestore-rules:emulator": "firebase emulators:exec --config firebase.test.json --only auth,firestore --project demo-cashpilot-ai \"npm run test:firestore-rules:all\""
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "5.0.1",
+    "firebase": "12.16.0"
+  }
+}

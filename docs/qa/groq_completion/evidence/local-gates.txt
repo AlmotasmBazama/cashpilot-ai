@@ -1,0 +1,31 @@
+CashPilot AI Groq completion sprint - sanitized local gate summary
+Date: 2026-08-14 (Africa/Tripoli)
+
+Gateway (services/cashpilot_ai_gateway)
+- npm test: PASS, 123/123
+- npm run lint: PASS
+- npm run typecheck: PASS
+- npm run build: PASS
+- npm run secret-scan: PASS
+- Dockerfile: inspected; Docker CLI was unavailable, so a local container build was not run.
+- Host test runtime: Node.js 26; deployment image target: Node.js 20.
+
+Flutter / Android
+- flutter test --no-pub -r compact: PASS, 1225/1225
+- flutter analyze --no-pub: PASS, no issues
+- flutter build apk --debug --no-pub with App Check and Groq staging define files: PASS (142.1s Gradle task)
+- APK: build/app/outputs/flutter-apk/app-debug.apk
+- Final full flutter analyze after force-stop acceptance hooks: PASS, no issues (41.4s)
+- Final full flutter test after force-stop acceptance hooks: PASS, 1225/1225
+- Focused design-system + AI UI tests: PASS, 18/18
+- Live force-stop debug APK build/install: PASS (21058ms)
+
+Evaluation harness
+- node --test tool/run_groq_primary_text_evaluation.test.cjs: PASS, 9/9
+- node --test tool/android_live_groq_runner_support.test.cjs: PASS, 6/6
+- Force-stop runner/support syntax: PASS
+- Force-stop + shared runner support tests: PASS, 24/24
+- Post-cleanup force-stop dry run: PASS; packageInstalled=false, liveExecuted=false
+- Dry run: PASS, exactly 25 sanitized cases (15 Arabic, 10 English), no network request.
+
+No secret, Firebase token, raw UID, prompt, or model response is included in this evidence.

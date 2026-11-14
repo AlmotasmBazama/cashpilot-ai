@@ -1,0 +1,34 @@
+name: Bug report / بلاغ عن مشكلة
+description: Report reproducible behavior using synthetic data.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please use synthetic data. Do not include financial records, user IDs,
+        credentials, auth/App Check tokens, or raw AI conversations.
+        For vulnerabilities, follow SECURITY.md instead of posting details here.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior / السلوك المتوقع والفعلي
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps / خطوات إعادة المشكلة
+      description: Include a minimal example with synthetic values.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit or app version / الإصدار
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform, OS version, and locale / النظام واللغة
+    validations:
+      required: true

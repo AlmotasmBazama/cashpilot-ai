@@ -1,0 +1,7 @@
+Command:
+  .\\node_modules\\.bin\\tsx.cmd --test tests/response_parser.test.ts
+
+Result: PASSED
+Tests: 25 focused parser tests passed, 0 failed, 0 skipped; the packaged gateway gate subsequently passed 109/109.
+Coverage: exact lexical decimals, Arabic/Persian digits and separators, Unicode minus, percent, grouping, >2^53, exponent/malformed rejection, and tool-field dimension provenance.
+Secrets/private data: none; all fixtures are synthetic.

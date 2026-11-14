@@ -1,0 +1,1 @@
+core.autocrlf=true core.eol= core.safecrlf= gitattributes_present=False git_lfs_version=git-lfs/3.7.1 (GitHub; windows amd64; go 1.25.1; git b84b3384) git_lfs_tracked_files=0

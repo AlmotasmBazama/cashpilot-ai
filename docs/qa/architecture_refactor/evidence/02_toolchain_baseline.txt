@@ -1,0 +1,29 @@
+CashPilot AI architecture-refactor toolchain baseline
+Captured: 2026-08-17 (Africa/Tripoli)
+
+Flutter: 3.41.9 stable, framework 00b0c91f06, engine 42d3d75a56
+Dart: 3.11.5 stable (windows_x64)
+DevTools: 2.54.2
+Windows: 11 Pro 64-bit, 25H2
+Android SDK: 36.1; build-tools 36.1.0; licenses accepted
+Flutter doctor bundled JDK: OpenJDK 21.0.10
+Shell java -version: Oracle Java 21.0.11 LTS
+Node: 26.1.0
+npm: 11.13.0 (invoked as npm.cmd because PowerShell execution policy blocks npm.ps1)
+
+Detected devices:
+- Windows desktop
+- Chrome 151.0.7922.138
+- Edge 151.0.4129.86
+
+No Android device or emulator was connected at baseline.
+Flutter doctor warning: Visual Studio C++ desktop components are incomplete. This is unrelated to the requested Android/Web gates.
+
+Application version: 1.0.0+1
+Database schema version: 17
+Android application ID: com.example.cashpilot_ai
+Dart files (excluding build/.dart_tool): 793
+Dart files under test/ and integration_test/: 169
+Runnable *_test.dart files: 166 (152 test, 14 integration_test)
+Literal test/testWidgets declarations: 1,181; loop-generated cases increase the runtime total.
+Repository files inspected by inventory command (excluding build, .dart_tool, node_modules, .git): 1,387

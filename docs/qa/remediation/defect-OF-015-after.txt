@@ -1,0 +1,13 @@
+OF-015 GREEN evidence - atomic receipt aggregate persistence
+Date: 2026-08-10
+Command: flutter test test/features/receipts/receipt_aggregate_persistence_test.dart --reporter expanded
+Result: PASSED
+
+Verified behaviors:
+- Parent, line items, and splits create in one database transaction.
+- Duplicate line or split IDs roll back the entire create.
+- Parent, line-item replacement, and split replacement update atomically.
+- Either child replacement failure restores the original parent and both child sets.
+- A successful update removes stale children and persists the exact new aggregate.
+
+Focused aggregate suite contribution: 6 passed.

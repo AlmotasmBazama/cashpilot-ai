@@ -1,0 +1,17 @@
+Phase 2 owner-operation fence RED evidence
+Date: 2026-08-10
+
+Command:
+flutter test test/features/ai_assistant/ai_deletion_operation_fence_test.dart --reporter expanded
+
+Expected RED result: FAIL (exit 1)
+Observed reason: the test-required fenced durable AI runtime did not yet exist,
+so both deletion-race regression cases failed to compile.
+
+Security scenarios introduced before implementation:
+- a successful AI result that completes after account deletion begins must be
+  suppressed as a safe cancelled result;
+- a new AI financial write while the owner scope is fenced must produce zero
+  delegate calls and zero reported mutations.
+
+Owner scope values and other sensitive identifiers are intentionally omitted.

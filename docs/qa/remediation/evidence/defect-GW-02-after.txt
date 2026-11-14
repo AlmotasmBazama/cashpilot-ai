@@ -1,0 +1,7 @@
+Command:
+  .\\node_modules\\.bin\\tsx.cmd --test tests/provider_output_safety.test.ts tests/general_chat_safety.test.ts
+
+Result: PASSED
+Tests: 6 focused claim-path tests passed, 0 failed, 0 skipped; the packaged gateway gate subsequently passed 109/109.
+Coverage: English/Arabic/Libyan claim corpus, explicit non-execution negatives, split-chunk claim buffering, no fallback after any upstream delta, and safe tool-selection clarification validation.
+Secrets/private data: none; all fixtures are synthetic.

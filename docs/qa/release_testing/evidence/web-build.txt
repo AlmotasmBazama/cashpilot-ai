@@ -1,0 +1,14 @@
+Command: flutter build web --no-pub
+Date: 2026-08-13
+Result: PASS
+Exit code: 0
+Elapsed seconds: 147.787
+Output: build/web
+index.html: 1627 bytes; HTTP 200
+main.dart.js: 6803194 bytes; HTTP 200
+sqlite3.wasm: 747018 bytes; HTTP 200
+drift_worker.js: 351218 bytes; HTTP 200
+Wasm dry run: PASS
+Interactive in-app-browser smoke: PASS for desktop onboarding render, 390x844 responsive render, and Skip navigation to #/welcome; no captured console warnings/errors.
+Refresh/back: NOT EXECUTED (browser-control session ended before durable result).
+Live Web Auth/App Check/Firebase AI: BLOCKED by external release configuration and was not claimed.

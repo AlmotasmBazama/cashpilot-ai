@@ -1,0 +1,24 @@
+Phase 2 owner-operation fence focused GREEN evidence
+Date: 2026-08-10
+
+Focused combined command:
+flutter test test/features/ai_assistant/ai_deletion_operation_fence_test.dart test/features/ai_assistant/phase1_owner_transition_regression_test.dart test/features/ai_assistant/ai_owner_scope_epoch_test.dart test/features/ai_assistant/app_agent_reconciliation_test.dart test/features/ai_assistant/app_agent_command_runtime_test.dart test/features/ai_assistant/ai_assistant_send_test.dart test/features/receipts/receipt_owner_scope_isolation_test.dart test/features/receipts/receipt_processing_test.dart --reporter compact
+
+Result: PASS (exit 0), 81 tests passed.
+
+Security regressions covered:
+- an AI success returning after deletion starts is replaced by a verified=false,
+  zero-mutation cancelled result;
+- a new AI financial write while fenced never calls the durable delegate;
+- receipt extraction returning after deletion starts cannot continue to
+  duplicate detection, line-item persistence, or a success callback;
+- a new receipt capture while fenced performs zero capture, owner-A
+  repository, owner-B repository, and analysis-provider calls;
+- startup reconciliation and durable recovery remain owner/session bound.
+
+Focused analyzer command:
+flutter analyze --no-pub [eight changed AI/receipt source and test files]
+
+Result: PASS (exit 0), no issues found.
+
+Owner scope values and sensitive identifiers are intentionally omitted.

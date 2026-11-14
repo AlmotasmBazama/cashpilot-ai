@@ -1,0 +1,15 @@
+AI-003 / AI-004 RED evidence
+Date: 2026-08-10
+
+AI-003 audit runtime evidence:
+- Arabic decimal ١٢٫٥٠ was truncated to 12.
+- Compound خمسة وعشرين was truncated to 5.
+- Source: docs/qa/evidence/ai-behavior-probe-output.txt.
+
+AI-004 focused RED:
+flutter test test/features/ai_assistant/financial_command_parser_test.dart --plain-name "the Arabic expense noun never classifies a draft as income"
+- Expected: TransactionType.expense
+- Actual: TransactionType.income
+- Exit code: 1
+
+All inputs were synthetic.

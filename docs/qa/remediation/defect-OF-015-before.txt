@@ -1,0 +1,14 @@
+OF-015 RED evidence - receipt aggregate persistence
+Date: 2026-08-10
+Command: flutter test test/features/receipts/receipt_aggregate_persistence_test.dart --reporter expanded
+Result: FAILED (1 passed, 5 failed within the OF-015 group)
+
+Observed failures before remediation:
+- Duplicate line IDs returned failure but left 1 receipt parent persisted.
+- Duplicate split IDs returned failure but left 1 receipt parent persisted.
+- An update containing duplicate line IDs returned AppSuccess.
+- An update containing duplicate split IDs returned AppSuccess.
+- A successful parent update retained stale line items instead of replacing the aggregate.
+
+The duplicate-parent control passed and proved the fixture could distinguish an
+unchanged existing aggregate from the partial-write cases.

@@ -1,0 +1,15 @@
+Final AI module pre-gate failure evidence
+Date: 2026-08-10
+Command: flutter test --no-pub test/features/ai_assistant --reporter compact
+Result before test-fixture repair: 16 failed tests.
+
+Failure grouping from a JSON reporter diagnostic rerun:
+- one deterministic intent-routing expectation classified an imperative expense
+  utterance as a financial question;
+- fifteen financial business reconciliation cases seeded a forged global Transfer
+  category that the remediated noncanonical_default_category Drift guard correctly
+  rejected.
+
+The security and owner-isolation implementation was not weakened. These failures are
+being corrected at their stale test inputs/fixtures and the full AI module will be
+rerun. No test was skipped or suppressed.

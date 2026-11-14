@@ -1,0 +1,5 @@
+Command:
+  flutter analyze --no-pub
+
+Result: PASSED — No issues found.
+Elapsed analyzer time: 12.5 seconds.

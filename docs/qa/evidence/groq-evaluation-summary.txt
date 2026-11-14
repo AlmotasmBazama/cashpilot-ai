@@ -1,0 +1,11 @@
+CashPilot AI Groq evaluation harness evidence (sanitized)
+Working directory: <REPOSITORY_ROOT>\tools\groq_evaluation
+
+Command: npm.cmd test
+Exit code: 0
+Result: PASSED — 16 passed, 0 failed; duration approximately 449 ms.
+
+Classification
+- This is the repository's local evaluation harness using synthetic/local fixtures.
+- It does not establish live Groq model availability, current model quality, gateway deployment, App Check, or staging behavior.
+- GROQ_API_KEY presence check was negative; no secret value was requested or printed.

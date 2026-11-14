@@ -1,0 +1,27 @@
+Newly discovered Phase 1 AI UI owner-race remediation evidence
+Date: 2026-08-10
+
+Command:
+flutter test test/features/ai_assistant/ai_assistant_send_test.dart --reporter expanded
+
+Result: PASS (exit 0), 12 tests passed.
+
+New focused regressions:
+- logout synchronously clears a visible owner-bound financial preview;
+- a delayed result captured for the prior owner cannot recreate a draft after
+  an owner transition;
+- switching owner while the first financial-context read is awaiting prevents
+  resolution of the next provider under the new owner.
+
+Additional owner-transition command:
+flutter test test/features/ai_assistant/phase1_owner_transition_regression_test.dart --reporter expanded
+
+Result: PASS (exit 0), 3 tests passed, including recovery UI reset across
+different owners and a new session epoch for the same owner.
+
+UI/navigation compatibility command:
+flutter test test/features/ai_assistant/ai_agent_ui_test.dart test/features/ai_assistant/ai_navigation_regression_test.dart test/features/ai_assistant/ai_assistant_smoke_test.dart --reporter compact
+
+Result: PASS (exit 0), 12 tests passed.
+
+Owner scope values and sensitive identifiers are intentionally omitted.

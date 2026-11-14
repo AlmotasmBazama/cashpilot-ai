@@ -1,0 +1,44 @@
+CashPilot AI focused source-audit evidence (sanitized)
+Working directory: <REPOSITORY_ROOT>
+
+Method alias used in the report: STATIC-AUDIT
+- Repository discovery/search used rg/rg --files.
+- Exact source context used PowerShell Get-Content with numbered, bounded line ranges.
+- Read-only source-trace commands cited by defects completed with exit code 0 unless a documented rg no-match returned 1.
+- flutter analyze --no-pub separately passed with exit code 0.
+- No source/config/test file was edited and no production data was accessed.
+
+Financial/owner/deletion roots traced
+- Account deletion/update/create: accounts_local_data_source.dart:29-51,85-100; accounts_repository_impl.dart:37-49,80-89; add_account_bottom_sheet.dart:150-181.
+- Transfers: transfer_processor.dart:139-190; finance_validation_service.dart:96-118; create_transfer_command.dart:8-37; transactions_repository_impl.dart:87-141,338-377.
+- Account deletion identity/races: account_deletion_auth_data_source.dart:36-40,75-79; data_deletion_repository_impl.dart:32-125; sync_manager.dart:40-75; data_deletion_request.dart:1-15.
+- Backup/privacy: sync_mutation_queue.dart:27-59,97-125; sync_queue_repository.dart:175-190; firestore_sync_data_source.dart:52-70; cloud_user_data_deletion_data_source.dart:19-45.
+- Owner health/categories: owner_scope_health_service.dart:37-127; categories_local_data_source.dart:47-68,77-180; app_database.dart:674-708.
+- Reporting: income_reporting_policy.dart:6-11; income_source_type.dart:43-50; dashboard_providers.dart:116-143,334-359,426-468.
+
+Receipt roots traced
+- Capture ordering and account-switch boundary: receipt_providers.dart:161-264; receipt_repository_impl.dart:189-205.
+- Confirmation and guards: confirm_receipt_transaction.dart:49-116; receipt_repository_impl.dart:235-276; app_database.dart:49-55,802-812.
+- Persistence/files: receipt_repository_impl.dart:42-72,109-137,209-231; receipt_review_screen.dart:652-789.
+- Consent/context: settings_keys.dart:10; receipt_privacy_consent_store.dart:10-18; firebase_receipt_analysis_provider.dart:58-74,136-159.
+
+AI roots traced
+- Tool owner boundary: ai_tool_contracts.dart:49-64; ai_agent_orchestrator_impl.dart:826-832; governed_ai_tool_registry.dart:22-110,150-191; riverpod_financial_agent_data_gateway.dart:23-64.
+- Policy reload: ai_app_control_providers.dart:121-130; ai_durable_action_providers.dart:87-100.
+- Parser/router: financial_command_parser.dart:296-351,380-446; ai_intent_router.dart:84-128,217-239,353-416; assistant_navigation_policy.dart:72-123.
+- Provider-first drafts: create_ai_action_draft.dart:129-205,225-280.
+- Response validation: ai_agent_support.dart:95-153; ai_agent_orchestrator_impl.dart:578-650.
+- Reconciliation: durable_ai_action_bridge.dart:402-461,538-545.
+- Streaming: firebase_ai_agent_model_gateway.dart:142-235; ai_agent_orchestrator_impl.dart:84-164,586-611.
+
+Runtime behavior probe
+Command: dart run docs/qa/evidence/ai_behavior_probe.dart
+Exit code: 0
+Artifact: docs/qa/evidence/ai-behavior-probe-output.txt
+Key observations: required English/Arabic receipt phrases and Libyan navigation wording misrouted; Arabic decimal and compound number amounts were truncated; the token مصروف produced income drafts; a generic cash-flow question routed to personalFinancialAnalysis.
+
+Command: dart analyze docs/qa/evidence/ai_behavior_probe.dart
+Exit code: 0
+Result: No issues found.
+
+Gateway source/probe evidence is recorded separately in gateway-test-summary.txt. Full finding records, severity decisions, impacts, fixes, tests, and release gates are in CASHPILOT_FULL_QA_REPORT_AR.md and CASHPILOT_FINDINGS.csv.

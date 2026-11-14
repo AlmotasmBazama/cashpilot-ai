@@ -1,0 +1,34 @@
+Phase 1 deterministic red-test evidence: AI-001 and OF-009
+Date: 2026-08-10
+Environment: local Windows / Flutter test runner
+Private data: none; all owner scopes and financial values are synthetic.
+
+Command:
+flutter test --no-pub test/features/ai_assistant/ai_owner_scope_epoch_test.dart
+
+Pre-fix result: exit 1 (expected red baseline).
+
+OF-009 deterministic failure:
+- Scenario: A has permissive settings and safe owner health; switch to B while
+  B settings and health are both pending.
+- Expected: effective policy fails closed immediately.
+- Actual: appControlAvailable remained true during B reload.
+- Sanitized matcher excerpt: Expected false; Actual true; test line 73.
+
+AI-001 deterministic failure:
+- Scenario: an immutable synthetic A context is retained, current scope switches
+  to B, then the financial gateway is invoked.
+- Expected: account_scope_changed before any B provider read.
+- Actual: the Future emitted AiToolResult instead of AiToolFailure.
+
+The first draft of the in-flight-await harness also demonstrated that the
+existing gateway had no explicit post-await scope check. That draft relied on
+a Riverpod FutureProvider invalidation and timed out, so it was replaced with a
+deterministic delayed handler before remediation. The timeout is not counted as
+product evidence.
+
+Later pre-fix rerun note:
+- A concurrent, unrelated dirty-worktree edit temporarily prevented test load:
+  sync_providers.dart did not yet pass the newly required operationFence to
+  BestEffortSyncMutationQueue and SyncManager.
+- This unrelated compile state is not counted as AI-001/OF-009 evidence.

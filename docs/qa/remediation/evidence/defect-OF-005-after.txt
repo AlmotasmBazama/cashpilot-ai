@@ -1,0 +1,46 @@
+CashPilot AI remediation evidence (sanitized)
+Defect: OF-005
+Phase: P0 - transfer-group idempotency and financial integrity
+Final verification date: 2026-08-10T20:27:44.8105796+02:00 (Africa/Tripoli)
+
+Focused OF-005 command:
+flutter test test/features/transactions/transfer_group_idempotency_test.dart test/features/transactions/transfer_group_adversarial_test.dart
+Post-fix exit code: 0
+Result: 53 passed, 0 failed, 0 skipped.
+
+Authoritative integration command:
+flutter test test/features/transactions/transfer_group_idempotency_test.dart test/features/transactions/transfer_group_adversarial_test.dart test/features/transactions/transactions_test.dart test/features/transactions/transactions_ui_test.dart test/features/finance_engine/finance_engine_test.dart test/core/database/app_database_migration_test.dart test/core/owner_scope/owner_scope_database_test.dart test/core/sync/sync_test.dart test/features/data_deletion/data_deletion_test.dart test/features/data_deletion/account_deletion_scope_recovery_finalizer_integration_test.dart
+Post-fix exit code: 0
+Result: 186 passed, 0 failed, 0 skipped.
+Runner final line: 00:10 +186: All tests passed!
+
+Static analysis command:
+flutter analyze --no-pub
+Exit code: 0
+Result: No issues found (14.6 seconds).
+
+Repository hygiene command:
+git diff --check -- <OF-005 production and test paths>
+Exit code: 0
+Result: no whitespace errors. Git emitted only the repository's existing LF-to-CRLF checkout warnings.
+
+Verified locally:
+- Construction allocates one stable transfer group and deterministic leg identities; retries and process/file reopen return the same two persisted legs.
+- Same-process and two-connection concurrency produce one pair and one financial effect; losing permits and injected failures clean up safely.
+- A durable owner-bound payload fingerprint distinguishes exact replay from conflicting group reuse without entering DTO, domain, backup, or sync payloads.
+- Pair capabilities and SQLite connection-local guards reject orphan, third-leg, duplicate-role, cross-owner, independent status, update, cancel, and delete mutations.
+- Replay validates raw structure before mapping or Finance Engine execution and does not call FX, Finance, or sync hooks again.
+- Explicit FX provenance is bound to the command. Modern fingerprinted cross-currency target-only pairs retain their informational-rate exception.
+- Every same-currency pair requires rate 1 and equal amounts. Fingerprint-NULL cross-currency pairs require incoming amount = outgoing amount * stored rate exactly.
+- Legacy claim rejects ambiguous terms and matching/nonmatching forged fingerprints. A migrated malformed v16 group remains unchanged and durably quarantines financial writes for that owner.
+- Owner-scope health reports corruption; new transfers, ordinary posted transactions, posting, and reversal fail with transfer_scope_integrity_quarantined until manual review.
+- Privacy deletion remains available while quarantined and is the reviewed escape that can remove the owner's corrupt history.
+- Delayed FX UI double confirmation dispatches one command.
+
+Code-generation provenance:
+- A broad build_runner invocation occurred earlier in the shared dirty worktree before output scoping was tightened; no pre-run generated-file hash was available.
+- A later filtered build regenerated the database output and its lazy dependencies.
+- The transaction DTO/entity generated files have no tracked diff.
+- lib/core/database/app_database.g.dart remains changed because the shared worktree already contains multiple table/schema edits plus OF-005's transfer_payload_fingerprint column; unrelated generated output was not reverted.
+
+Privacy: fixtures use synthetic owners and synthetic balances only. Logs redact exception payloads. No raw UID, token, secret, private document, or production financial data is recorded.

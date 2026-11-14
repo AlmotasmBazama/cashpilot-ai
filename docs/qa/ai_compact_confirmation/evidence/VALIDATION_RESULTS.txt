@@ -1,0 +1,29 @@
+VALIDATION RESULTS
+==================
+
+flutter analyze --no-pub
+PASS - No issues found.
+
+flutter test --no-pub test/features/ai_assistant
+PASS - 862 tests.
+
+flutter test --no-pub -r expanded
+PASS - 1738 tests.
+
+flutter build apk --debug --no-pub
+PASS - build/app/outputs/flutter-apk/app-debug.apk
+
+flutter build web --no-pub
+PASS - build/web
+
+Live Android command
+flutter run -d emulator-5554 --no-pub
+PASS - rebuilt, installed, and launched on Android 17 emulator.
+
+Notes
+-----
+- Web emitted its pre-existing CupertinoIcons asset advisory, but compilation
+  and Wasm dry run both completed successfully.
+- The full suite initially exposed a 3px transient skeleton overflow at the
+  narrow Arabic app shell. The skeleton was made flexible, the focused test
+  passed, and the full 1738-test suite then passed.

@@ -1,0 +1,50 @@
+CashPilot AI QA final repository-state evidence (sanitized)
+Captured after report/CSV/evidence creation: 2026-08-09 (Africa/Tripoli)
+Working directory: <REPOSITORY_ROOT>
+
+Command: git status --porcelain=v1 -uall
+Exit code: 0
+Result: 260 expanded porcelain entries: 90 tracked modifications and 170 untracked files.
+
+Baseline comparison
+- Before audit: 90 tracked modifications, 152 untracked files, 242 total entries.
+- After audit: 90 tracked modifications, 170 untracked files, 260 total entries.
+- Delta: exactly 18 new untracked files, all below docs/qa/. These are the two required deliverables plus 16 sanitized evidence/probe files.
+- No new tracked modification was introduced by the audit.
+
+Command: git diff --name-only
+Exit code: 0
+Result: 90 tracked paths, unchanged count from baseline.
+
+Command: git diff --shortstat
+Exit code: 0
+Result: 90 files changed, 19,364 insertions(+), 3,556 deletions(-), identical to baseline.
+Note: Git emitted existing LF-to-CRLF working-copy warnings; no rewrite was performed.
+
+Audit-created files
+- docs/qa/CASHPILOT_FULL_QA_REPORT_AR.md
+- docs/qa/CASHPILOT_FINDINGS.csv
+- docs/qa/evidence/ai_behavior_probe.dart
+- docs/qa/evidence/ai-behavior-probe-output.txt
+- docs/qa/evidence/ai-tests-summary.txt
+- docs/qa/evidence/analyzer-summary.txt
+- docs/qa/evidence/build-summary.txt
+- docs/qa/evidence/environment-summary.txt
+- docs/qa/evidence/firestore-emulator-summary.txt
+- docs/qa/evidence/flutter-test-summary.txt
+- docs/qa/evidence/gateway-test-summary.txt
+- docs/qa/evidence/git-status-before.txt
+- docs/qa/evidence/git-status-after.txt
+- docs/qa/evidence/groq-evaluation-summary.txt
+- docs/qa/evidence/integration-test-summary.txt
+- docs/qa/evidence/rtl-responsive-summary.txt
+- docs/qa/evidence/source-audit-summary.txt
+- docs/qa/evidence/static-search-summary.txt
+
+Incidental ignored/untracked pre-existing outputs
+- Flutter builds updated ignored build/ outputs.
+- Gateway build refreshed timestamps on already-untracked dist files; aggregate content hash remained unchanged.
+- Emulator commands updated ignored Firebase debug logs.
+- No listener remained on audit ports 8080 or 8765 at final check.
+
+No product source, configuration, tests, dependency manifests, production data, or external deployment was changed by the audit.

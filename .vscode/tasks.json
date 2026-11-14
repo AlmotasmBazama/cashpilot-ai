@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CashPilot: Prepare Web App Check",
+      "type": "process",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/tool/prepare_web_app_check_debug.cjs"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+CashPilot AI Groq force-stop/reopen acceptance - sanitized evidence
+Date: 2026-08-14 (Africa/Tripoli)
+Environment: Pixel_6 emulator, Android 17/API 37, instrumented debug APK
+Cloud Run revision: cashpilot-ai-gateway-staging-00005-civ (100% stable traffic)
+
+Result: PASS
+
+- First production-UI Groq answer completed: 17418ms.
+- Android force-stop made the old process absent.
+- Explicit MAIN/LAUNCHER reopen started a different PID: 3709ms.
+- The authenticated session was restored.
+- Second production-UI Groq answer completed: 17076ms.
+- Route: generalConversation; configured provider: Groq; Firebase text fallback: false.
+- Runner result: completed=true, processRestart=true, secondQuestion=true,
+  cleanup=true, exit=0.
+
+Cloud Run safe traces in the bounded UTC window
+2026-08-14T11:56:08.763Z..2026-08-14T12:06:08.763Z: exactly 2.
+
+- Trace 1 (2026-08-14T12:04:24.103824Z): openai/gpt-oss-20b; HTTP 200;
+  completed; upstream success;
+  duration/TTFC/completion 497/368/129ms; retry 0; 93 chunks.
+- Trace 2 (2026-08-14T12:04:53.687312Z): openai/gpt-oss-20b; HTTP 200;
+  completed; upstream success;
+  duration/TTFC/completion 495/317/178ms; retry 0; 189 chunks.
+
+Critical cleanup passed: local sign-out; synthetic Firestore profile deletion with
+404 absence confirmation; synthetic Auth user deletion/absence confirmation;
+App Check registration cleanup; UI-dump cleanup; logcat cleanup; package absence.
+
+No credential, token, raw UID, prompt, response, or request ID is included.
+This proves staging/debug behavior with Android Debug App Check, not a signed release
+artifact or production Play Integrity. Force-stop occurred between completed requests,
+not while a stream was active.

@@ -1,0 +1,26 @@
+Release-testing round owned files/hunks (2026-08-13)
+
+Implementation / test harness:
+- integration_test/ai_navigation_live_regression_test.dart
+- lib/features/ai_assistant/application/providers/ai_agent_providers.dart (safe typed diagnostics hunk only)
+- lib/shared/design_system/widgets/cp_empty_state.dart
+- test/shared/design_system/design_system_test.dart (narrow empty-state regression hunk only)
+- tool/register_android_app_check_debug.cjs
+- tool/run_android_live_ai_acceptance.cjs
+- tool/run_android_live_ai_failure_recovery.cjs
+
+Reports and evidence created/updated by this round:
+- docs/qa/release_testing/BASELINE_AR.md
+- docs/qa/release_testing/MASTER_TEST_REPORT_AR.md
+- docs/qa/release_testing/TEST_CASES.csv
+- docs/qa/release_testing/TEST_EXECUTION.csv
+- docs/qa/release_testing/MANUAL_ACCEPTANCE_AR.md
+- docs/qa/release_testing/PERFORMANCE_RESULTS.csv
+- docs/qa/release_testing/RELEASE_GATE_MATRIX_AR.md
+- docs/qa/release_testing/BLOCKERS.csv
+- docs/qa/release_testing/evidence/*
+
+Attribution boundary:
+- The repository already had 368 dirty status entries at baseline.
+- This list does not attribute unrelated pre-existing dirty hunks to this round.
+- No commit, push, reset, clean, stash, or branch operation was performed.

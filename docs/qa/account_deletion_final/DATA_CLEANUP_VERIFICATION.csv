@@ -1,0 +1,19 @@
+layer,target_expected,current_result,verification,release_effect
+"Existing quarantined synthetic accounts","0 exact accounts and no continuation",PASS_ALREADY_CLEAN,"Admin exact lookup=0; app signed out; no manual bypass",SAFE
+"Deletion quarantine","retained through protected completion",PASS,"interrupted flow force-stop and startup recovery",SAFE
+"Cloud user roots C/D","0",PASS,"server verified empty and Admin tree probe=0",GO
+"Unknown nested subcollections C/D","0",PASS,"future nested fixture absent",GO
+"Deletion safety lock","opaque permanent completed marker",PASS,"SHA-256 document id; no raw UID; anti-resurrection retention",SAFE
+"Firebase Auth C/D","absent only after cloud/local completion",PASS,"Auth present at interrupted stop then Admin not-found at end",GO
+"Owner-scoped Drift C/D","0",PASS,"database owner probe",GO
+"Receipt rows C/D","0",PASS,"database probe",GO
+"Receipt files C/D","0",PASS,"private directory probe",GO
+"Hive/settings/AI live entries C/D","0",PASS,"logical Hive probe; one intentional terminal tombstone per target",GO
+"Sync and backup queue C/D","0",PASS,"owner-scoped database probe",GO
+"Late AI receipt backup writes","0 resurrection",PASS,"network restored workers restarted reopen and 30-second observation",GO
+"Control users A/B","unchanged before fixture cleanup",PASS,"canonical JSON hash",GO
+"Built-in global categories","preserved",PASS,"not owner-deleted; test and live scope behavior",GO
+"App Check registration","preserved",PASS,"no registration removal",SAFE
+"Synthetic users created by task","0 remaining",PASS,"controls cleanup plus target Auth-not-found exact verification",CLEAN
+"Groq Gateway","traffic and service unchanged",PASS,"separate deletion service only",SAFE
+

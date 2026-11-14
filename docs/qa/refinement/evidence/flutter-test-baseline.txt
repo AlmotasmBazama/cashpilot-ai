@@ -1,0 +1,14 @@
+Command: flutter test --no-pub -r compact
+Date: 2026-08-13 (Africa/Tripoli)
+Exit code: 0
+Result: 1189 passed, 0 failed
+Wall time: approximately 97 seconds
+Terminal: All tests passed!
+Notable measured fixture:
+- dashboard_window_measurement repeats=5
+- before_rows=10020
+- after_rows=20
+- after_total_count=10020
+- before_median_us=432008
+- after_median_us=2336
+Note: Drift emitted its known debug warning about multiple AppDatabase instances in tests; it was non-failing.

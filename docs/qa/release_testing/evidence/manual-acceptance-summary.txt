@@ -1,0 +1,4 @@
+Android Debug daily journey: 2 PASS, 0 FAIL, 0 BLOCKED, 77 NOT EXECUTED.
+Clean launch and force-stop/launcher reopen were directly observed as manual steps.
+Automated integration results were not relabeled as manual PASS.
+Gate C: NO.

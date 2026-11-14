@@ -1,0 +1,23 @@
+Final Firebase emulator gate
+Date: 2026-08-10
+Project: demo-cashpilot-ai (Firebase demo project; non-emulated service access fails)
+
+Environment:
+- reused the already-running local demo Firestore emulator at 127.0.0.1:8080;
+- launched a fresh local Auth emulator at 127.0.0.1:9199 with firebase.test.json;
+- the rules-unit harness loaded the current repository firestore.rules directly.
+
+Sanitized command shape:
+FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 firebase emulators:exec
+  --config firebase.test.json --only auth --project demo-cashpilot-ai
+  "npm run test:firestore-rules:all"
+
+Results:
+- Firestore Rules: 42 passed, 0 failed, 0 skipped.
+- Account deletion with real local Admin/Auth emulator backends: 2 passed,
+  0 failed, 0 skipped.
+- Wrapper exit code: 0.
+
+Expected PERMISSION_DENIED messages were negative assertions proving denied access.
+No deployed Firebase project, production credential, real account, or private data was
+accessed. Deployed-rule parity and live Auth/App Check remain unverified.

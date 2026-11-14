@@ -1,0 +1,12 @@
+OF-016 GREEN evidence - truthful receipt finalization result
+Date: 2026-08-10
+Focused command: flutter test test/features/receipts/receipt_confirmation_state_machine_test.dart --reporter expanded
+Focused result: 5 passed, 0 failed, 0 skipped.
+Related receipt-module result: 64 passed, 0 failed, 0 skipped.
+
+Verified behavior:
+- Metadata finalization failure returns typed failure code
+  receipt_metadata_finalization_pending instead of success.
+- A fresh use-case instance retries finalization without creating or applying a
+  second transaction.
+- Success is returned only after the persisted receipt is confirmed and linked.

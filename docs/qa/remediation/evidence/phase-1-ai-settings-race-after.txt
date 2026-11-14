@@ -1,0 +1,8 @@
+CashPilot AI remediation evidence (sanitized)
+Phase: 1 - owner-scoped AI settings
+Commands: focused race regression plus AI scope-policy and app-control flag suites.
+Post-fix exit code: 0
+Result: 14 passed, 0 failed, 0 skipped.
+Targeted analyzer: 2 changed production/test files analyzed; 0 issues.
+Verified: a delayed A reset writes only A's captured key and cannot overwrite B's current controller state; scope-epoch fail-closed policy and conservative production flags remain green.
+Privacy: opaque synthetic scope hashes only; no raw UID, token, secret, or financial data recorded.

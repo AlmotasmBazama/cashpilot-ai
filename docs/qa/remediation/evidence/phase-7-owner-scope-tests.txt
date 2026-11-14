@@ -1,0 +1,6 @@
+Phase 7 owner/database regression gate
+Command: flutter test --no-pub -r expanded test/core/owner_scope test/core/database/app_database_migration_test.dart test/features/categories/category_delete_integrity_guard_test.dart test/features/transactions/transfer_group_owner_scope_update_guard_test.dart
+Result: 98 passed, 0 failed, 0 skipped.
+Targeted dart analyze of all changed Phase 7 source and tests: No issues found.
+The expected Drift multiple-database debug warning appeared only in legacy reopen
+fixtures; no assertion failed.

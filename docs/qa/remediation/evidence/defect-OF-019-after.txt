@@ -1,0 +1,4 @@
+Defect: OF-019 receipt FX amount/rate integrity (GREEN)
+The receipt processing suite passed 32/32 with zero failures/skips.
+Valid and high-precision Decimal pairs pass. Inverted direction, zero/negative rate,
+and an amount that is not exactly source × rate fail with receipt_currency_mismatch.

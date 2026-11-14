@@ -1,0 +1,33 @@
+LIVE ANDROID UI ACCEPTANCE
+==========================
+
+Target: emulator-5554, Android 17 (API 37), android-x64
+Launch: flutter run -d emulator-5554 --no-pub
+Date: 2026-08-23 (Africa/Tripoli)
+
+Observed before any financial write:
+- AI app control displayed Full Control.
+- Financial analysis, navigation, transaction drafts, and budget/goal drafts
+  were derived read-only indicators; confirmation remained mandatory.
+- "milk 5 dinar" opened the compact preview directly.
+- No "Would you like to record this expense?" transcript was present.
+- The preview showed Milk, 5 LYD, suggested groceries category, account,
+  Today, Posted, payment method, note, assumption notice, and storage effect.
+- Exactly two actions were present: Cancel and Confirm.
+- Cancel produced exactly: "Operation cancelled. Nothing was saved."
+- Arabic locale rendered the same card RTL with إلغاء and تأكيد.
+- Arabic Cancel produced exactly: "تم إلغاء العملية، وما تمش حفظ أي تغيير."
+- No red permission/error card appeared during either cancel flow.
+
+The Android shell keyboard available on this emulator accepts ASCII only.
+Arabic parsing itself was therefore exercised by deterministic domain/widget
+tests for حليب 5 دينار، خبز بدينارين، شريت حليب بـ 5، ودفعت 20 مواصلات; the
+live device acceptance exercised the fully localized Arabic RTL preview using
+the same deterministic financial draft path.
+
+Screenshots:
+01_full_control_policy.png
+02_preview_en_live.png
+03_cancel_en_live.png
+04_preview_ar_rtl_live.png
+05_cancel_ar_live.png

@@ -1,0 +1,5 @@
+Defect: OF-019 receipt FX amount/rate integrity (RED)
+Command: flutter test --no-pub -r expanded test/features/receipts/receipt_processing_test.dart
+The new exact direction/rate/product matrix failed because independently supplied
+amounts and rates were accepted. In the combined RED run: 23 passed, 4 tests failed,
+0 skipped (OF-019 and OF-020 failures together).

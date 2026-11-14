@@ -1,0 +1,37 @@
+CashPilot AI - Home expense analytics validation
+Date: 2026-08-23
+
+flutter analyze --no-pub
+PASS: No issues found (47.3s)
+
+Focused feature tests
+PASS: 24 tests across period resolver, Drift read model, providers, widget, and Dashboard integration.
+
+Targeted dart format check
+PASS: 12 feature/test files checked; 0 changed.
+Repository-wide check still reports 7 unrelated pre-existing files outside this feature.
+
+Performance rerun
+PASS: source_rows=6000 aggregate_rows=42 duration_us=78980; fixture_rows=10000.
+
+flutter test --no-pub -r compact
+PARTIAL: 1721 passed; 1 unrelated existing Settings RTL 320px overflow failure.
+Failing test: test/widget_test.dart - RTL settings controls fit a narrow app shell.
+Standalone rerun reproduced RenderFlex overflow by 3.0 pixels.
+
+flutter build apk --debug --no-pub
+PASS: build/app/outputs/flutter-apk/app-debug.apk
+
+flutter build web --no-pub
+PASS: build/web
+Non-blocking existing warning: CupertinoIcons font asset not present.
+
+git diff --check
+PASS: no whitespace errors; line-ending conversion warnings only.
+
+Live Android
+PASS: flutter run -d emulator-5554 --no-pub built, installed, and launched.
+Verified placement, week/month switch, Arabic/English, dark/light, 320px, and tablet layout.
+
+Local Web runtime
+BLOCKED: Firebase guest sign-in is disabled/rejected and App Check returned 403, so Home could not be reached in the browser without changing prohibited configuration.

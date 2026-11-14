@@ -1,0 +1,12 @@
+Date: 2026-08-13
+Device: emulator-5554
+Application ID: com.example.cashpilot_ai
+Build: ordinary Android Debug 1.0.0+1
+Provider: AndroidProvider.debug
+Secret retrieved: true
+Secret printed or persisted in reports/source: false
+Registration: created for the currently installed ordinary app
+Registration preserved: true
+Exchange debug token endpoint: accepted
+App Check token printed: false
+Final action: registration intentionally retained; do not delete it.

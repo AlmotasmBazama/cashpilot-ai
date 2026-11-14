@@ -1,0 +1,6 @@
+CashPilot AI remediation evidence (sanitized)
+Phase: 1 - provider/database stream isolation
+Command: flutter test --no-pub -r expanded test/core/owner_scope/scoped_session_stream_test.dart
+Pre-fix exit code: 1
+Expected compile-time regression failure: ScopedAppDatabaseSession had no guardStream boundary, so an already-subscribed old-scope Drift stream had no session invalidation signal.
+Privacy: synthetic owner label only; no raw UID, owner-scope value, token, secret, or financial data recorded.

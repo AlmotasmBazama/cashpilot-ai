@@ -1,0 +1,5 @@
+Defect: OF-023 special inflow reporting (GREEN)
+Reporting policy/regression gate: 23 passed, 0 failed, 0 skipped.
+All 16 IncomeSourceType values plus null have an explicit reporting bucket.
+Refund, reimbursement, loan proceeds, external transfer, other, and null do not
+inflate ordinary income; the exhaustive dashboard fixture totals exactly 110.

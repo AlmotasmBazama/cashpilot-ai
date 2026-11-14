@@ -1,0 +1,6 @@
+Reporting-integrity regression evidence
+- Dashboard tests: 28 passed, 0 failed, 0 skipped.
+- Financial reporting tests: 23 passed, 0 failed, 0 skipped.
+- Manual income classification widgets: 17 passed, 0 failed, 0 skipped.
+Unique tests across the three sets: 68 passed, 0 failed, 0 skipped.
+Synthetic accounts, categories, transactions, and exchange rates only.

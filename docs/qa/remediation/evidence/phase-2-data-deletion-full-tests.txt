@@ -1,0 +1,13 @@
+Phase 2 full data-deletion module gate
+Date: 2026-08-10
+Command: flutter test test/features/data_deletion --reporter expanded
+Earlier result: 153 passed, 0 failed, 0 skipped.
+Final module rerun after the late adversarial additions: 157 passed, 0 failed,
+0 skipped. See phase-2-late-regression-tests.txt.
+
+The gate covered trusted authentication/session epochs, same-UID replacement,
+A-to-B races, secure continuation and restart recovery, durable deletion
+quarantine, owner writer draining, exact owner-scoped storage-key parity,
+database-before-receipt-file deletion, resumable/chunked/corruption-safe file
+journals, verified recursive cloud deletion, and fail-closed empty-receipt
+contracts. All identities and records were synthetic.

@@ -1,0 +1,29 @@
+Phase 1/2 independent integration gate
+Date: 2026-08-10 (Africa/Tripoli)
+
+Focused command:
+flutter test --no-pub -r expanded [16 owner-scope, AI, receipt, deletion,
+backup/sync, stale-stream, and category regression files]
+
+Result: PASS (exit 0), 113 tests passed, 0 failed, 0 skipped.
+
+Coverage included:
+- A -> B -> A and logout owner/session transitions;
+- stale AI/UI/stream completion rejection;
+- receipt capture/extraction owner and deletion fencing;
+- deletion identity, ordered failure, resume/journal, and bypass tests;
+- backup consent generation, initial snapshot, reconciliation, redaction,
+  hard-delete plan, and deletion-writer drain;
+- shared default-category immutability.
+
+Expected failure-path logger records were redacted by AppLogger. Drift emitted
+two test-only multiple-database warnings from explicit legacy/health fixtures;
+neither warning was a test failure.
+
+Analyzer command:
+flutter analyze --no-pub
+
+Result: PASS (exit 0), no issues found (26.6 seconds).
+
+No raw owner identifiers, tokens, credentials, prompts, receipt content, or
+financial fixtures are included in this evidence.

@@ -1,0 +1,28 @@
+CashPilot AI Firestore rules evidence (sanitized)
+Working directory: <REPOSITORY_ROOT>
+Firebase CLI observed by the gateway audit: 15.22.4.
+
+Command: npm.cmd run test:firestore-rules:emulator
+Exit code: 0
+Result: wrapper completed, but its stdout did not expose exact test counts in this host session.
+
+Command: direct inner npm.cmd run test:firestore-rules against the locally started Firestore emulator
+Exit code: 0
+Result: PASSED — 39 passed, 0 failed, 0 skipped; duration 5099.0376 ms.
+
+Coverage demonstrated
+- Owner create/read/update/delete on nine backup paths: accounts, transactions, categories, payees, exchangeRates, budgets, goals, settings/main, and syncMetadata.
+- Cross-user, unauthenticated, anonymous-backup, invalid/public/nested-path denial.
+- Anonymous own root-profile behavior and owner root-profile update/delete.
+
+Coverage not established
+- Collection/list and collection-group queries.
+- Batched writes/transactions.
+- Equality between local and deployed staging rules.
+- Project/service-level App Check enforcement.
+
+Operational note
+- One immediate wrapper rerun encountered port 8080 already occupied by the emulator process created by the preceding wrapper. The exact inner suite was run against that emulator, then only residual emulator processes from the audit were terminated; port 8080 was confirmed free.
+- Firebase CLI warned that firebase.json has an unknown top-level flutter property; the rules suite still passed.
+
+No production Firebase project or production data was accessed.

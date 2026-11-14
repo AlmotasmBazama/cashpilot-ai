@@ -1,0 +1,13 @@
+Command: flutter test --no-pub -r compact -d emulator-5554 integration_test/ai_navigation_live_regression_test.dart --dart-define=CASH_PILOT_AI_PROVIDER=firebaseGemini --dart-define=CASH_PILOT_FIREBASE_AI_BACKEND=vertex
+Date: 2026-08-13
+Result: PASS
+Exit code: 0
+Passed: 1
+Failed: 0
+Elapsed seconds: 126.365
+Provider: Firebase AI (Vertex AI backend, global)
+Coverage: one deterministic local greeting, three non-local remote prompts including Arabic, retained conversation after Dashboard round-trip, New Conversation, governed local navigation to Accounts.
+Safety: synthetic unique Firebase Auth user; navigation-only app-control fixture; no financial read/draft/execution permission; no UID, owner scope, token, prompt, or response persisted in evidence.
+Historical failure closed: the fixture no longer reuses a deletion-quarantined identity and does not race backup startup repair.
+Additional fixture corrections: the diagnostic observer ignores safe plain-text markers instead of throwing FormatException; remote waits require a completed assistant turn; Firebase SDK does not require Groq SSE diagnostics.
+Regression found and fixed: CPEmptyState now scrolls on short viewports; the dedicated narrow regression passed 1/1.

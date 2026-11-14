@@ -1,0 +1,7 @@
+Defect: OF-031 owner health and reference guards (GREEN)
+Focused health matrix: 36 passed, 0 failed, 0 skipped.
+Focused database guard matrix: 22 passed, 0 failed, 0 skipped.
+The clean fixture reports safe; every independently corrupted material relationship
+reports crossScopeViolation/integrityCheckFailed; database audit errors fail closed.
+Canonical built-in global categories remain usable, while forged globals and
+cross-scope INSERT/UPDATE mutations are rejected.

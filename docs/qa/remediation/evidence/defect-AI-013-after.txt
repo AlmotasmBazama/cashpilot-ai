@@ -1,0 +1,12 @@
+AI-013 GREEN evidence
+Date: 2026-08-10
+
+The router now requires an explicit personal-data signal in addition to a
+financial topic and question. Generic concepts remain general conversation,
+set useFinancialPipeline=false, and expose zero private financial tools.
+Personal prompts such as "Analyze my cash flow this month" retain the personal
+financial route.
+
+Focused result: 1 passed, 0 failed, 0 skipped.
+Related file result: 12 passed, 0 failed, 0 skipped.
+Exit code: 0.

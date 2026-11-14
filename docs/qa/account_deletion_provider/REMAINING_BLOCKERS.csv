@@ -1,0 +1,8 @@
+id,severity,scope,status,blocker,owner,closure_evidence
+ADP-01,P0,"Account Deletion Staging",CLOSED,"Old Groq service identity lacked Firestore and Auth-delete permissions","Cloud backend","separate deletion service revision healthy and live deletion complete"
+ADP-02,P0,"Existing synthetic cleanup",CLOSED_ALREADY_CLEAN,"Baseline statement named two quarantined accounts but exact start-of-run lookup found none","QA","0 exact accounts and no continuation; fresh C/D journeys cover full flow"
+ADP-03,P1,"Android Release Candidate",OPEN_EXTERNAL,"Production deletion endpoint intentionally not deployed or configured","Release owner","approved Production deployment with explicit fail-closed config"
+ADP-04,P1,"Android Release Candidate",OPEN_EXTERNAL,"Application ID remains com.example.cashpilot_ai and release signing/SHA registration are not final","Android release owner","final application ID signing and Firebase SHA registrations"
+ADP-05,P1,"Android Release Candidate",OPEN_EXTERNAL,"Only debug emulator acceptance was authorized; Play Integrity/App Check and physical-device release verification remain","Mobile/Firebase owner","accepted Play Integrity/App Check signals and physical-device release test"
+ADP-06,P2,"Repository hygiene",OPEN_NONBLOCKING,"Full format gate has six unrelated pre-existing dirty files outside this task","Worktree owner","format command exits zero after owner-approved cleanup"
+

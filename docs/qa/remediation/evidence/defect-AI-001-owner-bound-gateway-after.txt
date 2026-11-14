@@ -1,0 +1,21 @@
+AI-001 GREEN evidence - immutable owner-bound real financial gateway
+Date: 2026-08-10
+Command: flutter test --no-pub test/features/ai_assistant/ai_owner_scope_epoch_test.dart --reporter expanded
+Result: 6 passed, 0 failed, 0 skipped.
+
+The new regression drives the production financialAgentDataGatewayProvider. Work is
+started with a delayed synthetic owner-A budget repository, the Riverpod graph moves
+to owner B and materializes B's gateway, and A is then released. The old operation
+fails with account_scope_changed. Counters prove exactly one A provider/read, zero B
+repository reads, and zero stale result egress.
+
+The production gateway now captures immutable owner-bound repositories and use cases
+synchronously before the first await, validates the exact owner/session binding around
+capture and every awaited result, and never resolves replacement-owner FutureProvider
+proxies during an in-flight request.
+
+Static validation:
+- targeted dart analyze: no issues;
+- repository-wide dart analyze performed by the isolated reviewer: no issues.
+
+Final Flutter analyzer and full-suite gates remain independently required.

@@ -1,0 +1,55 @@
+Phase 2 green validation evidence (sanitized)
+Date: 2026-08-10
+
+Implemented acceptance coverage:
+- one public production deletion path; legacy AuthController/AuthRepository deleteAccount API removed;
+- typed, centralized owner-scoped storage-key derivation matching AI memory,
+  AI memory consent, AI app-control policy, and receipt consent writers;
+- durable privacy-safe operation checkpoint and same-operation restart/resume;
+- Drift commit before receipt-file drain, with an opaque durable journal and
+  idempotent retry; Hive account preferences follow receipt cleanup;
+- writer fence/drain checkpoint is explicit before cloud deletion;
+- trusted server recursive delete contract uses verified Auth UID only,
+  Admin SDK recursiveDelete, and a verified-empty receipt; Flutter fails closed;
+- Firebase Auth deletion remains the final destructive stage.
+
+Validation commands and results:
+
+1) Focused Flutter deletion suite
+flutter test --no-pub test/features/data_deletion/data_deletion_architecture_test.dart test/features/data_deletion/phase2_data_deletion_safety_test.dart test/features/data_deletion/data_deletion_test.dart -r expanded
+Result: exit 0, 23/23 passed.
+
+2) Cross-feature owner/fence regression suite
+flutter test --no-pub test/core/sync/sync_test.dart test/features/data_deletion/data_deletion_architecture_test.dart test/features/data_deletion/phase2_data_deletion_safety_test.dart test/features/data_deletion/data_deletion_test.dart test/features/ai_assistant/ai_agent_memory_scope_test.dart test/features/ai_assistant/ai_app_control_feature_flags_test.dart test/features/receipts/receipt_owner_scope_isolation_test.dart -r compact
+Result: exit 0, 55/55 passed.
+
+3) Full Flutter static analysis
+flutter analyze --no-pub
+Result: exit 0, no issues found.
+
+4) Focused final static analysis after test fixture hardening
+dart analyze lib/features/data_deletion lib/core/storage lib/features/auth lib/features/receipts/data/services lib/features/ai_assistant/application/providers/ai_app_control_providers.dart test/features/data_deletion test/features/ai_assistant/ai_agent_memory_scope_test.dart integration_test/firebase_auth_smoke_test.dart
+Result: exit 0, no issues found.
+
+5) Gateway type checking
+npm.cmd run typecheck
+Result: exit 0.
+
+6) Gateway unit/security tests
+npm.cmd test
+Result: exit 0, 35/35 passed, including 3 recursive-deletion contract tests
+(trusted UID/unknown nested data, forged UID/unverified result, stale auth).
+
+7) Gateway lint
+npm.cmd run lint
+Result: exit 0, no issues.
+
+Live status:
+- Local implementation and verification are complete.
+- Deployment/configuration of the gateway and a live Firebase recursive-delete
+  acceptance run remain pending live environment access. When the gateway URL
+  is absent or the server cannot prove verifiedEmpty, deletion fails closed
+  before local data or Firebase Auth is removed.
+
+No Firebase UID, credential, token, local path, or production identifier is
+included in this evidence.

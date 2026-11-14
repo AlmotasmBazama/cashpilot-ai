@@ -1,0 +1,7 @@
+Defect: OF-031 database reference guards (RED)
+Command: flutter test --no-pub -r expanded test/core/owner_scope/owner_scope_reference_guard_matrix_test.dart
+Result before strict guards: 1 passed, 21 failed, 0 skipped.
+Unsafe writes accepted before the fix included category-parent, receipt-line-category,
+goal-contribution-transaction, sync-target, durable-AI owner, durable-AI child UPDATE,
+AI idempotency-result INSERT/UPDATE, and forged-global-default mutations.
+Synthetic owner scopes and records only; no raw UID or private data recorded.

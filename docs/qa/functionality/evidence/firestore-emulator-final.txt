@@ -1,0 +1,14 @@
+Firestore/Auth emulator validation
+Date: 2026-08-11
+Command: npm.cmd run test:firestore-rules:emulator
+Project: demo-cashpilot-ai (isolated emulator-only project)
+Services: Authentication Emulator + Firestore Emulator
+Result: PASS
+Exit code: 0
+Elapsed wall time: 41.1 seconds
+Firebase CLI reported: Script exited successfully (code 0)
+The CLI reported both emulators shut down. One owned Firestore Java process still
+held ports 8180/9151 afterward; its exact command line was verified and only that
+orphan PID was stopped. The ports were then released.
+
+No production Firebase data was read or written by this validation.

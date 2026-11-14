@@ -1,0 +1,28 @@
+Phase 5 remediation result
+Date: 2026-08-10
+
+- Proof validation/consumption and durable execution claim now commit in one
+  Drift transaction and are owner/command/revision/method/expiry/hash bound.
+- Authentic proofs are invalidated on pre-claim policy or stale-state rejection;
+  forged proofs cannot transition or audit the command.
+- Effective authorization is re-read before and after the durable claim.
+- Per-tool consent is explicit and fails closed for unknown tools.
+- Production handlers resolve state again immediately before the use case and
+  compare the confirmed preview fingerprint.
+- A normal AppSuccess is accepted only after exact immediate owner-scoped
+  reconciliation; uncertain completion remains executing for startup inspection.
+- Operation receipts are matched exactly, including ordered identifiers,
+  verification method, resume/retry flags, and every command-bound persisted
+  field for all six supported financial handlers.
+- Duplicate goal-contribution identifiers appearing after preview fail stale
+  without reaching the use case.
+- Result, idempotency finalization, command finalization, business-operation
+  state, and privacy-safe audit now share the completion transaction.
+- Missing business-operation correlation persists a recoverable manual-review
+  result and audit; startup recovery never executes or blindly retries it.
+- UI acknowledgement cannot suppress a result before it exists and is issued
+  only after the recovery result has reached a rendered UI frame.
+- Manual-review recovery is shown as a localized safe message and remains
+  visible without exposing internal failure codes.
+
+Financial AI and all release execution flags remain disabled.

@@ -1,0 +1,7 @@
+Command:
+  flutter test --no-pub -r expanded test/core/owner_scope/owner_scope_health_reference_matrix_test.dart
+
+Result: FAILED (expected RED before implementation)
+Tests: 0 passed, 3 failed, 0 skipped.
+Failures: category-parent and AI preview/command cross-scope corruption were reported safe; a database audit-query failure escaped instead of returning an unsafe health result.
+Secrets/private data: none; two distinct synthetic owner fixtures only.

@@ -1,0 +1,4 @@
+Defect: OF-024 manual income classification (GREEN)
+Focused widget tests: 17 passed, 0 failed, 0 skipped.
+Every income source option is selected and asserted at the repository boundary.
+A null selection blocks submission, displays validation, and performs zero writes.

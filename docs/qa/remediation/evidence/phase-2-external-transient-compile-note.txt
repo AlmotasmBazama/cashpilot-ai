@@ -1,0 +1,18 @@
+Phase 2 external transient compile note
+Date: 2026-08-10
+
+During the focused screen run, concurrent sync-owner work temporarily left the
+shared worktree between two compatible revisions. The compiler output was:
+
+lib/core/sync/data/sync_queue_repository.dart:54:43: Error: The getter
+'ownerUserId' isn't defined for the type 'SyncQueueItem'.
+lib/core/sync/data/sync_queue_repository.dart:112:31: Error: The getter
+'ownerUserId' isn't defined for the type 'SyncQueueItem'.
+lib/core/sync/data/sync_queue_repository.dart:229:5: Error: No named parameter
+with the name 'ownerUserId'.
+lib/core/sync/application/sync_mutation_queue.dart:127:11: Error: No named
+parameter with the name 'ownerUserId'.
+
+This was outside the AI/receipt patch, was repaired by the owning stream, and
+the final 81-test compatibility run plus the focused analyzer both passed.
+No owner scope values or sensitive identifiers are included.

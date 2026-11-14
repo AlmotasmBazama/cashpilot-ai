@@ -1,0 +1,40 @@
+CashPilot AI Groq Cloud Run candidate - sanitized deployment evidence
+Date: 2026-08-14 (Africa/Tripoli)
+
+Project: cashpilot-ai-a6b49
+Service: cashpilot-ai-gateway-staging
+Region: europe-west1
+Final candidate revision: cashpilot-ai-gateway-staging-00005-civ
+Created: 2026-08-14T10:55:10.505708Z
+Candidate tag URL: https://groq-candidate---cashpilot-ai-gateway-staging-yfgt2ypuvq-ew.a.run.app
+Candidate traffic during acceptance: 0%
+Previous serving revision during acceptance: cashpilot-ai-gateway-staging-00002-sww (100%)
+
+Promotion
+- Explicit traffic update: PASS in 22.021s
+- Final traffic: cashpilot-ai-gateway-staging-00005-civ = 100%
+- Rollback revision remains available: cashpilot-ai-gateway-staging-00002-sww
+- Stable URL health after promotion: 3/3 HTTP 200 at 331ms, 106ms, and 92ms
+- Stable revision Ready/latestReady: true
+
+Final candidate checks
+- Ready: true
+- Health: 3/3 HTTP 200; 574ms cold observation, then 117ms and 102ms warm observations
+- Health metadata: service 0.1.0, staging, client 1.0.0, ready=true,
+  Firebase configured=true, Groq configured=true; Cache-Control no-store
+- Cloud Build: SUCCESS in 61.4s; Dockerfile build with --no-cache
+- Built image digest: exact match with candidate revision
+- Upload: 40 files, 357,576 bytes, 0 forbidden files
+- Secret scan: PASS
+- Runtime: 1 CPU, 512MiB, concurrency 80, request timeout 60s,
+  min instances 0/unset, max instances 1
+- Runtime service account: dedicated staging gateway service account
+- Secret reference: cashpilot-groq-api-key:latest (value never read into evidence)
+- Diagnostics: false
+- Tool selection: false
+- Allowed browser origin: exact staging Firebase Hosting origin; no wildcard
+- IAM and ingress: unchanged; Cloud Run is publicly invokable while application AI
+  routes require Firebase Auth and App Check
+
+The ephemeral deployment access-token bridge was ACL-restricted and deleted after use.
+No credential, token, raw UID, prompt, or response is included in this evidence.

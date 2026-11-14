@@ -1,0 +1,30 @@
+CashPilot AI Groq model comparison - sanitized summary
+Date: 2026-08-14 (Africa/Tripoli)
+
+Dataset: exactly 25 synthetic cases per model (15 Arabic, 10 English).
+Configuration: SSE, max completion 512, reasoning effort low, reasoning format hidden,
+6,000ms between cases. Prompts and responses were not written to evidence.
+
+openai/gpt-oss-20b paced
+- Status: 25/25 successful; reliability 100%
+- TTFC median/p95: 332/482ms
+- Completion median/p95: 834/1,029ms
+- Nonempty/language-match/relevance/bounded proxies: 25/25 each and combined
+
+openai/gpt-oss-120b paced
+- Status: 25/25 successful; reliability 100%
+- TTFC median/p95: 367/457ms
+- Completion median/p95: 1,370/1,493ms
+- Nonempty/language-match/relevance/bounded proxies: 25/25 each and combined
+
+Selection
+- General conversation: openai/gpt-oss-20b, because reliability and deterministic
+  proxy quality tied while median completion was lower.
+- Bounded personal financial explanation: openai/gpt-oss-120b.
+
+The initial unpaced evidence is intentionally retained: 20b was 15/25 with eight
+HTTP 429 and two empty responses; 120b was 19/25 with six HTTP 429. The paced rerun
+matched gateway reasoning settings, avoided burst quota artifacts, and completed 25/25
+for both. These deterministic proxies do not replace human review of full answer text.
+
+No credential, token, raw UID, prompt, or response is included.

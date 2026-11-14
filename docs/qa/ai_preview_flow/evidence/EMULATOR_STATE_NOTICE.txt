@@ -1,0 +1,17 @@
+EMULATOR STATE NOTICE
+=====================
+
+The Flutter integration-test runner installed and removed its target package
+on emulator-5554. Because the same application ID had previously been used by
+the manually launched debug app, runner teardown cleared that emulator-local
+app installation and its local app storage.
+
+The production debug APK was rebuilt and reinstalled immediately. The emulator
+is now at onboarding and may require manual sign-in. The synthetic acceptance
+test did not read or mutate Firebase Auth, Firestore, App Check, Groq, Cloud
+Run, or any cloud-backed financial record. Any opt-in cloud backup remains
+untouched and can be restored only through the application's normal signed-in
+recovery flow.
+
+Future runs of the integration test must use a disposable emulator whose
+application ID is not holding a manual acceptance session.

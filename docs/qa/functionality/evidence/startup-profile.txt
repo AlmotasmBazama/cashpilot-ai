@@ -1,0 +1,20 @@
+CashPilot AI startup profile
+Date: 2026-08-11
+
+Android emulator API 37:
+- Cold main-app launch: 9377 ms total, 9405 ms wait
+- Hot task return: 90 ms
+- Fresh onboarding rendered without crash or visible clipping
+
+Web:
+- Build succeeded; Wasm dry run succeeded
+- Static index/bootstrap/JavaScript/Drift assets returned HTTP 200
+- Real browser startup timing was not measured because the in-app browser runtime
+  exposed no browser session
+
+Architecture:
+- Required local storage + Firebase Core startup is bounded and single-flight
+- App Check activation is separate, typed, bounded, and non-blocking for local startup
+- Protected deletion and remote-AI calls remain fail closed without attestation
+
+The Android numbers are one emulator observation, not a release/profile benchmark.

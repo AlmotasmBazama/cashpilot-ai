@@ -1,0 +1,51 @@
+Phase 1 receipt isolation evidence: AI-002 / OF-014
+Date: 2026-08-10
+Sanitization: synthetic owner labels only; local absolute paths and identifiers omitted.
+
+RED (before remediation)
+Command:
+  flutter test test/features/receipts/receipt_owner_scope_isolation_test.dart --reporter expanded
+
+Observed deterministic privacy-consent failure:
+  receipt privacy consent is isolated between owner A and owner B [E]
+  Expected: false
+    Actual: true
+
+This demonstrated that accepting remote receipt analysis for owner A also
+authorized owner B through the legacy global boolean. The pre-remediation
+capture control flow also resolved the receipt repository after the image
+acquisition await, so an A-to-B switch could continue against B. The added
+Completer-controlled tests pin that boundary and the local-image-store await.
+
+GREEN (after remediation)
+Command:
+  flutter test test/features/receipts/receipt_owner_scope_isolation_test.dart --reporter expanded
+
+Result:
+  +5: All tests passed.
+
+Covered assertions:
+  - legacy global consent is ignored;
+  - A=true leaves B=false;
+  - the persisted consent key contains only the opaque 64-hex owner scope;
+  - A-to-B during image acquisition performs zero repository/provider work;
+  - A-to-B during local image storage prevents all later repository/provider work;
+  - prepared bytes are overwritten and prepared state is dropped on cancellation;
+  - a prepared local reference is deleted on cancellation;
+  - a stale A consent decision sends zero provider bytes for B;
+  - the analysis use case rechecks the owner guard after its repository await,
+    before any provider upload.
+
+Focused receipt suite:
+  flutter test test/features/receipts --reporter expanded
+  +39: All tests passed.
+
+Static analysis:
+  dart analyze lib/features/receipts
+  No issues found.
+
+  dart analyze test/features/receipts/receipt_owner_scope_isolation_test.dart
+  No issues found.
+
+  flutter analyze
+  No issues found.

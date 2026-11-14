@@ -1,0 +1,10 @@
+Date: 2026-08-13
+Platform: Android emulator-5554 API 37
+Live Firebase AI acceptance: PASS
+Network failure and Retry recovery: PASS
+Composite AI history/new-conversation/navigation: PASS
+Executed integration files: 3
+Not executed integration files in current inventory: 8
+Gate B decision: NO because the full integration_test inventory was not executed.
+Evidence: firebase-ai-live.txt; firebase-ai-failure-recovery.txt; android-integration-composite.txt
+No prompt, response, UID, token, owner scope, or financial data is stored in this evidence.

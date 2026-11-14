@@ -1,0 +1,22 @@
+CashPilot AI Groq stable HTTP security matrix - sanitized evidence
+Date: 2026-08-14 (Africa/Tripoli)
+
+Result: PASS, 24/24 probes rerun on the stable URL while
+cashpilot-ai-gateway-staging-00005-civ served 100% of traffic.
+
+- Four protected routes rejected missing/invalid Firebase Auth with
+  gatewayAuthenticationRequired.
+- Native POST without Origin reached application authentication (not rejected by CORS).
+- The exact allowed Web origin was echoed.
+- Disallowed and wildcard origins were rejected with HTTP 403/gatewayRequestInvalid.
+- Allowed/no-Origin preflight returned 204; disallowed preflight returned 403.
+- Unsupported GET and PUT returned 405.
+- Non-JSON returned 415; malformed JSON 400; oversized JSON 413/requestTooLarge;
+  unknown route 404.
+- Every observed error response used Cache-Control: no-store.
+
+The Android live suite separately proved that a valid Firebase ID token paired with
+missing or invalid App Check is rejected as HTTP 401/gatewayAppCheckRequired, while a
+valid Android Debug App Check token is accepted.
+
+No credential, token, raw UID, prompt, or response is included in this evidence.

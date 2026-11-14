@@ -1,0 +1,7 @@
+Command:
+  .\\node_modules\\.bin\\tsx.cmd --test tests/response_parser.test.ts
+
+Result: FAILED (expected RED after exact boundary introduced typed counts)
+Tests: 23 passed, 1 leaf test failed, 0 skipped (Node also reports the containing suite as failed).
+Failure: a schema-valid integer count was ignored by the grounding collector, so provider text containing the exact count was incorrectly unsupported.
+Secrets/private data: none.

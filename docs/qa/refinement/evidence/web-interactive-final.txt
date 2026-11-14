@@ -1,0 +1,14 @@
+Web interactive final evidence
+Date: 2026-08-13
+Build: flutter build web --no-pub PASS
+Wasm dry run: PASS
+Static server: local loopback only; stopped after inspection
+Interactive tool: in-app Browser
+Expanded viewport onboarding: rendered; no console warnings/errors
+Next action: advanced onboarding
+Skip action: navigated to welcome route
+Welcome route: rendered
+320x640 viewport: no visible clipping in inspected onboarding/welcome state
+Browser Back: remained in a safe welcome state
+Remote Web Auth/App Check/AI: not tested; external configuration remains required
+No prompt, response, token, UID, owner scope, or financial datum is recorded here.

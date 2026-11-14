@@ -1,0 +1,3 @@
+Status: PASS (automated synthetic coverage)
+Evidence: final full Flutter suite 1204/1204 includes current migration tests under test/core/database and test/core/sync.
+Physical historical upgrade: BLOCKED; no prior supported signed artifact/retained physical-device fixture.

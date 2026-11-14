@@ -1,0 +1,10 @@
+OF-033 RED evidence - legacy negative-balance repair
+Date: 2026-08-10
+Command: flutter test test/features/finance_engine/finance_engine_test.dart test/features/accounts/accounts_financial_integrity_test.dart --name "OF-033|positive credit can repair" --reporter expanded
+Result: 9 passed, 2 failed.
+
+Before remediation, FinanceValidationService rejected a positive credit when
+the existing account balance was already below its minimum. The real Drift and
+transaction-repository integration likewise returned insufficient_balance and
+left the legacy negative account unrecoverable. New negative openings were
+already rejected for all nine account types.

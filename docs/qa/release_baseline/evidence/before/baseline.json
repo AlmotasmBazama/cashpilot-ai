@@ -1,0 +1,21 @@
+{
+  "repositoryRoot": "C:\\Users\\pixel\\cashpilot_ai",
+  "branch": "codex/production-transformation",
+  "head": "fd24526f3f21ba0e96ca73dcc4a69f5a11aed632",
+  "capturedAt": "2026-08-22T00:02:00.8468549+02:00",
+  "trackedModified": 255,
+  "deleted": 1,
+  "renamed": 0,
+  "staged": 0,
+  "untracked": 994,
+  "includedFiles": 1614,
+  "quarantinedFiles": 60,
+  "excludedRegenerableFiles": 83,
+  "secretLocalPathsExcluded": [
+    ".secrets/",
+    ".dart-define.appcheck.json",
+    ".dart-define.groq-staging.local.json",
+    "android/local.properties"
+  ],
+  "gitHistoryBundle": "_baseline/repository-history.bundle"
+}

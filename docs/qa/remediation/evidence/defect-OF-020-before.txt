@@ -1,0 +1,5 @@
+Defect: OF-020 negative residual receipt split (RED)
+Command: flutter test --no-pub -r expanded test/features/receipts/receipt_processing_test.dart
+The 0.02/four-equal-category regression produced 0.01, 0.01, 0.01, -0.01.
+The currency-scale precision and negative entity-invariant regressions also failed.
+Combined RED run: 23 passed, 4 tests failed, 0 skipped.

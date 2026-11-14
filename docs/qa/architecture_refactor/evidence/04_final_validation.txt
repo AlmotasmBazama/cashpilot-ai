@@ -1,0 +1,67 @@
+CashPilot AI architecture-refactor final validation evidence
+Captured: 2026-08-17 (Africa/Tripoli)
+Sanitization: command/result summaries only; no tokens, prompts, provider responses, receipts, financial records, authorization headers, UIDs, owner scopes, or signing data.
+
+Repository identity
+- branch: master
+- HEAD: fd24526f3f21ba0e96ca73dcc4a69f5a11aed632
+- staged paths: 0
+- forbidden Git mutation/commit/push operations: not run
+
+Flutter/Dart
+- flutter analyze --no-pub: PASS, zero issues
+- dart fix --dry-run: Nothing to fix
+- flutter test --no-pub -r expanded: PASS 1623, FAIL 0
+- test/architecture: PASS 20, FAIL 0
+- flutter build apk --debug --no-pub: PASS, 101455 ms
+- flutter build web --no-pub: PASS, 161508 ms; Wasm dry run PASS
+- Web emitted a Cupertino font tree-shaker warning after removal of the unused dependency; repository search found no Cupertino source/lock/package-config reference and both builds passed.
+
+Gateway
+- npm.cmd test: PASS 133, FAIL 0
+- npm.cmd run lint: PASS
+- npm.cmd run typecheck: PASS
+- npm.cmd run build: PASS
+- npm.cmd run secret-scan: FAIL at the same two baseline locations:
+  - lib/features/ai_assistant/domain/entities/ai_runtime_status.dart
+  - tool/run_android_groq_staging.test.cjs
+- The scanner was not weakened and no secret value was retained in this evidence.
+
+Tooling
+- npm.cmd run test:tools: PASS 154, FAIL 0
+- No live/device/network/cloud/build-install scenario runner was invoked as a refactor gate.
+
+Firestore emulators
+- Firestore rules: PASS 42, FAIL 0
+- Gateway account deletion emulator: PASS 2, FAIL 0
+- The configured default port collided with a pre-existing user emulator. A temporary isolated config used 8280/9299, was removed afterward, and its exact task-owned Java process was stopped. The pre-existing listener on 8180 was preserved.
+
+Devices/live validation
+- flutter devices: Windows, Chrome, Edge only
+- Android device/emulator: unavailable
+- Android integration/live Groq/receipt/background/force-stop smoke: not run
+
+Behavior contracts
+- characterization matrix: 75 rows, parity yes 75, pending 0, duplicate IDs 0
+- architecture strict Dart debt: 44 -> 0
+- Gateway/tool architecture debt: 20 -> 0
+- feature SCC: 13 features/48 edges -> 9 features/31 edges; downward ratchet PASS
+- Drift schemaVersion: 17
+- app version: 1.0.0+1
+- Android applicationId/namespace: com.example.cashpilot_ai
+- route contract: 29 paths, 29 names, 29 GoRoute, 1 ShellRoute
+- locale contract per ar/en ARB: 945 non-@@locale keys = 929 messages + 16 metadata
+
+Performance
+- dashboard bounded query: 1986 -> 2466 us (+24.2% raw)
+- transaction first page: 2740 -> 3811 us (+39.1% raw)
+- budget bounded query: 1927 -> 2288 us (+18.7% raw)
+- status: investigated_wall_clock_variance, not a raw timing pass
+- query count remained one and mapped rows remained 20/50/20; no Riverpod path in the fixtures
+- normalized bounded/full ratios changed +2.9% dashboard and +4.1% transactions; host full-history timing shifted materially
+- APK build: -6.2%; Web build: -12.1% (diagnostic/cache-sensitive)
+
+Worktree checks
+- git diff --check: exit 0; LF/CRLF conversion warnings only
+- current full porcelain after final reports: 250 tracked differing paths + 786 untracked paths
+- exact task path delta: evidence/05_task_path_delta.txt

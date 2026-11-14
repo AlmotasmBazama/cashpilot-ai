@@ -1,0 +1,24 @@
+Phase 2 late adversarial regression gate
+Date: 2026-08-10
+
+Focused command:
+flutter test test/features/data_deletion/phase2_data_deletion_safety_test.dart test/features/data_deletion/account_deletion_confirmation_lease_tamper_test.dart --reporter compact
+Result: 40 passed, 0 failed, 0 skipped.
+
+Full module command:
+flutter test test/features/data_deletion --reporter compact
+Result: 157 passed, 0 failed, 0 skipped.
+
+The added deterministic regressions use synthetic identities and data only and prove:
+- a genuinely issued production confirmation lease fails closed when its anonymous
+  flag, owner scope, or Auth session generation is altered;
+- each altered lease causes zero cloud, local, Firebase Auth, token, native Auth,
+  support-state, or completion mutation;
+- the nine owner-scoped preference keys produced by real production writers are
+  removed for owner A while owner B remains byte-for-byte unchanged;
+- a SQLite abort after receipt-file journal staging rolls the journal and receipt
+  row back together, preserves the file, and a retry commits the database before
+  draining the file journal.
+
+Expected fail-closed application log entries were redacted and contained no raw UID,
+owner scope, token, financial data, or receipt content.

@@ -1,0 +1,7 @@
+CashPilot AI remediation evidence (sanitized)
+Phase: 1 - owner-scoped AI settings
+Command: flutter test --no-pub -r expanded test/features/ai_assistant/ai_app_control_scope_race_test.dart
+Pre-fix exit code: 1
+Expected deterministic failure: a delayed settings reset captured for synthetic owner A completed after switching and overwrote owner B's current controller state with the conservative A result.
+Expected B level: draftChanges; actual stale level: off.
+Privacy: opaque synthetic scope hashes only; no raw UID, token, secret, or financial data recorded.

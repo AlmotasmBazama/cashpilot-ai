@@ -1,0 +1,7 @@
+Command:
+  flutter test --no-pub -r expanded test/features/ai_assistant/ai_agent_streaming_safety_test.dart
+
+Result: PASSED
+Tests: 1 passed, 0 failed, 0 skipped.
+Coverage: cumulative provider stream is buffered; a split false-mutation claim is never emitted as a partial response and is rejected before the single final response.
+Secrets/private data: none.

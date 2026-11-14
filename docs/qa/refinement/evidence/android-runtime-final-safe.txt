@@ -1,0 +1,23 @@
+Android runtime final safe evidence
+Date: 2026-08-13
+Device: emulator-5554; Android 17; API 37
+Package: com.example.cashpilot_ai
+Version: 1.0.0+1
+minSdk: 24
+targetSdk: 36
+Artifact kind: ordinary debug APK (not integration-test listener)
+Install: adb install -r PASS
+Launcher: com.example.cashpilot_ai/.MainActivity foreground PASS
+APK bytes: 205028039
+APK SHA-256: C71D00D5ADEA236E7527AED481B9B8FCDB038B9C9B12EE1F7A0581C6E2DEB8DC
+Cold start: Status ok; LaunchState COLD; TotalTime 3120ms; WaitTime 3125ms
+Hot return: Status ok; LaunchState HOT; TotalTime 103ms; WaitTime 105ms
+Firebase general route: preference auto; selected firebase; model gemini-3.6-flash
+Remote Arabic: completed
+Remote English: completed
+Network denial: typed retryable failure shown
+Retry after restore: completed; no duplicate user turn observed
+Launcher reopen: correct package; another remote response completed
+App Check helper: secretRetrieved=true; secretPrinted=false; registration=created; preserved=true; exchange=accepted; tokenPrinted=false
+Current debug registration was not deleted.
+No prompt, response, token, UID, owner scope, or financial datum is recorded here.

@@ -1,0 +1,12 @@
+OF-011 GREEN evidence - guarded receipt confirmation
+Date: 2026-08-10
+Focused command: flutter test test/features/receipts/receipt_confirmation_state_machine_test.dart --reporter expanded
+Focused result: 5 passed, 0 failed, 0 skipped.
+Related command: flutter test test/features/receipts --reporter expanded
+Related result: 64 passed, 0 failed, 0 skipped.
+
+Verified with production owner/reference and financial-integrity guards enabled:
+- Confirmation creates the deterministic transaction before persisting the guarded link.
+- Exactly one transaction and one balance effect survive replay and process restart.
+- Exact existing transactions reconcile; mismatches fail closed.
+- A create race is accepted only after rereading an exact committed transaction.

@@ -1,0 +1,17 @@
+# Architecture tests read Dart source as a byte-stable contract. Keep Dart
+# sources on LF even when a Windows checkout has core.autocrlf enabled.
+*.dart text eol=lf
+
+# Flutter rewrites these generated registrants with LF during dependency
+# setup. A fixed policy prevents a clean checkout from becoming stat-dirty.
+linux/flutter/generated_plugin_registrant.cc text eol=lf
+linux/flutter/generated_plugin_registrant.h text eol=lf
+linux/flutter/generated_plugins.cmake text eol=lf
+macos/Flutter/GeneratedPluginRegistrant.swift text eol=lf
+windows/flutter/generated_plugin_registrant.cc text eol=lf
+windows/flutter/generated_plugin_registrant.h text eol=lf
+windows/flutter/generated_plugins.cmake text eol=lf
+
+# Platform readiness verifies the vendored Drift worker byte-for-byte.
+web/drift_worker.js text eol=lf
+web/sqlite3.wasm binary

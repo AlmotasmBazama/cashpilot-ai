@@ -1,0 +1,7 @@
+Dashboard: 520787us before -> 2349us after; 10020 total / 20 mapped.
+Transaction history: 209797us before -> 1738us after; 10000 / 50 mapped.
+Budget window: 179125us before -> 1100us after; 10020 / 20 mapped.
+Android Debug cold starts observed: 8.1-14.1s; FAIL versus 5s release target.
+20-navigation loop: NOT EXECUTED.
+30-minute profile soak: NOT EXECUTED.
+Physical-device profile: BLOCKED.

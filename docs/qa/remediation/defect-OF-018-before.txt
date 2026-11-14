@@ -1,0 +1,12 @@
+OF-018 RED evidence - receipt image deletion ordering
+Date: 2026-08-10
+Command: flutter test test/features/receipts/receipt_aggregate_persistence_test.dart --reporter expanded
+Result: FAILED
+
+Observed failure before remediation:
+- An injected image deletion failure returned AppFailure only after the receipt,
+  line-item, and split rows had already been deleted.
+- Reload returned null, so the surviving local file no longer had a durable,
+  retryable database reference.
+
+Combined suite result: 1 passed, 6 failed.

@@ -1,0 +1,16 @@
+Phase 9 backup/privacy local gate
+Date: 2026-08-10
+Command: flutter test test/core/sync/backup_privacy_regression_test.dart test/core/sync/sync_test.dart --reporter expanded
+Result: 38 passed, 0 failed, 0 skipped.
+
+Verified locally:
+- Mature owner-scoped snapshot includes two documents per supported type,
+  nested goal contributions, exact-once identities, settings/base currency,
+  and excludes another owner.
+- Missed upserts and deletes reconcile from authoritative local state.
+- Hook failure remains observable and later reconciliation repairs it.
+- Disabled-at-entry and in-flight consent revocation permit no later writes.
+- Queue ownership/payloads/errors are opaque, minimized, and bounded.
+- Successful hard deletes purge their local queue records.
+
+Firestore emulator/deployed-network verification remains a separate live gate.

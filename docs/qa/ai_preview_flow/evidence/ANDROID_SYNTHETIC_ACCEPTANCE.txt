@@ -1,0 +1,29 @@
+ANDROID SYNTHETIC FINANCIAL ACCEPTANCE
+======================================
+
+Target: emulator-5554, Android 17 (API 37), android-x64
+Command:
+flutter test --no-pub -r expanded -d emulator-5554 integration_test/ai_financial_preview_synthetic_android_test.dart
+
+Isolation:
+- Dedicated SQLite file under the test application's temporary directory.
+- Synthetic owner, account, category, command IDs, and amounts only.
+- No Firebase Auth, Firestore, App Check, Groq, or Cloud Run mutation.
+- The SQLite fixture is deleted at teardown.
+
+Result:
+cancel_balance=100.000
+balance_before_confirm=100.000
+balance_after_confirm=95.000
+transaction_count=1
+confirm_invocations_after_two_rapid_taps=1
+database_reopened=true
+restart_transaction_count=1
+restart_balance=95.000
+restart_replay=blocked
+test_result=PASS
+
+The successful write ran through CreateTransaction, the production
+TransactionsRepository implementation, Drift transaction storage, and the
+Finance Engine balance processor. The expected duplicate replay emitted a
+redacted SQLite-domain failure and did not change durable state.

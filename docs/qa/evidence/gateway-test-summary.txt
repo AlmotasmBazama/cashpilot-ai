@@ -1,0 +1,58 @@
+CashPilot AI gateway/security evidence (sanitized)
+Working directory: <REPOSITORY_ROOT>\services\cashpilot_ai_gateway
+Local runtime: Node v26.1.0; npm.cmd 11.13.0. Production Dockerfile targets Node 20.
+
+Command: npm.cmd test
+Exit code: 0
+Result: PASSED — 32 passed, 0 failed, 0 skipped; duration 18454.8938 ms.
+
+Command: npm.cmd run lint
+Exit code: 0
+Result: PASSED.
+
+Command: npm.cmd run typecheck
+Exit code: 0
+Result: PASSED.
+
+Command: npm.cmd run build
+Exit code: 0
+Result: PASSED. The build refreshed timestamps in already-untracked dist output only; aggregate SHA-256 was unchanged:
+92F5488A14E4DC2D7963982D0597D413E670EF7BD9E993F1017CD57E3FF6E3DC
+
+Command: npm.cmd run secret-scan
+Exit code: 0
+Result: PASSED. No secret values are stored in this evidence.
+
+Command: npm.cmd audit --omit=dev --json
+Exit code: 1
+Result: 5 high affected production package entries, 0 critical. The entries trace to a brace-expansion denial-of-service advisory through brace-expansion/glob/google-gax/minimatch/rimraf. package.json pins 5.0.8 and a 5.0.9 fix is available. Runtime reachability was not demonstrated.
+
+Synthetic security probes (no private or production data)
+- Unsupported Arabic-Indic monetary value: accepted=true; unsupportedCount=0.
+- Unsafe integer collision around 2^53: accepted=true; unsupportedCount=0.
+- Scientific notation assembled from supported digits: accepted=true; unsupportedCount=0.
+- Passive English false mutation claim: accepted=true.
+- Arabic nominal false mutation claim: accepted=true.
+- General chat false claim: HTTP 200; claimForwarded=true; completed=true.
+- Synthetic arbitrary financial context: HTTP 200; providerCalls=1; transaction-like fields forwarded=true.
+- Combined SSE frame around 1.2 MB: accepted.
+- Stream output around 1.2 million characters with requested maxTokens=1: accepted.
+- Client disconnect: upstreamSignalAbortedAfter120ms=false.
+- Mid-stream AbortError: classified as malformedSse.
+- Ungrouped seven-digit monetary value: rejected as phone-like; grouped equivalent accepted.
+- Misspelled environment, staging HTTP origin, production null origin, and production HTTP provider URL: accepted by configuration parser.
+- Malformed JSON: HTTP 503/providerUnavailable; providerCalls=0.
+
+Controls demonstrated by tests/source review
+- Auth required before protected route/provider use; strict request schemas and unknown-field rejection.
+- Exact-origin CORS controls; method/content-type/body bounds; no-store/private cache headers.
+- Fixed model selection; tool allowlist and strict argument validation.
+- Diagnostics default off and Auth/App Check protected when enabled.
+- No arbitrary proxy/database/filesystem/mutation route; no Firebase tokens forwarded upstream.
+
+Not live-validated
+- Firebase Admin signature, revoked-token, audience, and App Check enforcement.
+- Staging ingress/CORS and multi-instance rate limiting.
+- Groq model availability and production Node 20 container behavior.
+
+No API keys, tokens, authorization headers, real prompts, or real financial payloads were recorded.

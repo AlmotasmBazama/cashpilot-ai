@@ -1,0 +1,36 @@
+CashPilot AI integration/device evidence (sanitized)
+Working directory: <REPOSITORY_ROOT>
+
+Synthetic AI navigation test on Chrome
+Command: flutter test --no-pub -r expanded integration_test/ai_navigation_device_regression_test.dart -d chrome
+Exit code: 1
+Result: BLOCKED BY TOOL/PLATFORM before any test ran.
+Output: Web devices are not supported for integration tests yet.
+
+Android emulator attempt
+Command: flutter emulators --launch Pixel_6
+Exit code: 0
+Result: launch process started.
+
+Command: flutter devices --device-timeout 60
+Exit code: 0
+Result: only Windows, Chrome, and Edge were detected; no Android target.
+
+Command: Android SDK adb polling for up to 50 seconds (`adb devices -l`, no data mutation)
+Exit code: 2
+Result: no emulator/device registered with adb. The synthetic device integration test could not start.
+
+Local web UI smoke attempt
+Command: flutter run -d web-server --web-hostname=127.0.0.1 --web-port=8765 --no-pub --release (started as a bounded local background process)
+Result: local server returned HTTP 200 with the built Flutter shell.
+Browser result: BLOCKED — the in-app browser runtime reported no available browser backend, so no UI clicks/visual assertions were executed. The server and the non-connecting Pixel_6 emulator processes started by the audit were then stopped by exact PID; port 8765 was released.
+
+Live integration tests — BLOCKED / NOT EXECUTED:
+- integration_test/firebase_auth_smoke_test.dart directly creates and deletes a live Firebase user/profile. It was not run because the repository points at a non-emulator project and the audit forbids production-data mutation; no isolated staging Auth/Firestore target was established.
+- integration_test/app_check_diagnostics_test.dart requires a registered App Check debug token; presence check reported absent. No token was printed.
+- Firebase AI/Groq live smoke tests require live provider selection, registered App Check, staging isolation, and/or gateway configuration that was not safely available. They were not marked passing.
+- integration_test/ai_navigation_live_regression_test.dart performs live Firebase/gateway initialization and was not run without the required staging guarantees.
+- iOS runtime tests are blocked on Windows.
+
+Future acceptance requirement:
+Run every live smoke test against an explicitly isolated staging Firebase project with valid staging App Check, synthetic accounts/data, server-side Groq configuration, and cleanup verification; run synthetic navigation on a connected Android target and iOS in a valid macOS environment.

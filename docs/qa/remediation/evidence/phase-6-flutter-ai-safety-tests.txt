@@ -1,0 +1,7 @@
+Command:
+  flutter test --no-pub -r expanded test/features/ai_assistant/ai_response_grounding_test.dart test/features/ai_assistant/ai_provider_response_safety_test.dart test/features/ai_assistant/ai_agent_streaming_safety_test.dart test/features/ai_assistant/ai_agent_test.dart test/features/ai_assistant/groq_ai_agent_model_gateway_test.dart
+
+Result: PASSED
+Tests: 43 passed, 0 failed, 0 skipped.
+Coverage: exact Decimal grounding (including Arabic/Persian and >2^53), dimensional/provenance/currency/period/category checks, provider false-mutation claims, pre-display streaming buffering, deterministic fallback, model-tool authority, and exact bounded Flutter financial-context schemas.
+Secrets/private data: none; all fixtures are synthetic.

@@ -1,0 +1,36 @@
+CASH PILOT AI refinement final validation
+Date: 2026-08-13
+
+flutter analyze --no-pub
+Result: PASS; 0 issues; exit 0; final post-integration run ~69.0s
+
+flutter test --no-pub -r compact --concurrency=1
+Result: PASS; 1203 passed; 0 failed; exit 0; wall ~3m26s
+
+flutter build apk --debug --no-pub
+Result: PASS
+Artifact: build/app/outputs/flutter-apk/app-debug.apk
+Bytes: 205028039
+SHA-256: C71D00D5ADEA236E7527AED481B9B8FCDB038B9C9B12EE1F7A0581C6E2DEB8DC
+
+flutter build web --no-pub
+Result: PASS; recorded wall 88.9s
+Wasm dry run: PASS
+build/web bytes: 44881719
+
+npm.cmd run test:firestore-rules:emulator
+Result: PASS; Firestore 42/42; account deletion 2/2; total 44/44
+
+Gateway
+Tests: 109/109 PASS
+Lint: PASS
+Typecheck: PASS
+Build: PASS
+Secret scan: PASS
+
+Scoped Dart format check: 20 files; 0 changed
+ARB JSON parse: PASS
+App Check helper Node syntax: PASS
+Report audit: main 37/37 sections; manual 62/62 rows; defects 18x20; performance 8x10; changed paths 55/55; 0 placeholders; 0 trailing whitespace
+
+No prompt, response, token, UID, owner scope, or financial datum is recorded here.

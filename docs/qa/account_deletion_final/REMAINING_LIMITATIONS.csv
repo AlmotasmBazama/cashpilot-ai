@@ -1,0 +1,8 @@
+id,severity,limitation,owner,closure_evidence,account_deletion_effect
+ADL-01,P1,"Production deletion provider is intentionally neither deployed nor configured",Release/Cloud owner,"approved production deployment with explicit endpoint and rollback",NONE_ON_STAGING_GO
+ADL-02,P1,"Application ID is still com.example.cashpilot_ai and release signing/SHA registrations are not final",Android release owner,"final ID signing and Firebase registrations",BLOCKS_ANDROID_RC
+ADL-03,P1,"Play Integrity/App Check release acceptance and physical-device verification remain",Mobile/Firebase owner,"accepted release attestation on physical device",BLOCKS_ANDROID_RC
+ADL-04,P2,"Full Dart format gate still names six unrelated pre-existing dirty files",Worktree owner,"owner-approved formatting yields exit 0",NONE_ON_DELETION
+ADL-05,P2,"Hive append-only bytes retain historical scope matches and one logical terminal tombstone",Data safety owner,"design decision; tombstone intentionally retained",DOCUMENTED_SAFE
+ADL-06,P3,"Web build emits a non-fatal Cupertino icon font warning",Web owner,"include/remove referenced font as appropriate",NONE_ON_DELETION
+

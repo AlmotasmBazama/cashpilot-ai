@@ -1,0 +1,30 @@
+CashPilot AI remediation evidence (sanitized)
+Defect: OF-005
+Phase: P0 - transfer-group idempotency and financial integrity
+Date: 2026-08-10 (Africa/Tripoli)
+
+Initial test-first RED command:
+flutter test test/features/transactions/transfer_group_idempotency_test.dart
+
+Pre-fix exit code: 1
+Result: 0 passed, 7 failed, 0 skipped.
+The exact initial wall-clock timestamp was not captured; this run completed before production remediation began.
+
+Expected failure categories:
+- An exact posted retry created or attempted a second financial effect instead of returning the persisted pair.
+- A rebuilt pending retry was not durably idempotent.
+- Concurrent exact retries were not serialized to one logical transfer.
+- Conflicting transfer-group reuse was not rejected with a stable conflict result.
+- One-leg and extra/duplicate-role groups were not rejected as malformed.
+- Raw database insert/update paths could bypass pair integrity.
+
+Final legacy-term tightening RED commands:
+flutter test test/features/transactions/transfer_group_idempotency_test.dart test/features/transactions/transfer_group_adversarial_test.dart --plain-name contradiction
+Result: 0 passed, 3 failed, 0 skipped.
+
+flutter test test/features/transactions/transfer_group_idempotency_test.dart --plain-name "repository rejects null-fingerprint"
+Result: 0 passed, 1 failed, 0 skipped.
+
+The tightening failures proved that a migrated v16 pair with contradictory amount/rate terms escaped the live audit, legacy claim accepted same- and cross-currency contradictions, and the repository could post a contradictory fingerprint-NULL pair.
+
+Privacy: fixtures use synthetic owners and synthetic balances only. No raw UID, token, secret, private document, or production financial data is recorded.

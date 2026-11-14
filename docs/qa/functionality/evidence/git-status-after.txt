@@ -1,0 +1,352 @@
+CashPilot AI post-sprint worktree snapshot
+Date: 2026-08-11
+Warning: the worktree was already broadly dirty before this sprint. Compare this
+snapshot with git-status-before.txt; do not attribute every line below to this sprint.
+
+Branch: master
+HEAD: fd24526f3f21ba0e96ca73dcc4a69f5a11aed632
+Status entries: 343
+
+ M .gitignore
+ M CHANGELOG.md
+ M README.md
+ M android/app/build.gradle.kts
+ M android/app/src/main/AndroidManifest.xml
+ M docs/ai_activation.md
+ M docs/manual_qa_checklist.md
+ M firebase.json
+ M firestore.rules
+ M integration_test/app_check_diagnostics_test.dart
+ M integration_test/firebase_ai_chat_smoke_test.dart
+ M integration_test/firebase_ai_receipt_smoke_test.dart
+ M integration_test/firebase_ai_smoke_test.dart
+ M integration_test/firebase_auth_smoke_test.dart
+ M ios/Runner.xcodeproj/project.pbxproj
+ M lib/app/app.dart
+ M lib/app/bootstrap.dart
+ M lib/app/router/app_router.dart
+ M lib/core/database/app_database.dart
+ M lib/core/database/app_database.g.dart
+ M lib/core/firebase/firebase_initializer.dart
+ M lib/core/firebase/firebase_providers.dart
+ M lib/core/storage/settings_keys.dart
+ M lib/core/storage/settings_local_data_source.dart
+ M lib/core/sync/application/sync_manager.dart
+ M lib/core/sync/application/sync_mutation_queue.dart
+ M lib/core/sync/application/sync_providers.dart
+ M lib/core/sync/data/firestore_sync_data_source.dart
+ M lib/core/sync/data/sync_preferences_local_data_source.dart
+ M lib/core/sync/data/sync_queue_repository.dart
+ M lib/core/sync/data/tables/sync_queue_table.dart
+ M lib/core/sync/domain/sync_queue_item.dart
+ M lib/features/accounts/accounts.dart
+ M lib/features/accounts/application/providers/accounts_providers.dart
+ M lib/features/accounts/data/datasources/local/accounts_local_data_source.dart
+ M lib/features/accounts/data/datasources/local/tables/accounts_table.dart
+ M lib/features/accounts/data/repositories/accounts_repository_impl.dart
+ M lib/features/accounts/presentation/widgets/account_form_fields.dart
+ M lib/features/accounts/presentation/widgets/add_account_bottom_sheet.dart
+ M lib/features/accounts/presentation/widgets/edit_account_bottom_sheet.dart
+ M lib/features/ai_assistant/application/providers/ai_assistant_providers.dart
+ M lib/features/ai_assistant/application/services/ai_action_executor.dart
+ M lib/features/ai_assistant/application/services/ai_connection_diagnostic.dart
+ M lib/features/ai_assistant/data/config/ai_runtime_config.dart
+ M lib/features/ai_assistant/data/config/firebase_ai_config.dart
+ M lib/features/ai_assistant/domain/entities/ai_capability.dart
+ M lib/features/ai_assistant/domain/entities/ai_transaction_draft.dart
+ M lib/features/ai_assistant/domain/services/ai_action_draft_factory.dart
+ M lib/features/ai_assistant/domain/services/ai_action_validator.dart
+ M lib/features/ai_assistant/domain/services/ai_intent_router.dart
+ M lib/features/ai_assistant/domain/services/financial_command_parser.dart
+ M lib/features/ai_assistant/domain/usecases/create_ai_action_draft.dart
+ M lib/features/ai_assistant/presentation/pages/ai_assistant_screen.dart
+ M lib/features/ai_assistant/presentation/widgets/ai_action_confirmation_card.dart
+ M lib/features/auth/application/providers/auth_providers.dart
+ M lib/features/auth/data/datasources/firebase_auth_data_source.dart
+ M lib/features/auth/data/dtos/auth_user_dto.dart
+ M lib/features/auth/data/mappers/auth_mapper.dart
+ M lib/features/auth/data/repositories/auth_repository_impl.dart
+ M lib/features/auth/domain/entities/auth_user.dart
+ M lib/features/auth/domain/repositories/auth_repository.dart
+ M lib/features/auth/domain/usecases/complete_profile.dart
+ D lib/features/auth/domain/usecases/delete_auth_account.dart
+ M lib/features/auth/presentation/pages/email_verification_screen.dart
+ M lib/features/auth/presentation/pages/forgot_password_screen.dart
+ M lib/features/auth/presentation/pages/guest_mode_info_screen.dart
+ M lib/features/auth/presentation/pages/login_screen.dart
+ M lib/features/auth/presentation/pages/profile_completion_screen.dart
+ M lib/features/auth/presentation/pages/register_screen.dart
+ M lib/features/budgets/application/providers/budgets_providers.dart
+ M lib/features/budgets/data/datasources/local/budgets_local_data_source.dart
+ M lib/features/budgets/data/datasources/local/tables/budgets_table.dart
+ M lib/features/budgets/presentation/widgets/budget_form_sheet.dart
+ M lib/features/categories/application/providers/categories_providers.dart
+ M lib/features/categories/data/datasources/local/categories_local_data_source.dart
+ M lib/features/categories/data/datasources/local/tables/categories_table.dart
+ M lib/features/categories/data/repositories/categories_repository_impl.dart
+ M lib/features/categories/presentation/pages/categories_screen.dart
+ M lib/features/dashboard/application/dashboard_providers.dart
+ M lib/features/dashboard/presentation/pages/dashboard_screen.dart
+ M lib/features/data_deletion/application/data_deletion_providers.dart
+ M lib/features/data_deletion/data/datasources/account_deletion_auth_data_source.dart
+ M lib/features/data_deletion/data/datasources/cloud_user_data_deletion_data_source.dart
+ M lib/features/data_deletion/data/datasources/deletion_preferences_data_source.dart
+ M lib/features/data_deletion/data/datasources/local_user_data_deletion_data_source.dart
+ M lib/features/data_deletion/data/repositories/data_deletion_repository_impl.dart
+ M lib/features/data_deletion/domain/entities/data_deletion_request.dart
+ M lib/features/data_deletion/domain/failures/data_deletion_failure_codes.dart
+ M lib/features/exchange_rates/application/providers/exchange_rates_providers.dart
+ M lib/features/exchange_rates/data/datasources/local/exchange_rates_local_data_source.dart
+ M lib/features/exchange_rates/data/datasources/local/tables/exchange_rates_table.dart
+ M lib/features/exchange_rates/presentation/widgets/exchange_rates_settings_section.dart
+ M lib/features/finance_engine/domain/exceptions/finance_exception.dart
+ M lib/features/finance_engine/domain/services/finance_validation_service.dart
+ M lib/features/finance_engine/domain/services/transfer_processor.dart
+ M lib/features/goals/application/providers/goals_providers.dart
+ M lib/features/goals/data/datasources/local/goals_local_data_source.dart
+ M lib/features/goals/data/datasources/local/tables/goal_contributions_table.dart
+ M lib/features/goals/data/datasources/local/tables/goals_table.dart
+ M lib/features/goals/presentation/widgets/goal_contribution_sheet.dart
+ M lib/features/goals/presentation/widgets/goal_form_sheet.dart
+ M lib/features/income_sources/domain/enums/income_source_type.dart
+ M lib/features/income_sources/domain/services/income_reporting_policy.dart
+ M lib/features/payees/application/providers/payees_providers.dart
+ M lib/features/payees/data/datasources/local/payees_local_data_source.dart
+ M lib/features/payees/data/datasources/local/tables/payees_table.dart
+ M lib/features/receipts/application/receipt_providers.dart
+ M lib/features/receipts/data/datasources/local/tables/receipt_line_items_table.dart
+ M lib/features/receipts/data/datasources/local/tables/receipts_table.dart
+ M lib/features/receipts/data/datasources/local/tables/transaction_splits_table.dart
+ M lib/features/receipts/data/providers/firebase_receipt_analysis_provider.dart
+ M lib/features/receipts/data/repositories/receipt_repository_impl.dart
+ M lib/features/receipts/data/services/receipt_local_image_store.dart
+ M lib/features/receipts/data/services/receipt_privacy_consent_store.dart
+ M lib/features/receipts/domain/entities/receipt_transaction_draft.dart
+ M lib/features/receipts/domain/entities/transaction_split.dart
+ M lib/features/receipts/domain/failures/receipt_failure_codes.dart
+ M lib/features/receipts/domain/repositories/receipt_analysis_provider.dart
+ M lib/features/receipts/domain/repositories/receipt_repository.dart
+ M lib/features/receipts/domain/services/receipt_split_allocator.dart
+ M lib/features/receipts/domain/usecases/analyze_receipt_image.dart
+ M lib/features/receipts/domain/usecases/build_receipt_transaction_draft.dart
+ M lib/features/receipts/domain/usecases/confirm_receipt_transaction.dart
+ M lib/features/receipts/presentation/pages/receipt_capture_screen.dart
+ M lib/features/receipts/presentation/pages/receipt_review_screen.dart
+ M lib/features/reports/presentation/pages/reports_screen.dart
+ M lib/features/settings/application/base_currency_provider.dart
+ M lib/features/settings/presentation/pages/settings_screen.dart
+ M lib/features/settings/presentation/widgets/ai_diagnostics_settings_section.dart
+ M lib/features/settings/presentation/widgets/backup_sync_settings_section.dart
+ M lib/features/settings/presentation/widgets/delete_all_user_data_dialog.dart
+ M lib/features/transactions/application/providers/transactions_providers.dart
+ M lib/features/transactions/data/adapters/drift_account_balance_repository.dart
+ M lib/features/transactions/data/adapters/drift_finance_transaction_manager.dart
+ M lib/features/transactions/data/datasources/local/tables/transactions_table.dart
+ M lib/features/transactions/data/datasources/local/transactions_local_data_source.dart
+ M lib/features/transactions/data/repositories/transactions_repository_impl.dart
+ M lib/features/transactions/domain/entities/create_transfer_command.dart
+ M lib/features/transactions/domain/entities/created_transfer.dart
+ M lib/features/transactions/domain/failures/transaction_failure_codes.dart
+ M lib/features/transactions/domain/repositories/transactions_repository.dart
+ M lib/features/transactions/domain/usecases/search_transactions.dart
+ M lib/features/transactions/presentation/pages/transactions_screen.dart
+ M lib/features/transactions/presentation/pages/transfer_screen.dart
+ M lib/features/transactions/presentation/widgets/transaction_form_sheet.dart
+ M lib/firebase_options.dart
+ M lib/l10n/app_ar.arb
+ M lib/l10n/app_en.arb
+ M lib/l10n/app_localizations.dart
+ M lib/l10n/app_localizations_ar.dart
+ M lib/l10n/app_localizations_en.dart
+ M linux/flutter/generated_plugin_registrant.cc
+ M linux/flutter/generated_plugins.cmake
+ M macos/Flutter/GeneratedPluginRegistrant.swift
+ M macos/Runner/DebugProfile.entitlements
+ M macos/Runner/Release.entitlements
+ M package.json
+ M pubspec.lock
+ M pubspec.yaml
+ M test/core/database/app_database_migration_test.dart
+ M test/core/sync/sync_test.dart
+ M test/features/ai_assistant/ai_action_test.dart
+ M test/features/ai_assistant/ai_assistant_send_test.dart
+ M test/features/ai_assistant/ai_connection_diagnostic_test.dart
+ M test/features/ai_assistant/ai_module_test.dart
+ M test/features/ai_assistant/ai_runtime_config_test.dart
+ M test/features/ai_assistant/ai_understanding_expansion_test.dart
+ M test/features/ai_assistant/financial_command_parser_test.dart
+ M test/features/budgets/budgets_test.dart
+ M test/features/categories/categories_test.dart
+ M test/features/dashboard/dashboard_exchange_rate_test.dart
+ M test/features/dashboard/dashboard_warning_ui_test.dart
+ M test/features/data_deletion/data_deletion_test.dart
+ M test/features/exchange_rates/exchange_rates_test.dart
+ M test/features/exchange_rates/exchange_rates_ui_test.dart
+ M test/features/finance_engine/finance_engine_test.dart
+ M test/features/goals/goals_test.dart
+ M test/features/payees/payees_test.dart
+ M test/features/receipts/firebase_receipt_analysis_provider_test.dart
+ M test/features/receipts/receipt_persistence_and_image_test.dart
+ M test/features/receipts/receipt_processing_test.dart
+ M test/features/receipts/receipt_ui_test.dart
+ M test/features/settings/ai_diagnostics_settings_section_test.dart
+ M test/features/settings/base_currency_test.dart
+ M test/features/settings/delete_all_user_data_dialog_test.dart
+ M test/features/transactions/transactions_test.dart
+ M test/features/transactions/transactions_ui_test.dart
+ M test/firestore/firestore.rules.test.mjs
+ M test/widget_test.dart
+ M windows/flutter/generated_plugin_registrant.cc
+ M windows/flutter/generated_plugins.cmake
+?? cashpilot_ai_gateway.zip
+?? cashpilot_ai_gateway_repaired.zip
+?? docs/ai_agent_manual_qa_checklist.md
+?? docs/ai_agent_privacy.md
+?? docs/ai_app_capability_inventory.md
+?? docs/ai_conversation_memory.md
+?? docs/ai_financial_agent_architecture.md
+?? docs/ai_financial_guidance_policy.md
+?? docs/ai_financial_staging_activation.md
+?? docs/ai_model_routing.md
+?? docs/ai_tool_permission_policy.md
+?? docs/ai_tool_registry.md
+?? docs/groq_gateway_architecture.md
+?? docs/groq_gateway_deployment.md
+?? docs/groq_gateway_security.md
+?? docs/groq_live_acceptance.md
+?? docs/groq_model_evaluation.md
+?? docs/groq_privacy_data_flow.md
+?? docs/groq_rollout_and_rollback.md
+?? docs/local_owner_scope_architecture.md
+?? docs/qa/
+?? firebase.test.json
+?? integration_test/ai_navigation_device_regression_test.dart
+?? integration_test/ai_navigation_live_regression_test.dart
+?? integration_test/firebase_ai_agent_smoke_test.dart
+?? integration_test/firebase_ai_general_assistant_smoke_test.dart
+?? ios/Runner/Runner.entitlements
+?? ios/Runner/RunnerDebug.entitlements
+?? ios/Runner/RunnerProfile.entitlements
+?? lib/app/router/navigation_transition_diagnostics.dart
+?? lib/app/startup_initializer.dart
+?? lib/core/firebase/firebase_app_check_activation.dart
+?? lib/core/owner_scope/
+?? lib/core/storage/owner_scoped_storage_keys.dart
+?? lib/core/sync/application/backup_consent_lifecycle.dart
+?? lib/core/sync/application/backup_operation_fence.dart
+?? lib/core/sync/application/owner_deletion_quarantine_store.dart
+?? lib/core/sync/data/legacy_sync_queue_migration.dart
+?? lib/features/accounts/domain/failures/
+?? lib/features/accounts/domain/repositories/opening_balance_ledger.dart
+?? lib/features/ai_assistant/application/agent/
+?? lib/features/ai_assistant/application/app_agent/
+?? lib/features/ai_assistant/application/providers/ai_agent_providers.dart
+?? lib/features/ai_assistant/application/providers/ai_agent_scope_providers.dart
+?? lib/features/ai_assistant/application/providers/ai_app_control_providers.dart
+?? lib/features/ai_assistant/application/providers/ai_durable_action_providers.dart
+?? lib/features/ai_assistant/data/agent/
+?? lib/features/ai_assistant/data/app_agent/
+?? lib/features/ai_assistant/data/config/ai_agent_feature_flags.dart
+?? lib/features/ai_assistant/data/config/ai_app_control_feature_flags.dart
+?? lib/features/ai_assistant/data/config/ai_gateway_feature_flags.dart
+?? lib/features/ai_assistant/data/gateway/
+?? lib/features/ai_assistant/domain/agent/
+?? lib/features/ai_assistant/domain/app_agent/
+?? lib/features/ai_assistant/domain/gateway/
+?? lib/features/ai_assistant/presentation/widgets/google_search_entry_point.dart
+?? lib/features/ai_assistant/presentation/widgets/google_search_entry_point_io.dart
+?? lib/features/ai_assistant/presentation/widgets/google_search_entry_point_web.dart
+?? lib/features/auth/data/services/
+?? lib/features/dashboard/data/
+?? lib/features/data_deletion/application/account_deletion_authenticated_continuation.dart
+?? lib/features/data_deletion/application/account_deletion_execution_coordinator.dart
+?? lib/features/data_deletion/application/account_deletion_startup_recovery_coordinator.dart
+?? lib/features/data_deletion/data/datasources/account_auth_deletion_data_source.dart
+?? lib/features/data_deletion/data/datasources/account_deletion_scope_recovery_finalizer.dart
+?? lib/features/data_deletion/data/datasources/account_deletion_session_proof_store.dart
+?? lib/features/data_deletion/data/datasources/account_deletion_startup_recovery_gateway.dart
+?? lib/features/data_deletion/data/datasources/data_deletion_operation_state_store.dart
+?? lib/features/data_deletion/data/datasources/receipt_file_deletion_journal.dart
+?? lib/features/data_deletion/domain/entities/data_deletion_operation_context.dart
+?? lib/features/data_deletion/presentation/
+?? lib/features/receipts/domain/services/receipt_transaction_identity.dart
+?? lib/features/settings/presentation/widgets/ai_app_control_settings_section.dart
+?? lib/features/settings/presentation/widgets/legacy_data_claim_section.dart
+?? lib/features/transactions/data/adapters/transactions_opening_balance_ledger.dart
+?? lib/shared/domain/currency/localized_decimal_parser.dart
+?? services/
+?? test/app/account_deletion_startup_gate_test.dart
+?? test/app/router/
+?? test/app/startup_initializer_test.dart
+?? test/core/firebase/
+?? test/core/owner_scope/
+?? test/core/sync/backup_privacy_regression_test.dart
+?? test/core/sync/owner_deletion_quarantine_store_test.dart
+?? test/core/sync/sync_controller_epoch_test.dart
+?? test/features/accounts/accounts_financial_integrity_test.dart
+?? test/features/ai_assistant/ai_agent_memory_late_write_test.dart
+?? test/features/ai_assistant/ai_agent_memory_scope_test.dart
+?? test/features/ai_assistant/ai_agent_provider_composition_test.dart
+?? test/features/ai_assistant/ai_agent_scope_generation_test.dart
+?? test/features/ai_assistant/ai_agent_streaming_safety_test.dart
+?? test/features/ai_assistant/ai_agent_test.dart
+?? test/features/ai_assistant/ai_agent_ui_test.dart
+?? test/features/ai_assistant/ai_app_control_feature_flags_test.dart
+?? test/features/ai_assistant/ai_app_control_scope_race_test.dart
+?? test/features/ai_assistant/ai_availability_test.dart
+?? test/features/ai_assistant/ai_conversation_controller_owner_race_test.dart
+?? test/features/ai_assistant/ai_deletion_operation_fence_test.dart
+?? test/features/ai_assistant/ai_gateway_feature_flags_test.dart
+?? test/features/ai_assistant/ai_navigation_regression_test.dart
+?? test/features/ai_assistant/ai_owner_scope_epoch_test.dart
+?? test/features/ai_assistant/ai_provider_egress_owner_race_test.dart
+?? test/features/ai_assistant/ai_provider_response_safety_test.dart
+?? test/features/ai_assistant/ai_response_grounding_test.dart
+?? test/features/ai_assistant/app_agent_command_runtime_test.dart
+?? test/features/ai_assistant/app_agent_missing_correlation_recovery_test.dart
+?? test/features/ai_assistant/app_agent_reconciliation_test.dart
+?? test/features/ai_assistant/assistant_navigation_policy_test.dart
+?? test/features/ai_assistant/assistant_routing_regression_test.dart
+?? test/features/ai_assistant/category_spending_schema_parity_test.dart
+?? test/features/ai_assistant/durable_app_agent_store_test.dart
+?? test/features/ai_assistant/firebase_ai_agent_model_gateway_test.dart
+?? test/features/ai_assistant/firebase_gateway_token_provider_test.dart
+?? test/features/ai_assistant/groq_ai_agent_model_gateway_test.dart
+?? test/features/ai_assistant/groq_gateway_client_test.dart
+?? test/features/ai_assistant/phase1_owner_transition_regression_test.dart
+?? test/features/ai_assistant/routed_ai_agent_model_gateway_test.dart
+?? test/features/auth/auth_controller_transition_test.dart
+?? test/features/auth/firebase_auth_operation_coordinator_test.dart
+?? test/features/auth/firebase_oauth_security_race_test.dart
+?? test/features/auth/profile_completion_session_test.dart
+?? test/features/categories/category_delete_integrity_guard_test.dart
+?? test/features/dashboard/dashboard_transactions_read_model_test.dart
+?? test/features/data_deletion/account_deletion_authenticated_continuation_test.dart
+?? test/features/data_deletion/account_deletion_confirmation_lease_tamper_test.dart
+?? test/features/data_deletion/account_deletion_continuation_app_test.dart
+?? test/features/data_deletion/account_deletion_gateway_proof_transport_test.dart
+?? test/features/data_deletion/account_deletion_scope_recovery_finalizer_integration_test.dart
+?? test/features/data_deletion/account_deletion_secure_storage_architecture_test.dart
+?? test/features/data_deletion/account_deletion_session_proof_store_test.dart
+?? test/features/data_deletion/account_deletion_startup_recovery_coordinator_test.dart
+?? test/features/data_deletion/account_deletion_startup_recovery_gateway_test.dart
+?? test/features/data_deletion/data_deletion_architecture_test.dart
+?? test/features/data_deletion/data_deletion_controller_epoch_test.dart
+?? test/features/data_deletion/data_deletion_repository_restart_integration_test.dart
+?? test/features/data_deletion/phase2_data_deletion_safety_test.dart
+?? test/features/receipts/receipt_aggregate_persistence_test.dart
+?? test/features/receipts/receipt_confirmation_state_machine_test.dart
+?? test/features/receipts/receipt_owner_scope_isolation_test.dart
+?? test/features/reports/
+?? test/features/settings/ai_app_control_settings_section_race_test.dart
+?? test/features/transactions/manual_income_classification_test.dart
+?? test/features/transactions/transfer_group_adversarial_test.dart
+?? test/features/transactions/transfer_group_idempotency_test.dart
+?? test/features/transactions/transfer_group_owner_scope_update_guard_test.dart
+?? test/firestore/run_emulator_suites.mjs
+?? test/helpers/
+?? test/platform/
+?? test/shared/domain/
+?? tools/
+?? web/drift_worker.js
+?? web/sqlite3.wasm

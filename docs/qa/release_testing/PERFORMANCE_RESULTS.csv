@@ -1,0 +1,11 @@
+metric_id,area,platform,build_mode,dataset,measurement,status,target,evidence,notes
+PERF-001,Dashboard bounded read,Host VM,Test,"10020 rows; 20 mapped","520787us before; 2349us after; 221.71x",PASS,"Bound mapped rows and materially improve latency",test/features/dashboard/dashboard_transactions_read_model_test.dart,"Synthetic Drift fixture; current source"
+PERF-002,Transaction history page,Host VM,Test,"10000 rows; 50 mapped","209797us before; 1738us after",PASS,"Map one page rather than all history",test/features/transactions/transaction_history_pagination_test.dart,"Synthetic fixture"
+PERF-003,Budget contributing window,Host VM,Test,"10020 rows; 20 mapped","179125us before; 1100us after",PASS,"Map contributing window only",test/features/budgets/budget_transactions_read_model_test.dart,"Synthetic fixture"
+PERF-004,Android cold debug startup,Android emulator,Debug,Installed ordinary APK,"8.1-14.1s observed across repeated instrumented cold starts",FAIL,"<=5s release target",docs/qa/release_testing/evidence/android-debug-build.txt,"Debug emulator includes instrumentation/host variance; still above target"
+PERF-005,Firebase AI first content,Android emulator,Debug,Three remote prompts,"3615-6633ms",PASS,"Actionable remote completion without indefinite loading",docs/qa/release_testing/evidence/firebase-ai-live.txt,"Real Firebase Vertex/global gemini-3.6-flash"
+PERF-006,Firebase AI completion,Android emulator,Debug,Three remote prompts,"4164-6636ms",PASS,"Bounded remote response",docs/qa/release_testing/evidence/firebase-ai-live.txt,"No prompt/response retained"
+PERF-007,Web build,Windows host,Release Web build,"main.dart.js 6803194 bytes","147.787s build",PASS,"Successful deployable artifact",docs/qa/release_testing/evidence/web-build.txt,"Not Web daily-use acceptance"
+PERF-008,20-navigation memory loop,Android emulator,Debug,Synthetic user,NOT EXECUTED,NOT EXECUTED,"No monotonic leak",,Not executed
+PERF-009,30-minute soak,Android emulator,Profile,Synthetic user,NOT EXECUTED,NOT EXECUTED,"No crash/leak/stall",,Profile soak not executed
+PERF-010,Physical-device profile,Physical Android,Profile,Synthetic user,BLOCKED,BLOCKED,"Representative device metrics",,No physical Android device connected

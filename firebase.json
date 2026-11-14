@@ -1,0 +1,41 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "buildConfigurations": {
+          ".": {
+            "projectId": "cashpilot-ai-a6b49",
+            "appId": "1:102802326815:android:6c62d29c46586279841c2a",
+            "fileOutput": "android/app/google-services.json"
+          }
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "cashpilot-ai-a6b49",
+          "configurations": {
+            "android": "1:102802326815:android:6c62d29c46586279841c2a",
+            "web": "1:102802326815:web:9ecc413034a3dd66841c2a"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "emulators": {
+    "auth": {
+      "host": "127.0.0.1",
+      "port": 9099
+    },
+    "firestore": {
+      "host": "127.0.0.1",
+      "port": 8080
+    },
+    "ui": {
+      "enabled": false
+    },
+    "singleProjectMode": true
+  }
+}

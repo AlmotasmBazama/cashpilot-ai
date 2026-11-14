@@ -1,0 +1,13 @@
+Command:
+  npm.cmd test
+
+Result: PASSED
+Tests: 109 passed, 0 failed, 0 skipped.
+Coverage includes Auth/App Check mocks, deletion boundary, general streaming, false-mutation claims, tool-selection clarifications, exact financial schemas, exact lexical numeric grounding, context minimization, CORS, request limits, privacy filtering, and no-store responses.
+Secrets/private data: none; all fixtures are synthetic.
+
+Additional gateway gates:
+  npm.cmd run lint        PASSED
+  npm.cmd run typecheck   PASSED
+  npm.cmd run build       PASSED
+  npm.cmd run secret-scan PASSED

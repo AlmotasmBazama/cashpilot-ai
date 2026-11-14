@@ -1,0 +1,18 @@
+Phase 2 P0 deletion resurrection remediation - RED
+Date: 2026-08-10
+
+Gateway focused test command:
+  npm.cmd test
+
+Observed before implementation:
+  36 tests discovered; 35 passed; 1 failed.
+  The new account-deletion lock contract test failed because the production
+  module did not yet expose an idempotent lock/conflict implementation.
+
+Firestore rules regression added before implementation:
+  Owner/root and every supported backup collection must reject create,
+  update, and delete after an opaque account-deletion lock is present.
+  Lock documents must be inaccessible to clients.
+
+No Firebase UID, credential, token, local path, or financial value is included
+in this evidence.

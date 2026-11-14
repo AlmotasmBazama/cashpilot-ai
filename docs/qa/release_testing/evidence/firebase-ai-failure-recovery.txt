@@ -1,0 +1,21 @@
+Command: node tool/run_android_live_ai_failure_recovery.cjs
+Date: 2026-08-13
+Result: PASS
+Exit code: 0
+Device: emulator-5554
+App Check activation available: true
+Offline control applied: true
+Loading started: true
+Double send blocked: true
+Typed first failure: appCheckUnavailable
+Retryable: true
+Loading ended: true
+Network restored and observed: true
+Retry succeeded: true
+Firebase sessions: 2
+Single user turn retained: true
+New Conversation cleared: true
+App Check registration revoked: false
+App Check registration preserved: true
+Device logs cleared by safe runner: true
+Safety: no token, UID, owner scope, prompt, response, or financial data was printed or stored.

@@ -1,0 +1,27 @@
+SYNTHETIC FINANCE ENGINE / DRIFT ACCEPTANCE
+===========================================
+
+Test:
+test/features/ai_assistant/ai_income_finance_engine_integration_test.dart
+
+Fixture:
+- One owner-scoped Cash account.
+- Opening balance: 100 LYD (Decimal).
+- Expense proposal: 5 LYD, Milk, Groceries, Posted.
+
+Observed assertions:
+- Reject: transaction count 0; balance 100 LYD.
+- Two concurrent Confirm calls: transaction count 1; balance 95 LYD.
+- Recreated executor after simulated restart, same durable draft: duplicate
+  execution rejected; transaction count 1; balance 95 LYD.
+- No pending effect is applied and no exchange rate is invented.
+
+Related durable-runtime coverage:
+- stale preview and wrong owner both execute zero mutations
+  (ai_transaction_mutation_durable_runtime_test.dart).
+- persistence failure exposes Retry, creates no success result, and Retry
+  returns to a new preview requiring another explicit Confirm
+  (ai_assistant_send_test.dart).
+
+This is the exact isolated 100 -> 95 acceptance evidence. It does not touch a
+real authenticated account or cloud backup.

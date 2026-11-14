@@ -1,0 +1,103 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSupportedPrincipal() {
+      return request.auth != null
+        && !request.auth.token.keys().hasAny(['tenant_id'])
+        && (
+          !request.auth.token.keys().hasAny(['firebase'])
+          || !request.auth.token.firebase.keys().hasAny(['tenant'])
+        );
+    }
+
+    function isOwner(userId) {
+      return isSupportedPrincipal() && request.auth.uid == userId;
+    }
+
+    function isBackupOwner(userId) {
+      return isOwner(userId)
+        && request.auth.token.firebase.sign_in_provider != 'anonymous';
+    }
+
+    function hasAccountDeletionLock(userId) {
+      return exists(
+        /databases/$(database)/documents/accountDeletionLocks/$(hashing.sha256(userId).toHexString())
+      );
+    }
+
+    function canWriteUserTree(userId) {
+      return !hasAccountDeletionLock(userId);
+    }
+
+    match /users/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update, delete: if isOwner(userId)
+        && canWriteUserTree(userId);
+
+      match /accounts/{accountId} {
+        allow read: if isBackupOwner(userId);
+        allow create, update, delete: if isBackupOwner(userId)
+          && canWriteUserTree(userId);
+      }
+
+      match /transactions/{transactionId} {
+        allow read: if isBackupOwner(userId);
+        allow create, update, delete: if isBackupOwner(userId)
+          && canWriteUserTree(userId);
+      }
+
+      match /categories/{categoryId} {
+        allow read: if isBackupOwner(userId);
+        allow create, update, delete: if isBackupOwner(userId)
+          && canWriteUserTree(userId);
+      }
+
+      match /payees/{payeeId} {
+        allow read: if isBackupOwner(userId);
+        allow create, update, delete: if isBackupOwner(userId)
+          && canWriteUserTree(userId);
+      }
+
+      match /budgets/{budgetId} {
+        allow read: if isBackupOwner(userId);
+        allow create, update, delete: if isBackupOwner(userId)
+          && canWriteUserTree(userId);
+      }
+
+      match /goals/{goalId} {
+        allow read: if isBackupOwner(userId);
+        allow create, update, delete: if isBackupOwner(userId)
+          && canWriteUserTree(userId);
+      }
+
+      match /exchangeRates/{exchangeRateId} {
+        allow read: if isBackupOwner(userId);
+        allow create, update, delete: if isBackupOwner(userId)
+          && canWriteUserTree(userId);
+      }
+
+      match /settings/{settingsId} {
+        allow read: if isBackupOwner(userId) && settingsId == 'main';
+        allow create, update, delete: if isBackupOwner(userId)
+          && settingsId == 'main' && canWriteUserTree(userId);
+      }
+
+      match /syncMetadata/{deviceId} {
+        allow read: if isBackupOwner(userId);
+        allow create, update, delete: if isBackupOwner(userId)
+          && canWriteUserTree(userId);
+      }
+    }
+
+    // Only the Admin SDK may create or inspect permanent opaque deletion
+    // locks. Admin SDK requests bypass Firestore Security Rules.
+    match /accountDeletionLocks/{lockId} {
+      allow read, write: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

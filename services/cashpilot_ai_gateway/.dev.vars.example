@@ -1,0 +1,8 @@
+# Copy to .dev.vars for local development. Never commit .dev.vars.
+GROQ_API_KEY=replace-with-local-secret
+FIREBASE_PROJECT_ID=replace-with-staging-project-id
+CASH_PILOT_ALLOWED_ORIGINS=http://localhost:5000
+CASH_PILOT_ENVIRONMENT=development
+MODEL_DIAGNOSTICS_ENABLED=false
+CASH_PILOT_AI_GROQ_TOOL_SELECTION_ENABLED=false
+CASH_PILOT_CLIENT_VERSION=1.0.0

@@ -1,0 +1,25 @@
+Phase 5 failing evidence (sanitized synthetic tests)
+Date: 2026-08-10
+
+- Durable confirmation proof was consumed before the durable execution claim;
+  a simulated interruption at beforeExecutionClaim left the command confirmed
+  but its proof consumed.
+- A direct durable claim could be created for a confirmed command without a
+  durable confirmation proof.
+- A matching transaction identity and amount with the wrong persisted status
+  reconciled as verifiedSucceeded instead of inconsistent.
+- A post-commit exception finalized the command as failed instead of leaving it
+  recoverable for state inspection.
+- acknowledgeUiDelivery called before result persistence suppressed the later
+  recoverable result.
+- A simulated interruption after durable-result save produced one result row
+  and zero audit rows, proving a transaction boundary gap.
+- A stale pre-claim command left an authentic proof active; a forged proof could
+  drive the same stale-command failure transition.
+
+Representative RED assertions:
+- expected inconsistent; actual verifiedSucceeded
+- expected consumed; actual active
+- expected one privacy-safe audit event; actual zero
+
+No real account, financial, provider, or production data was used.

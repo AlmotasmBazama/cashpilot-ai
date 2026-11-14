@@ -1,0 +1,6 @@
+Defect: OF-022 referenced category deletion (GREEN)
+Focused tests: 9 passed, 0 failed, 0 skipped.
+Each of six dependencies independently blocks repository and raw-SQL deletion:
+child category, payee default, transaction, budget, receipt line item, and split.
+An unreferenced custom category deletes and emits exactly one tombstone.
+Owner-scoped custom categories cannot be promoted to shared defaults.

@@ -1,0 +1,6 @@
+Defect: OF-020 negative residual receipt split (GREEN)
+The receipt processing suite passed 32/32 with zero failures/skips.
+Largest-remainder allocation operates in integer minor units, uses category-ID tie
+breaking, rejects unrepresentable totals, and guarantees nonnegative exact sums.
+Bounded deterministic matrices cover scales 0/2/3, 1–12 categories, 90 weighted
+samples, exact totals, minor-unit representability, and ≤1-minor-unit deviation.

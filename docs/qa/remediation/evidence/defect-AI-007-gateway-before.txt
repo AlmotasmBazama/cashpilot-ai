@@ -1,0 +1,7 @@
+Command:
+  .\\node_modules\\.bin\\tsx.cmd --test tests/provider_output_safety.test.ts
+
+Result: FAILED (expected RED before implementation)
+Tests: 1 file failed; provider output safety module was absent.
+Failure: ERR_MODULE_NOT_FOUND for src/security/provider_output_safety.js.
+Secrets/private data: none.

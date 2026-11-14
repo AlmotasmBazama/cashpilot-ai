@@ -1,0 +1,11 @@
+Command: flutter test --no-pub -r compact
+Date: 2026-08-11
+Exit code: 1
+Result: 1074 passed, 1 failed.
+Sole failure: test/features/data_deletion/account_deletion_secure_storage_architecture_test.dart
+Test: secure-storage platform requirements are committed
+Expected by stale test: source contains literal `minSdk = 23`.
+Actual Gradle: `minSdk = flutter.minSdkVersion`.
+Effective Flutter 3.41.9 minSdk: 24.
+Focused reproduction: 2 passed, 1 failed; same assertion.
+No test was skipped, suppressed, or deleted.

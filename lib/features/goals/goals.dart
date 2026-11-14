@@ -1,0 +1,9 @@
+export 'application/models/goal_linked_account_option.dart';
+export 'application/providers/goal_linked_account_options_provider.dart';
+export 'application/providers/goals_providers.dart';
+export 'domain/entities/goal.dart';
+export 'domain/entities/goal_contribution.dart';
+export 'domain/entities/goal_progress.dart';
+export 'domain/enums/goal_status.dart';
+export 'domain/enums/goal_type.dart';
+export 'domain/repositories/goal_repository.dart';

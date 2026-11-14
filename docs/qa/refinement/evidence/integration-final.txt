@@ -1,0 +1,18 @@
+Android integration final evidence
+Date: 2026-08-13
+
+Deterministic device navigation integration
+File: integration_test/ai_navigation_device_regression_test.dart
+Device: emulator-5554
+Result: PASS 1/1
+Harness fix: production appRouterProvider read from ProviderScope; no production route bypass
+
+Live routed integration
+File: integration_test/ai_navigation_live_regression_test.dart
+Device: emulator-5554
+Final result: FAIL 0/1
+Typed blocker: OwnerScopeException deletionQuarantined
+Interpretation: synthetic composite fixture did not establish a clean owner/deletion-quarantine state. This failure is not hidden and is not counted as provider success.
+
+Independent installed-app runtime evidence confirms Firebase requests completed, but it does not change the integration result above.
+No prompt, response, token, UID, owner scope value, or financial datum is recorded here.

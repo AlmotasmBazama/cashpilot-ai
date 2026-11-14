@@ -1,0 +1,32 @@
+CashPilot AI focused AI test evidence (sanitized)
+Working directory: <REPOSITORY_ROOT>
+
+All AI assistant tests
+Command: flutter test --no-pub -r expanded test/features/ai_assistant
+Exit code: 0
+Wall time: 29 seconds
+Result: PASSED — 304 passed, 0 failed.
+
+Intent, deterministic parsing, routing, and runtime configuration
+Command: flutter test --no-pub -r expanded test/features/ai_assistant/financial_command_parser_test.dart test/features/ai_assistant/assistant_routing_regression_test.dart test/features/ai_assistant/ai_understanding_expansion_test.dart test/features/ai_assistant/ai_runtime_config_test.dart
+Exit code: 0
+Result: PASSED — 42 passed.
+
+Tool registry, navigation policy, and feature flags
+Command: flutter test --no-pub -r expanded test/features/ai_assistant/ai_agent_test.dart test/features/ai_assistant/assistant_navigation_policy_test.dart test/features/ai_assistant/ai_app_control_feature_flags_test.dart test/features/ai_assistant/ai_gateway_feature_flags_test.dart
+Exit code: 0
+Result: PASSED — 32 passed.
+
+Confirmation, execution, durable store, and reconciliation
+Command: flutter test --no-pub -r expanded test/features/ai_assistant/ai_action_test.dart test/features/ai_assistant/app_agent_command_runtime_test.dart test/features/ai_assistant/app_agent_reconciliation_test.dart test/features/ai_assistant/durable_app_agent_store_test.dart
+Exit code: 0
+Result: PASSED — 76 passed.
+
+Memory scope, provider composition/routing, Groq model gateway, and client
+Command: flutter test --no-pub -r expanded test/features/ai_assistant/ai_agent_memory_scope_test.dart test/features/ai_assistant/ai_agent_provider_composition_test.dart test/features/ai_assistant/routed_ai_agent_model_gateway_test.dart test/features/ai_assistant/groq_ai_agent_model_gateway_test.dart test/features/ai_assistant/groq_gateway_client_test.dart
+Exit code: 0
+Result: PASSED — 32 passed.
+
+Coverage demonstrated by passing assertions includes bounded allowlists; rejection of unknown tools/arguments; no model-callable compatibility draft tools; local blocking of secret/confirmation-bypass requests; conservative feature defaults; owner-scoped memory; explicit confirmation; one-time scope-bound proofs; stale-preview rejection; concurrent double-confirm protection; all supported handler reconciliation crash points; provider route gates; sanitized Groq context; bounded SSE decoding; and safe typed gateway failures.
+
+Limit: passing mocked/unit tests do not establish live staging Firebase, App Check, Groq, two-user device-session, background/restart, or real platform behavior. Those are classified separately.

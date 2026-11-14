@@ -1,0 +1,45 @@
+case_id,area,scenario,expected,result,evidence_or_note
+LIVE-001,Environment,Pixel 6 Android Debug runtime,App launches with Staging flags,PASS,API 37 x86_64 1080x2400
+LIVE-002,Configuration,Update and archive Staging gates,Enabled only in Staging,PASS,canonical Staging configuration
+LIVE-003,Update,Posted expense amount update,Reverse old effect and apply new once,PASS,Cash 870 to 850
+LIVE-004,Idempotency,Rapid duplicate Confirm,One durable execution,PASS,Cash remained 850
+LIVE-005,Undo,Undo posted update,Restore prior snapshot once,PASS,Cash returned 870
+LIVE-006,Undo,Second update Undo,Unavailable and no mutation,PASS,Cash remained 870
+LIVE-007,Delete,Delete posted expense,Reverse effect once,PASS,Cash became 900
+LIVE-008,Undo,Undo posted deletion,Restore one transaction and effect,PASS,Cash returned 870
+LIVE-009,Undo,Second delete Undo,Unavailable and no duplicate,PASS,Cash remained 870
+LIVE-010,Status,Pending expense to posted,Apply effect once,PASS,Cash became 850
+LIVE-011,Undo,Undo pending to posted,Return pending and reverse effect,PASS,Cash returned 870
+LIVE-012,Transfer,Cancel latest active transfer,Cancel linked legs atomically,PASS,Cash 970 and Bank 2500
+LIVE-013,Transfer,Undo cancellation of existing transfer,Fail closed without partial restore,SAFE_PASS,Balances unchanged
+LIVE-014,Transfer,Edit existing transfer leg,Fail closed without mutation,SAFE_PASS,Balances unchanged
+LIVE-015,Ambiguity,Multiple plausible expense targets,Show at most three safe choices,PASS,No internal IDs
+LIVE-016,Ambiguity,Ordinal candidate selection,Preview only selected candidate,PASS,Cancelled with no mutation
+LIVE-017,Conversation,Clarification response rendering,One assistant clarification only,PASS,Duplicate transcript removed
+LIVE-018,Owner isolation,Switch A to B,No A draft preview Undo or candidate visible,PASS,Distinct B fixture
+LIVE-019,Owner isolation,Cross-owner replay,Reject before mutation,PASS,Automated owner-bound coverage
+LIVE-020,Restart,Force-stop and launcher reopen,New process and no replay,PASS,PID change verified without retaining values
+LIVE-021,Restart,Consumed or unsafe Undo after reopen,Remain unavailable,PASS,No financial change
+LIVE-022,Read only,Scoped account-balance question after restart,Grounded balance and no mutation,PASS,970 LYD
+PARSER-001,Parser,Arabic and mixed-language update aliases,Resolve canonical financial intent,PASS,Focused parser suite
+PARSER-002,Parser,Transfer-cancellation wording,Resolve atomic cancellation intent,PASS,Focused parser suite
+PARSER-003,Parser,Specific unsupported transfer Undo,Return safe unsupported result,PASS,Focused parser suite
+RES-001,Resolver,Inactive cancelled transfer candidates,Exclude from active target set,PASS,Draft-service coverage
+RES-002,Resolver,Bounded owner-scoped candidate read,At most 20 candidates,PASS,Automated coverage
+RES-003,Resolver,Ambiguous choices,At most three display-safe candidates,PASS,Live and automated
+UI-001,Preview,Update confirmation card,Show amount account status delta and warning,PASS,Widget and live verification
+UI-002,Preview,Pending-status confirmation card,Show exact new balance effect,PASS,Widget and live verification
+UI-003,Lifecycle,Verified action after submission,Remain visible and stable,PASS,Live verification
+SAFE-001,Architecture,Model mutation authority,No database handle SQL owner ID or arbitrary execution,PASS,Local deterministic bridge
+SAFE-002,Confirmation,Destructive mutation confirmation,Always required,PASS,Live settings and cards
+SAFE-003,Release,Release default behavior,Fail closed without explicit production flags,PASS,Environment-default tests
+VAL-001,Validation,Flutter analyzer,Zero issues,PASS,No issues found
+VAL-002,Validation,Full Flutter test suite,Zero failures,PASS,1687 of 1687
+VAL-003,Build,Android Debug APK,Artifact produced,PASS,app-debug.apk
+VAL-004,Build,Web release bundle,Artifact produced,PASS,build web
+VAL-005,Tooling,Repository tool tests,Zero failures,PASS,160 of 160
+VAL-006,Firestore,Rules emulator suite,Zero failures,PASS,42 of 42
+VAL-007,Account deletion,Emulator test suite,Zero failures,PASS,2 of 2
+CLEAN-001,Cleanup,Acceptance local financial records,Remove only A and B scopes,PASS,Zero target accounts and unrelated fixture preserved
+CLEAN-002,Cleanup,Synthetic Auth and cloud profiles,Remove both users and profiles,PASS,Zero remaining
+CLEAN-003,Cleanup,Temporary sensitive artifacts,Restore keyboard and remove temporary UI files,PASS,No raw prompts retained

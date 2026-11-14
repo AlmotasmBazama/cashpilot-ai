@@ -1,0 +1,31 @@
+Phase 2 deletion/sync validation (sanitized)
+Date: 2026-08-10 Africa/Tripoli
+
+Focused tests
+Command: flutter test --no-pub test/features/data_deletion/data_deletion_test.dart test/core/sync/sync_test.dart -r expanded
+Exit code: 0
+Result: 28 tests passed, 0 failed.
+Covered: trusted Auth identity, forged caller fields removed, A-to-B switch,
+stable operation context, stage replay rejection, concurrent deletion guard,
+writer fence/drain, captured writer cancellation, zero post-fence upload or
+metadata write, Auth-last ordering, and existing deletion/sync regressions.
+
+Targeted analyzer
+Command: dart analyze lib/features/data_deletion
+Exit code: 0
+Result: No issues found.
+
+Command: dart analyze lib/core/sync
+Exit code: 0
+Result: No issues found.
+
+Repository analyzer
+Command: flutter analyze --no-pub
+Exit code: 1
+Result: Two warnings in an unrelated receipt test:
+- test/features/receipts/receipt_owner_scope_isolation_test.dart:6 unused import
+- test/features/receipts/receipt_owner_scope_isolation_test.dart:28 unused import
+No Phase 2 deletion/sync issue was reported.
+
+No token, credential value, private record, raw production UID, or production
+Firebase operation was included or executed.

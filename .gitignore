@@ -1,0 +1,103 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+**/node_modules/
+**/dist/
+
+# Local secrets, dart-define files, and signing material
+.env
+.env.*
+!.env.example
+!.env.*.example
+.dev.vars
+**/.dev.vars
+.secrets/
+**/.secrets/
+.dart-define*
+.dart-define.appcheck.json
+dart-define*.json
+dart_defines*.json
+firebase_app_check_debug_token*
+app_check_debug_token*
+*appcheck*token*
+*debug-token*
+**/key.properties
+**/*.jks
+**/*.keystore
+**/*.p12
+**/*.pfx
+**/*.pem
+**/*.key
+**/*service-account*.json
+**/*service_account*.json
+**/*firebase-adminsdk*.json
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Nested build state for the source-only Android Unicode QA IME.
+/tool/android_unicode_ime/.gradle/
+/tool/android_unicode_ime/build/
+/tool/android_unicode_ime/app/build/
+
+# Local UI captures can expose tester account/device metadata. Keep the
+# sanitized text manifests in Git and retain raster/XML captures locally only.
+/docs/qa/ui_redesign/evidence/**/*.png
+/docs/qa/ui_redesign/evidence/**/*.xml
+/docs/qa/ui_redesign/screenshots/
+
+# Keep new device captures local: UI images/XML may contain tester identity.
+/docs/qa/ai_compact_confirmation/**/*.png
+/docs/qa/ai_compact_confirmation/**/*.jpg
+/docs/qa/ai_compact_confirmation/**/*.jpeg
+/docs/qa/ai_compact_confirmation/**/*.webp
+/docs/qa/ai_compact_confirmation/**/*.xml
+/docs/qa/ai_preview_flow/**/*.png
+/docs/qa/ai_preview_flow/**/*.jpg
+/docs/qa/ai_preview_flow/**/*.jpeg
+/docs/qa/ai_preview_flow/**/*.webp
+/docs/qa/ai_preview_flow/**/*.xml
+/docs/qa/home_expense_analytics/**/*.png
+/docs/qa/home_expense_analytics/**/*.jpg
+/docs/qa/home_expense_analytics/**/*.jpeg
+/docs/qa/home_expense_analytics/**/*.webp
+/docs/qa/home_expense_analytics/**/*.xml

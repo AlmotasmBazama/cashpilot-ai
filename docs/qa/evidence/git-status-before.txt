@@ -1,0 +1,43 @@
+CashPilot AI QA baseline (sanitized)
+Captured: 2026-08-09T23:13:41.376+02:00
+Working directory: <REPOSITORY_ROOT>
+
+Command: git rev-parse --show-toplevel
+Exit code: 0
+Output: <REPOSITORY_ROOT>
+
+Command: git branch --show-current
+Exit code: 0
+Output: master
+
+Command: git rev-parse HEAD
+Exit code: 0
+Output: fd24526f3f21ba0e96ca73dcc4a69f5a11aed632
+
+Command: git status --short
+Exit code: 0
+Summary: dirty working tree; 242 porcelain entries (90 tracked modified files and 152 untracked files when expanded with -uall).
+Tracked modifications include application, generated, localization, configuration, documentation, and test files. Untracked work includes the new owner-scope subsystem, AI agent/app-control/gateway subsystems, gateway service, integration/unit tests, documentation, tools, and two ZIP archives.
+
+Command: git diff --stat
+Exit code: 0
+Output summary: 90 files changed, 19,364 insertions(+), 3,556 deletions(-).
+
+Command: git diff --name-only
+Exit code: 0
+Output summary: 90 tracked modified paths.
+
+Command: git ls-files --others --exclude-standard
+Exit code: 0
+Output summary: 152 untracked paths. No untracked file contents were inspected solely because they were untracked.
+
+Application metadata from pubspec.yaml:
+- version: 1.0.0+1
+- Dart SDK constraint: ^3.11.5
+
+Host:
+- Microsoft Windows 11 Pro 64-bit
+- OS version: 10.0.26200
+
+Important audit constraint:
+This baseline predates all analyzer/test/build commands and the creation of every other audit artifact. Existing user changes must not be reverted or overwritten.

@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="false"
+        android:label="CashPilot QA Unicode IME"
+        android:supportsRtl="true">
+        <service
+            android:name=".UnicodeImeService"
+            android:exported="true"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/input_method" />
+        </service>
+
+        <receiver
+            android:name=".UnicodeTextReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.cashpilot.qa.unicodeime.COMMIT_TEXT" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

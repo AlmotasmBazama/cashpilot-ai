@@ -1,0 +1,61 @@
+SAFE ORIGINAL DENIAL TRACE
+===========================
+
+Target: Android emulator-5554, debug/staging application path.
+Captured: 2026-08-23 (Africa/Tripoli).
+
+Only allowlisted diagnostic facts are recorded here. The raw message, UID,
+owner-scope value, tokens, and financial history are intentionally omitted.
+
+Old route and denial chain
+--------------------------
+
+1. A clear item-plus-money statement was classified as financialRecordOffer.
+2. That offer retained AiIntent.unknown.
+3. The affirmative continuation called failureForIntent(AiIntent.unknown).
+4. That branch returned the generic typed application code permissionDenied
+   before the transaction-draft resolver was called.
+5. Therefore the user saw the generic financial-draft permission message.
+6. With the same effective policy evaluated as transactionDraft, the first
+   policy-specific resolver denial is transactionDraftsDisabled.
+
+Original safe policy snapshot
+-----------------------------
+
+account_control_level=fullControl
+transaction_draft_permission=false
+confirmed_execution_permission=false
+policy_revision=1
+policy_provenance=persistedUserSelection
+owner_scope_readiness=true
+app_control_flag_enabled=true
+create_drafts_flag_enabled=true
+confirmed_execution_flag_enabled=true
+local_dataset_scope_flag_enabled=true
+displayed_typed_failure=permissionDenied
+first_policy_specific_denial=transactionDraftsDisabled
+
+Proven inconsistency
+--------------------
+
+The persisted V2 record selected Full Control while its retired independent
+capability bits remained false. V1 records were rebuilt from the selected
+level, but V2 records were not. Settings, draft creation, and confirmation
+therefore observed a contradictory policy.
+
+Post-fix safe policy snapshot
+-----------------------------
+
+account_control_level=fullControl
+transaction_draft_permission=true
+confirmed_execution_permission=true
+policy_provenance=persistedUserSelection
+owner_scope_readiness=true
+app_control_flag_enabled=true
+create_drafts_flag_enabled=true
+confirmed_execution_flag_enabled=true
+local_dataset_scope_flag_enabled=true
+denial=none
+
+The selected level now reconstructs every supported capability. Unsupported
+families remain false, and explicit confirmation remains mandatory.

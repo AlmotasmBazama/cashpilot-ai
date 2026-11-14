@@ -1,0 +1,17 @@
+Firebase AI live acceptance — safe evidence
+Date: 2026-08-13
+Device: emulator-5554; Android debug
+Provider: firebase
+Backend: vertexAi
+Location: global
+Model: gemini-3.6-flash
+App Check token issued: true (token value not printed or stored)
+Local deterministic prompts: 2; Firebase sessions: 0 for those prompts
+Remote prompts: 3; Firebase sessions: 3
+Remote result 0: completed=true; firstContentMs=6633; completionMs=6636; partials=0
+Remote result 1: completed=true; firstContentMs=3615; completionMs=4164; partials=5
+Remote result 2: completed=true; firstContentMs=4431; completionMs=4431; partials=0
+At least one streamed remote response: true
+App Check registration: revoked=false; preserved=true
+Flutter integration exit code: 0
+No prompt, response, token, UID, owner scope, or financial record is stored here.

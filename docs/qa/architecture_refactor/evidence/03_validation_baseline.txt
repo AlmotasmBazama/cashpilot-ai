@@ -1,0 +1,43 @@
+CashPilot AI architecture-refactor validation baseline
+Captured: 2026-08-17 (Africa/Tripoli)
+
+flutter analyze --no-pub
+PASS — No issues found (37.3 s)
+
+flutter test --no-pub -r compact
+PASS — 1,450 passed, 0 failed (2 min 8 s)
+Expected negative-path error logs and Drift multi-database debug warnings were emitted; they did not fail tests.
+
+flutter build apk --debug --no-pub
+PASS — build/app/outputs/flutter-apk/app-debug.apk (108.2 s)
+
+flutter build web --no-pub
+PASS — build/web (183.7 s); Wasm dry run succeeded.
+
+npm.cmd test (services/cashpilot_ai_gateway)
+PASS — 123 passed, 0 failed.
+
+npm.cmd run lint (services/cashpilot_ai_gateway)
+PASS.
+
+npm.cmd run typecheck (services/cashpilot_ai_gateway)
+PASS.
+
+npm.cmd run build (services/cashpilot_ai_gateway)
+PASS.
+
+npm.cmd run secret-scan (services/cashpilot_ai_gateway)
+PRE-EXISTING FAILURE — scanner flagged:
+- lib/features/ai_assistant/domain/entities/ai_runtime_status.dart (provider configuration in client)
+- tool/run_android_groq_staging.test.cjs
+The scanner was not weakened and no product behavior was changed to hide this baseline failure.
+
+npm.cmd run test:firestore-rules:emulator (repository root)
+PASS — Firestore rules: 42 passed, 0 failed; gateway account-deletion emulator: 2 passed, 0 failed.
+The command used demo project demo-cashpilot-ai and shut down the Auth/Firestore emulators cleanly.
+
+Android integration/live smoke
+NOT RUN at baseline — no Android device or emulator was connected. Live runners also require explicit external credentials/state and can mutate synthetic cloud/emulator state.
+
+dart fix --dry-run
+PASS — Nothing to fix. No automatic fixes were applied.

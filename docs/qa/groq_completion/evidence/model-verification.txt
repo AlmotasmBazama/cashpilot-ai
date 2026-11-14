@@ -1,0 +1,9 @@
+CashPilot AI Groq deployment model verification - sanitized summary
+Date: 2026-08-14 (Africa/Tripoli)
+
+Verification source: live Groq Models API through the deployment-time verifier.
+- openai/gpt-oss-20b: ACTIVE
+- openai/gpt-oss-120b: ACTIVE
+
+Credential handling: the Secret Manager value was supplied in memory only. It was not
+printed, persisted in the repository, or exposed to Flutter.

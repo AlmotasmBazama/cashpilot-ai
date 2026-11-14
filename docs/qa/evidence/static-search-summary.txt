@@ -1,0 +1,30 @@
+CashPilot AI targeted static-search evidence (sanitized)
+Working directory: <REPOSITORY_ROOT>
+
+Command: git diff --check
+Exit code: 0
+Result: no whitespace-error findings. Git emitted existing LF-to-CRLF conversion warnings for many dirty tracked files; no file was rewritten.
+
+High-risk secret-shaped filename check
+Command class: git ls-files filtered for .env, service-account JSON, credential JSON, PEM/P12/JKS, and keystore names
+Exit code: 0
+Result: 0 tracked paths matched.
+
+Secret-shaped content check
+Command class: rg filename-only scan for Groq/OpenAI-style server keys, Google client keys, and private-key headers; build, node_modules, report evidence, archives, and lockfiles excluded
+Exit code: 0
+Result: 2 paths matched only the expected Firebase client configuration files:
+- android/app/google-services.json
+- lib/firebase_options.dart
+Firebase client API identifiers are configuration identifiers, not Groq/server/private credentials. No values were printed or copied. Gateway secret-scan also passed.
+
+Financial floating-point search
+Command class: rg for double.parse, double.tryParse, and toDouble in finance/account/transaction/budget/goal/report/receipt source
+Result: the observed conversions were UI progress/threshold/display conversions (for example budget progress), not monetary balance arithmetic. Money and Finance Engine paths use Decimal/decimal strings. No defect was raised merely for UI double usage.
+
+Other targeted searches/source tracing covered direct balance writes, owner_scope_id handling, AI tool permissions, raw UID persistence, preference-key derivation, backup/deletion flows, receipt paths, cross-model streaming fallback, model selection, routes, token forwarding, and gateway configuration. Findings are individually cited in CASHPILOT_FULL_QA_REPORT_AR.md.
+
+Final audit-artifact secret scan
+Command class: rg filename-only scan of docs/qa for high-risk server-key, bearer-token, and private-key shapes
+Exit code: 0
+Result: 0 matching audit artifact files.

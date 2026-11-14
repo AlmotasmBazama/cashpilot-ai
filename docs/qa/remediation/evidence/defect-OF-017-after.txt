@@ -1,0 +1,13 @@
+OF-017 local GREEN evidence - visible, retryable receipt image cleanup
+Date: 2026-08-10
+Focused command: flutter test test/features/receipts/receipt_confirmation_state_machine_test.dart --reporter expanded
+Focused result: 5 passed, 0 failed, 0 skipped.
+Related receipt-module result: 64 passed, 0 failed, 0 skipped.
+
+Verified behavior under deterministic failure injection:
+- Image cleanup failure returns typed failure code receipt_image_cleanup_pending.
+- The persisted local-image reference remains present after failure.
+- A fresh use-case instance retries cleanup without duplicating the financial effect.
+- Complete success requires both verified file deletion and a reloaded cleared reference.
+
+Live device verification remains required for platform filesystem behavior.

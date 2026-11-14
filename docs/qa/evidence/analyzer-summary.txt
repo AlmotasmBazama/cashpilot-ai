@@ -1,0 +1,15 @@
+CashPilot AI analyzer evidence
+Working directory: <REPOSITORY_ROOT>
+
+Command: flutter analyze --no-pub
+Exit code: 0
+Wall time: 336.9 seconds
+Analyzer-reported duration: 330.4 seconds
+Result: PASSED
+Sanitized output:
+  Analyzing cashpilot_ai...
+  No issues found! (ran in 330.4s)
+
+Repository-state check after the phase:
+- Expanded porcelain entry count was 244: original 242 entries plus the two audit evidence files created so far.
+- No analyzer-created source/config/generated-file change was observed by Git.

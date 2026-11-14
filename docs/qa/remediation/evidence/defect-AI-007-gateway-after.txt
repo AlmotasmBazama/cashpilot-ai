@@ -1,0 +1,7 @@
+Command:
+  .\\node_modules\\.bin\\tsx.cmd --test tests/provider_output_safety.test.ts
+
+Result: PASSED
+Tests: 2 passed, 0 failed, 0 skipped.
+Coverage: English, Arabic, and Libyan unverified mutation claims; safe advice and explicit non-execution statements.
+Secrets/private data: none.

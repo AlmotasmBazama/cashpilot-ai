@@ -1,0 +1,19 @@
+{
+  "brand": {
+    "name": "CashPilot AI",
+    "source": "assets/brand/cashpilot_ai_official_source.png",
+    "primary": "#0F766E",
+    "secondary": "#14B8A6",
+    "accent": "#22C55E",
+    "backgroundLight": "#E6F0EF",
+    "white": "#FFFFFF"
+  },
+  "assets": {
+    "launcherIcon": "assets/images/app_icon.png",
+    "transparentIcon": "assets/images/app_icon_transparent.png",
+    "adaptiveForeground": "assets/images/app_icon_adaptive_foreground.png",
+    "splashLogo": "assets/images/splash_logo.png",
+    "notificationIcon": "assets/images/notification_icon.png",
+    "svgLogo": "assets/images/app_logo.svg"
+  }
+}

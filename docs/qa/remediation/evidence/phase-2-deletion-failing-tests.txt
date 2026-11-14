@@ -1,0 +1,17 @@
+Phase 2 deterministic failing baseline (sanitized)
+Date: 2026-08-10 Africa/Tripoli
+Command: flutter test --no-pub test/features/data_deletion/data_deletion_test.dart -r expanded
+Exit code: 1
+
+OF-008 caller identity forgery:
+Expected trusted Auth identity: synthetic user-1
+Actual cloud deletion identity: synthetic forged-user
+Location: test/features/data_deletion/data_deletion_test.dart:121
+
+OF-006 Auth switch TOCTOU:
+Expected deleted Auth identities not to contain synthetic user-2
+Actual deleted Auth identities: [synthetic user-2]
+Location: test/features/data_deletion/data_deletion_test.dart:130
+
+Summary: 8 passed, 2 failed. No token, credential value, private record, or
+production Firebase identifier is included in this evidence.

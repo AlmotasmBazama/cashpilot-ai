@@ -1,0 +1,145 @@
+name: Source validation
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: source-validation-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  FLUTTER_VERSION: '3.41.9'
+  NODE_VERSION: '24'
+  CI: 'true'
+
+jobs:
+  flutter:
+    name: Flutter analysis and tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get --enforce-lockfile
+      - name: Regenerate derived sources
+        run: |
+          flutter gen-l10n
+          dart run build_runner build --delete-conflicting-outputs
+          git diff --exit-code -- lib test integration_test
+      - run: dart format --output=none --set-exit-if-changed lib test integration_test
+      - run: flutter analyze --no-pub
+      - run: flutter test --no-pub -r expanded
+
+  builds:
+    name: Android Debug and Web builds
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@d1374f8ac74474200d16ef8ecee22c7ae7a51880 # v6
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get --enforce-lockfile
+      - run: flutter build apk --debug --no-pub
+      - run: flutter build web --no-pub
+
+  services:
+    name: Service / ${{ matrix.service }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        service: [cashpilot_ai_gateway, cashpilot_account_deletion]
+    defaults:
+      run:
+        working-directory: services/${{ matrix.service }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: services/${{ matrix.service }}/package-lock.json
+      - run: npm ci --engine-strict
+      - run: npm test
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm run secret-scan
+      - name: Build the production container without deploying
+        run: docker build --pull --tag cashpilot-service:ci .
+
+  tooling:
+    name: Offline tooling tests / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2025]
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            tools/groq_evaluation/package-lock.json
+      - run: npm ci
+      - run: pwsh -NoProfile -Command '$PSVersionTable.PSVersion'
+      - run: npm run test:tools
+      - run: npm --prefix tools/groq_evaluation ci --ignore-scripts
+      - run: npm --prefix tools/groq_evaluation test
+
+  emulators:
+    name: Firebase rules and deletion emulators
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            services/cashpilot_account_deletion/package-lock.json
+      - uses: actions/setup-java@d1374f8ac74474200d16ef8ecee22c7ae7a51880 # v6
+        with:
+          distribution: temurin
+          java-version: '21'
+      - run: npm ci
+      - run: npm --prefix services/cashpilot_account_deletion ci
+      - run: npm install --global firebase-tools@15.22.4
+      - name: Test only the local demo project
+        run: npm run test:firestore-rules:emulator

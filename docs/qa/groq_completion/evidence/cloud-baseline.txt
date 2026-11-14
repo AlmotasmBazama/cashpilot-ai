@@ -1,0 +1,67 @@
+Captured: 2026-08-14 (Africa/Tripoli)
+Mode: read-only inventory before this sprint deployment
+
+Project
+- Firebase/Google Cloud project: cashpilot-ai-a6b49 (ACTIVE)
+- Repository Firebase alias: none; all operations must pass the project explicitly
+- Billing: enabled
+- Required APIs: Cloud Run, Cloud Build, Artifact Registry, Secret Manager,
+  Service Usage, Cloud Resource Manager, and Cloud Storage enabled
+
+Existing Cloud Run staging service
+- Service: cashpilot-ai-gateway-staging
+- Region: europe-west1
+- Safe URL: https://cashpilot-ai-gateway-staging-yfgt2ypuvq-ew.a.run.app
+- Ready revision before this sprint: cashpilot-ai-gateway-staging-00002-sww
+- Revision time: 2026-07-31T11:58:50Z
+- Traffic: 100% latest ready revision
+- Ingress: all; Cloud Run invoker: allUsers
+- Application-level Firebase Auth and App Check remain required on AI routes
+- Runtime service account: cashpilot-ai-gateway-staging@cashpilot-ai-a6b49.iam.gserviceaccount.com
+- CPU: 1
+- Memory: 512Mi
+- Concurrency: 80
+- Cloud Run timeout: 60s
+- Min instances: 0
+- Max instances: 1
+- Startup CPU boost: enabled
+
+Existing safe runtime configuration
+- GATEWAY_ENVIRONMENT=staging
+- FIREBASE_PROJECT_ID=cashpilot-ai-a6b49
+- CASH_PILOT_ALLOWED_ORIGINS=https://cashpilot-ai-a6b49.web.app
+- MAX_AI_REQUESTS_PER_MINUTE=20
+- MODEL_DIAGNOSTICS_ENABLED=true (must be disabled in the accepted revision)
+
+Secret Manager
+- Secret name: cashpilot-groq-api-key
+- Referenced by Cloud Run as GROQ_API_KEY=cashpilot-groq-api-key:latest
+- Enabled secret version before sprint: 1
+- Runtime service account has secret-level roles/secretmanager.secretAccessor
+- Secret value was not read or recorded during inventory
+
+Artifact Registry / build provenance
+- Repository: europe-west1/cloud-run-source-deploy
+- Format/mode: Docker / standard
+- Existing source deploy used the gateway Dockerfile and Cloud Build
+- Existing gateway source is untracked, so the old revision cannot be tied to a Git commit
+
+Observed live health before sprint
+- GET /health: HTTP 200, Cache-Control no-store
+- Payload: status=success only
+- Observed latency: first/cold-like 2582ms; subsequent 527ms, 109ms, 108ms
+- Missing requested service version, environment, and readiness metadata
+
+Android baseline
+- Emulator: emulator-5554, Pixel_6 AVD, Android 17 / API 37
+- Installed package: com.example.cashpilot_ai, version 1.0.0+1
+- No physical Android device connected
+- Existing App Check debug registration must be preserved
+
+Unproven at baseline
+- Live Groq Models API availability
+- Authenticated/App Check-protected Groq chat
+- Arabic/English Groq responses
+- Groq streaming, retry, cancellation, and force-stop/reopen
+
+No secret, token, raw UID, prompt, response, or private financial data is present.

@@ -1,0 +1,6 @@
+root=<REPOSITORY_ROOT>
+branch=master
+head=fd24526f3f21ba0e96ca73dcc4a69f5a11aed632
+status_entries=364
+tracked_status_entries=198
+untracked_status_entries=166

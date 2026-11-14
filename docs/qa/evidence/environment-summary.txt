@@ -1,0 +1,64 @@
+CashPilot AI QA environment (sanitized)
+Audit host date: 2026-08-09 (Africa/Tripoli, UTC+02:00)
+Working directory: <REPOSITORY_ROOT>
+
+Command: flutter --version
+Exit code: 0
+Result: Flutter 3.41.9 stable; framework 00b0c91f06; engine 42d3d75a56; Dart 3.11.5; DevTools 2.54.2.
+
+Command: dart --version
+Exit code: 0
+Result: Dart SDK 3.11.5 stable, windows_x64.
+
+Command: flutter doctor -v
+Exit code: 0 (doctor reported one warning category)
+Result:
+- Windows 11 Pro 64-bit supported.
+- Android SDK 36.1.0 and JDK 21.0.10 available; licenses accepted.
+- Chrome available.
+- Windows desktop toolchain BLOCKED: Visual Studio C++ workload/components absent.
+- Connected targets: Windows, Chrome, Edge.
+- Network resource check passed.
+
+Command: flutter devices
+Exit code: 0
+Result: 3 targets: Windows desktop, Chrome web, Edge web. No Android device was connected.
+
+Command: flutter emulators
+Exit code: 0
+Result: 4 configured Android emulators: Pixel_6, Pixel_7_Pro, Resizable_Experimental, Small_Phone. None was running during baseline discovery.
+
+Command: java -version
+Exit code: 0
+Result: Java 21.0.11 LTS, 64-bit.
+
+Command: node --version
+Exit code: 0
+Result: v26.1.0.
+
+Command: npm --version
+Exit code: 1
+Result: BLOCKED by the Windows PowerShell execution policy because npm.ps1 could not be loaded.
+
+Command: npm.cmd --version
+Exit code: 0
+Result: 11.13.0. npm.cmd is used for executable npm workflows.
+
+Command: firebase.cmd --version
+Exit code: 0
+Result: the CLI returned no version text in this invocation; executable presence was detected. Emulator execution is assessed separately.
+
+Platform classification at discovery:
+- Android build toolchain: available.
+- Android runtime interaction: not yet executed; emulator configured but not connected.
+- Chrome web: available.
+- Edge web: available.
+- Windows runtime target: visible, but Windows compilation is expected to be blocked by missing C++ components.
+- iOS: BLOCKED / unsupported on this Windows host.
+- Firebase Emulator Suite: CLI present; actual execution assessed separately.
+- Node gateway tests: supported via npm.cmd.
+- Live staging Firebase/App Check/Groq: credentials/tokens were not printed; live readiness assessed through safe presence checks and dedicated tests.
+
+Repository state check after environment discovery:
+- 243 expanded porcelain entries: the original 242 plus docs/qa/evidence/git-status-before.txt.
+- No other new repository path was observed from environment discovery.

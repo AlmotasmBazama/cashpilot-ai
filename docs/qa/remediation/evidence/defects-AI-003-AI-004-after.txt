@@ -1,0 +1,15 @@
+AI-003 / AI-004 GREEN evidence
+Date: 2026-08-10
+
+- Arabic and Persian digits, Arabic decimal/group separators, valid ASCII
+  grouped decimals, and decimal comma are normalized lexically and parsed with
+  Decimal, never binary floating point.
+- A bounded Arabic compound-number grammar handles the regression corpus.
+- Scientific notation, malformed grouping, and competing amount candidates
+  fail closed instead of truncating the first token.
+- The noun مصروف is no longer an income token and produces an expense draft.
+
+Command:
+flutter test test/features/ai_assistant/financial_command_parser_test.dart
+
+Result: 19 passed, 0 failed, 0 skipped; exit code 0.

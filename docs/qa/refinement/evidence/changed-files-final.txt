@@ -1,0 +1,65 @@
+Exact current-refinement file accounting
+Total paths attributed to this refinement request: 55
+
+Implementation / tests / product docs (31)
+1. README.md
+2. docs/firebase_setup.md
+3. docs/receipt_scanning.md
+4. docs/ai_tool_registry.md
+5. docs/ai_tool_permission_policy.md
+6. integration_test/ai_navigation_device_regression_test.dart
+7. integration_test/ai_navigation_live_regression_test.dart
+8. lib/features/categories/data/datasources/local/categories_local_data_source.dart
+9. lib/features/dashboard/presentation/pages/dashboard_screen.dart
+10. lib/features/reports/presentation/pages/reports_screen.dart
+11. lib/features/transactions/data/repositories/transactions_repository_impl.dart
+12. lib/features/transactions/domain/failures/transaction_failure_codes.dart
+13. lib/features/transactions/presentation/pages/transaction_details_screen.dart
+14. lib/features/transactions/presentation/widgets/transaction_form_sheet.dart
+15. lib/features/receipts/application/receipt_capture_state.dart
+16. lib/features/receipts/application/receipt_providers.dart
+17. lib/features/receipts/presentation/pages/receipt_capture_screen.dart
+18. lib/l10n/app_en.arb
+19. lib/l10n/app_ar.arb
+20. lib/l10n/app_localizations.dart
+21. lib/l10n/app_localizations_en.dart
+22. lib/l10n/app_localizations_ar.dart
+23. test/features/categories/categories_test.dart
+24. test/features/dashboard/dashboard_warning_ui_test.dart
+25. test/features/reports/reports_period_labels_test.dart
+26. test/features/transactions/transactions_test.dart
+27. test/features/transactions/transactions_ui_test.dart
+28. test/features/transactions/transaction_history_pagination_test.dart
+29. test/features/receipts/receipt_ui_test.dart
+30. test/features/receipts/receipt_owner_scope_isolation_test.dart
+31. tool/register_android_app_check_debug.cjs
+
+Required QA reports (8)
+32. docs/qa/refinement/REFINEMENT_BASELINE_AR.md
+33. docs/qa/refinement/COMPREHENSIVE_REFINEMENT_REPORT_AR.md
+34. docs/qa/refinement/PRODUCT_LOGIC_CHANGES_AR.md
+35. docs/qa/refinement/TECHNICAL_CHANGES_AR.md
+36. docs/qa/refinement/REFINEMENT_DEFECTS.csv
+37. docs/qa/refinement/PERFORMANCE_REFINEMENT.csv
+38. docs/qa/refinement/MANUAL_ACCEPTANCE_AR.md
+39. docs/qa/refinement/RELEASE_CANDIDATE_GAPS_AR.md
+
+Evidence (16)
+40. docs/qa/refinement/evidence/android-ai-baseline-safe.txt
+41. docs/qa/refinement/evidence/flutter-analyze-baseline.txt
+42. docs/qa/refinement/evidence/flutter-test-baseline.txt
+43. docs/qa/refinement/evidence/git-baseline-metadata.txt
+44. docs/qa/refinement/evidence/git-diff-names-before.txt
+45. docs/qa/refinement/evidence/git-diff-stat-before.txt
+46. docs/qa/refinement/evidence/git-status-before.txt
+47. docs/qa/refinement/evidence/receipt-focused-gate.txt
+48. docs/qa/refinement/evidence/refinement-focused-gate-1.txt
+49. docs/qa/refinement/evidence/untracked-before.txt
+50. docs/qa/refinement/evidence/final-validation.txt
+51. docs/qa/refinement/evidence/android-runtime-final-safe.txt
+52. docs/qa/refinement/evidence/integration-final.txt
+53. docs/qa/refinement/evidence/web-interactive-final.txt
+54. docs/qa/refinement/evidence/worktree-preservation-final.txt
+55. docs/qa/refinement/evidence/changed-files-final.txt
+
+Attribution caveat: the repository was already heavily modified/untracked at baseline. Only the scoped hunks and paths above are attributed to this request; no blanket ownership is asserted over the rest of the dirty tree.

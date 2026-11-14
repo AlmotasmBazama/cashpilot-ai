@@ -1,0 +1,11 @@
+CashPilot AI Web runtime acceptance boundary
+Date: 2026-08-11
+Static server: local 127.0.0.1 only; stopped after checks; port released
+HTTP resources: PASS (see web-build-final.txt)
+Browser runtime discovery: agent.browsers.list() returned []
+Visual/responsive acceptance: BLOCKED_ENVIRONMENT
+Remote Web AI: BLOCKED_EXTERNAL_WEB_APP_CHECK
+
+No substitute browser-control backend was used. No claim is made for browser render,
+Drift initialization inside a real page, responsive layouts, refresh persistence,
+deep links, or live AI behavior.

@@ -1,0 +1,14 @@
+target_commit=27d7ad636bb9bc5baad9c822ef6fd51e217471cb
+initial_status=clean
+final_status=clean
+flutter_analyze=PASS,0 issues,86.7s
+flutter_test=PASS,1701/1701,148s
+android_debug_build=PASS,153.6s
+web_build=PASS,95.9s
+tooling=PASS,160/160
+groq_evaluation=PASS,16/16
+gateway=PASS,133/133,lint,typecheck,build,secret-scan
+account_deletion=PASS,31/31,lint,typecheck,build,secret-scan
+firestore_rules_emulator=PASS,42/42
+account_deletion_emulator=PASS,2/2
+repository_secret_scan=PASS

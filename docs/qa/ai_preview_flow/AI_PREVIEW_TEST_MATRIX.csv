@@ -1,0 +1,38 @@
+ID,Area,Scenario,Expected,Result,Evidence
+P01,Policy,Full Control canonical mapping,Drafts and confirmed creates enabled with all gates ready,PASS,ai_app_control_policy_modes_test.dart
+P02,Policy,Review Before Execution mapping,Transaction draft and confirmed create enabled with confirmation,PASS,ai_app_control_policy_modes_test.dart
+P03,Policy,Read Only,Block before financial context and show settings card,PASS,ai_assistant_send_test.dart
+P04,Policy,Off,Preserve explicit Off and show settings card,PASS,ai_assistant_send_test.dart
+P05,Policy,Contradictory V2 record,Normalize supported bits from selected level,PASS,ai_app_control_policy_modes_test.dart
+P06,Policy,Stale preview revision,Reject as staleConfiguration before execution,PASS,ai_assistant_send_test.dart
+P07,Policy,Owner removed before Confirm,Reject as ownerScopeNotReady,PASS,ai_assistant_send_test.dart
+P08,Diagnostics,Safe decision line,Include flags level permissions owner revision provenance and denial only,PASS,ai_app_control_permission_resolver_test.dart
+R01,Routing,milk 5 dinar,Direct deterministic expense pipeline,PASS,financial_record_offer_routing_test.dart
+R02,Routing,coffee 3 LYD,Direct deterministic expense pipeline,PASS,financial_command_parser_compact_confirmation_test.dart
+R03,Routing,bread 2 dinar,Direct deterministic expense pipeline,PASS,financial_command_parser_compact_confirmation_test.dart
+R04,Routing,حليب 5 دينار,Direct deterministic expense pipeline,PASS,financial_command_parser_compact_confirmation_test.dart
+R05,Routing,خبز بدينارين,Parse amount 2 and create preview,PASS,financial_command_parser_compact_confirmation_test.dart
+R06,Routing,شريت حليب بـ 5,Parse expense and create preview,PASS,financial_command_parser_compact_confirmation_test.dart
+R07,Routing,دفعت 20 مواصلات,Parse transport expense,PASS,financial_command_parser_compact_confirmation_test.dart
+R08,Validation,Missing amount,No draft and no durable write,PASS,financial_command_parser_compact_confirmation_test.dart
+R09,Account,No safe active account,Ask exact localized account question,PASS,financial_command_parser_compact_confirmation_test.dart
+R10,Account,Archived only account,Never select archived account,PASS,financial_command_parser_compact_confirmation_test.dart
+R11,Timezone,Tripoli midnight stored in UTC,Preview renders Today not prior device day,PASS,ai_financial_storage_preview_card_test.dart + live Android
+U01,Preview,Complete financial phrase,One compact preview and no redundant assistant confirmation,PASS,ai_assistant_send_test.dart
+U02,Preview,Fields,Show stored fields assumptions and effect,PASS,ai_financial_storage_preview_card_test.dart
+U03,Preview,Actions,Exactly Cancel and Confirm,PASS,ai_financial_storage_preview_card_test.dart
+U04,Responsive,Narrow RTL dark large text,No overflow and usable scrolling/actions,PASS,ai_action_confirmation_card_test.dart
+U05,Cancel,English,Exact friendly response and no write,PASS,live Android + ai_assistant_send_test.dart
+U06,Cancel,Arabic,Exact friendly response RTL and no write,PASS,live Android + ai_assistant_send_test.dart
+C01,Confirm,Double rapid tap,Immediate guard and one invocation,PASS,Android synthetic integration
+C02,Confirm,Durable idempotency,One transaction only,PASS,Android synthetic integration + finance engine test
+C03,Confirm,Posted balance effect,100.000 to 95.000 exactly once,PASS,Android synthetic integration
+C04,Confirm,Database reopen,One transaction and 95.000 remain,PASS,Android synthetic integration
+C05,Confirm,Replay after reopen,Duplicate command rejected and state unchanged,PASS,Android synthetic integration
+C06,Failure,Verification failure,No success and typed recoverable failure,PASS,ai_assistant_send_test.dart
+C07,Failure,Unexpected runtime throw,Failed state replaces loading,PASS,coordinator implementation + focused workflow suite
+L01,Localization,Arabic card,RTL labels إلغاء and تأكيد,PASS,live Android + widget tests
+G01,Gate,flutter analyze --no-pub,No issues,PASS,evidence/VALIDATION_RESULTS.txt
+G02,Gate,flutter test --no-pub -r expanded,All tests pass,PASS,evidence/VALIDATION_RESULTS.txt
+G03,Gate,flutter build apk --debug --no-pub,Debug APK builds,PASS,evidence/VALIDATION_RESULTS.txt
+G04,Gate,flutter build web --no-pub,Web builds,PASS,evidence/VALIDATION_RESULTS.txt

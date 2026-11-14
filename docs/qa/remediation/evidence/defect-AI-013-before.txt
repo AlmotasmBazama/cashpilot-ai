@@ -1,0 +1,13 @@
+AI-013 RED evidence
+Date: 2026-08-10
+
+Focused command:
+flutter test test/features/ai_assistant/assistant_routing_regression_test.dart --plain-name "generic financial concepts never open the personal data pipeline"
+
+Failure:
+- Input: What is cash flow?
+- Expected target: generalConversation
+- Actual target: personalFinancialAnalysis
+- Exit code: 1
+
+Only synthetic prompts were used.

@@ -1,0 +1,13 @@
+CashPilot AI remediation evidence (sanitized)
+Defect: OF-021
+Phase: 1 - cross-user isolation
+Command: flutter test --no-pub -r expanded test/features/categories/categories_test.dart
+Post-fix exit code: 0
+Result: 6 passed, 0 failed, 0 skipped.
+Targeted analyzer: 4 changed production/test files analyzed; 0 issues.
+Verified locally:
+- Owner-scoped repository rejects shared built-in default updates.
+- A second synthetic owner observes the unchanged built-in definition.
+- Production owner-guard configuration rejects direct SQL UPDATE and DELETE of a shared default.
+- Existing category seed, deletion guard, nesting, and reset coverage remains green.
+Privacy: synthetic owner identities only; no raw UID, owner-scope value, token, secret, or financial data recorded.

@@ -1,0 +1,9 @@
+Command: flutter test --no-pub -r expanded --concurrency=1
+Date: 2026-08-13
+Result: PASS
+Exit code: 0
+Passed: 1204
+Failed: 0
+Elapsed seconds: 370.917
+Final runner line: All tests passed!
+Notes: Non-failing Drift multiple-database debug warning remained visible in widget coverage; no assertion failed.

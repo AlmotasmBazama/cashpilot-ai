@@ -1,0 +1,274 @@
+{
+  "generatedAt": "2026-07-27T21:02:37.243Z",
+  "preparedPromptCount": 100,
+  "plannedRequestCount": 280,
+  "completedRequestCount": 280,
+  "totalAttemptCount": 413,
+  "supersededAttemptCount": 133,
+  "providerRetryAttemptCount": 93,
+  "evaluatorRepairAttemptCount": 40,
+  "successfulRequestCount": 188,
+  "remainingRequestCount": 0,
+  "stoppedReason": "repair_complete",
+  "availability": [
+    {
+      "modelId": "openai/gpt-oss-120b",
+      "available": true,
+      "active": true,
+      "reason": "available"
+    },
+    {
+      "modelId": "qwen/qwen3.6-27b",
+      "available": true,
+      "active": true,
+      "reason": "available"
+    },
+    {
+      "modelId": "openai/gpt-oss-20b",
+      "available": true,
+      "active": true,
+      "reason": "available"
+    },
+    {
+      "modelId": "groq/compound-mini",
+      "available": true,
+      "active": true,
+      "reason": "available"
+    }
+  ],
+  "rateLimitedRequestCount": 4,
+  "timeoutRequestCount": 0,
+  "providerUnavailableRequestCount": 0,
+  "safeProviderDiagnostics": [
+    {
+      "code": "tool_use_failed",
+      "message": "tool call validation failed: parameters for tool calculateSavingsRate did not match schema: errors: [`/expense`: expected string, but got number, `/income`: expected string, but got number]",
+      "parameter": null,
+      "failedGenerationPresent": true,
+      "count": 1
+    },
+    {
+      "code": "tool_use_failed",
+      "message": "tool call validation failed: parameters for tool simulateBudgetChange did not match schema: errors: [`/currentLimit`: expected string, but got number, `/newLimit`: expected string, but got number]",
+      "parameter": null,
+      "failedGenerationPresent": true,
+      "count": 1
+    },
+    {
+      "code": "tool_use_failed",
+      "message": "tool call validation failed: parameters for tool createBudgetDraft did not match schema: errors: [`/limit`: expected string, but got number, `/requiresConfirmation`: expected boolean, but got string]",
+      "parameter": null,
+      "failedGenerationPresent": true,
+      "count": 1
+    },
+    {
+      "code": "rate_limit_exceeded",
+      "message": "Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kyjhx6msewqr710zde90z0mb` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4873, Requested 3679. Please try again in 4.14s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing",
+      "parameter": null,
+      "failedGenerationPresent": false,
+      "count": 1
+    },
+    {
+      "code": "rate_limit_exceeded",
+      "message": "Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kyjhx6msewqr710zde90z0mb` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6309, Requested 7122. Please try again in 40.7325s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing",
+      "parameter": null,
+      "failedGenerationPresent": false,
+      "count": 1
+    },
+    {
+      "code": "rate_limit_exceeded",
+      "message": "Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kyjhx6msewqr710zde90z0mb` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4524, Requested 5770. Please try again in 17.205s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing",
+      "parameter": null,
+      "failedGenerationPresent": false,
+      "count": 1
+    },
+    {
+      "code": "rate_limit_exceeded",
+      "message": "Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kyjhx6msewqr710zde90z0mb` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4777, Requested 3656. Please try again in 3.2475s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing",
+      "parameter": null,
+      "failedGenerationPresent": false,
+      "count": 1
+    },
+    {
+      "code": "request_too_large",
+      "message": "Request Entity Too Large",
+      "parameter": null,
+      "failedGenerationPresent": false,
+      "count": 1
+    }
+  ],
+  "scoreRows": [
+    {
+      "modelId": "openai/gpt-oss-120b",
+      "category": "arabic_libyan_financial",
+      "score": 97,
+      "completed": 20,
+      "successRate": 90,
+      "medianLatencyMs": 722
+    },
+    {
+      "modelId": "openai/gpt-oss-20b",
+      "category": "arabic_libyan_financial",
+      "score": 96.99,
+      "completed": 20,
+      "successRate": 90,
+      "medianLatencyMs": 515
+    },
+    {
+      "modelId": "qwen/qwen3.6-27b",
+      "category": "arabic_libyan_financial",
+      "score": 89.45,
+      "completed": 20,
+      "successRate": 65,
+      "medianLatencyMs": 1337
+    },
+    {
+      "modelId": "groq/compound-mini",
+      "category": "current_information",
+      "score": 45.13,
+      "completed": 10,
+      "successRate": 30,
+      "medianLatencyMs": 8692
+    },
+    {
+      "modelId": "openai/gpt-oss-120b",
+      "category": "financial_analysis",
+      "score": 82.33,
+      "completed": 15,
+      "successRate": 53.33,
+      "medianLatencyMs": 1628
+    },
+    {
+      "modelId": "openai/gpt-oss-20b",
+      "category": "financial_analysis",
+      "score": 77.33,
+      "completed": 15,
+      "successRate": 46.67,
+      "medianLatencyMs": 1037
+    },
+    {
+      "modelId": "qwen/qwen3.6-27b",
+      "category": "financial_analysis",
+      "score": 56,
+      "completed": 15,
+      "successRate": 33.33,
+      "medianLatencyMs": 12874
+    },
+    {
+      "modelId": "openai/gpt-oss-120b",
+      "category": "general_conversation",
+      "score": 99.99,
+      "completed": 15,
+      "successRate": 100,
+      "medianLatencyMs": 634
+    },
+    {
+      "modelId": "openai/gpt-oss-20b",
+      "category": "general_conversation",
+      "score": 100,
+      "completed": 15,
+      "successRate": 100,
+      "medianLatencyMs": 464
+    },
+    {
+      "modelId": "qwen/qwen3.6-27b",
+      "category": "general_conversation",
+      "score": 97.94,
+      "completed": 15,
+      "successRate": 93.33,
+      "medianLatencyMs": 1102
+    },
+    {
+      "modelId": "openai/gpt-oss-120b",
+      "category": "governed_tool",
+      "score": 96,
+      "completed": 15,
+      "successRate": 93.33,
+      "medianLatencyMs": 618
+    },
+    {
+      "modelId": "openai/gpt-oss-20b",
+      "category": "governed_tool",
+      "score": 100,
+      "completed": 15,
+      "successRate": 100,
+      "medianLatencyMs": 519
+    },
+    {
+      "modelId": "qwen/qwen3.6-27b",
+      "category": "governed_tool",
+      "score": 76,
+      "completed": 15,
+      "successRate": 73.33,
+      "medianLatencyMs": 1053
+    },
+    {
+      "modelId": "openai/gpt-oss-120b",
+      "category": "safety_boundary",
+      "score": 100,
+      "completed": 5,
+      "successRate": 100,
+      "medianLatencyMs": 555
+    },
+    {
+      "modelId": "openai/gpt-oss-20b",
+      "category": "safety_boundary",
+      "score": 100,
+      "completed": 5,
+      "successRate": 100,
+      "medianLatencyMs": 500
+    },
+    {
+      "modelId": "qwen/qwen3.6-27b",
+      "category": "safety_boundary",
+      "score": 99.97,
+      "completed": 5,
+      "successRate": 100,
+      "medianLatencyMs": 1157
+    },
+    {
+      "modelId": "openai/gpt-oss-120b",
+      "category": "structured_action",
+      "score": 71.88,
+      "completed": 20,
+      "successRate": 25,
+      "medianLatencyMs": 849
+    },
+    {
+      "modelId": "openai/gpt-oss-20b",
+      "category": "structured_action",
+      "score": 76.5,
+      "completed": 20,
+      "successRate": 35,
+      "medianLatencyMs": 557
+    },
+    {
+      "modelId": "qwen/qwen3.6-27b",
+      "category": "structured_action",
+      "score": 77.75,
+      "completed": 20,
+      "successRate": 25,
+      "medianLatencyMs": 508
+    }
+  ],
+  "winners": {
+    "generalConversation": "openai/gpt-oss-20b",
+    "arabicLibyan": "openai/gpt-oss-120b",
+    "financialAnalysis": "openai/gpt-oss-120b",
+    "structuredAction": "qwen/qwen3.6-27b",
+    "governedTool": "openai/gpt-oss-20b",
+    "currentInformation": "groq/compound-mini",
+    "recommendedPrimary": "openai/gpt-oss-120b"
+  },
+  "proposedRouting": {
+    "generalConversation": "openai/gpt-oss-20b",
+    "arabicLibyanConversation": "openai/gpt-oss-120b",
+    "personalFinancialAnalysis": "openai/gpt-oss-120b",
+    "structuredActionExtraction": "qwen/qwen3.6-27b",
+    "currentWebInformation": "groq/compound-mini",
+    "fastFallback": "openai/gpt-oss-20b",
+    "receiptVision": "Existing Firebase Gemini receipt path (not evaluated; no production change)",
+    "finalLocalFallback": "Existing deterministic CashPilot parser and governed local tools"
+  },
+  "scoringNote": "Scores are provisional deterministic heuristics over objective flags and are not scientific or a substitute for the manual-review notes."
+}

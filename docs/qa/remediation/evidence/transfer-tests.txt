@@ -1,0 +1,39 @@
+CashPilot AI OF-005 transfer test ledger (sanitized)
+Date: 2026-08-10 (Africa/Tripoli)
+
+1. Initial RED
+Command: flutter test test/features/transactions/transfer_group_idempotency_test.dart
+Result: exit 1; 0 passed, 7 failed, 0 skipped.
+
+2. Primary implementation transition
+Focused result: 16 passed, 1 failed, 0 skipped.
+Remaining case: bad-currency was classified as transfer_group_conflict instead of transfer_group_malformed. The classification was corrected; the focused file then reached 17 passed, 0 failed, 0 skipped.
+
+3. First combined integration transition
+Command: flutter test test/features/transactions/transfer_group_idempotency_test.dart test/features/transactions/transfer_group_adversarial_test.dart test/features/transactions/transactions_test.dart test/features/transactions/transactions_ui_test.dart test/features/finance_engine/finance_engine_test.dart test/core/database/app_database_migration_test.dart test/core/owner_scope/owner_scope_database_test.dart test/core/sync/sync_test.dart test/features/data_deletion/data_deletion_test.dart test/features/data_deletion/account_deletion_scope_recovery_finalizer_integration_test.dart
+Result: exit 1; 179 passed, 1 failed, 0 skipped.
+Failure: corrupt raw payload / bad-source expected transfer_group_malformed but received a null failure code at transfer_group_idempotency_test.dart:1267.
+Classification: stale test-harness state. The corruption matrix intentionally retained the prior corrupt group in one database, so the newly correct owner quarantine blocked setup of the next case. The harness was changed to use a fresh database per corruption. No production quarantine behavior was weakened.
+Note: the tool truncated the original 407-line combined reporter stream; the exact command, count, and isolated failure above are preserved rather than represented as a full raw transcript.
+
+4. Legacy-term RED
+Command: flutter test test/features/transactions/transfer_group_idempotency_test.dart test/features/transactions/transfer_group_adversarial_test.dart --plain-name contradiction
+Result: exit 1; 0 passed, 3 failed, 0 skipped.
+Command: flutter test test/features/transactions/transfer_group_idempotency_test.dart --plain-name "repository rejects null-fingerprint"
+Result: exit 1; 0 passed, 1 failed, 0 skipped.
+
+5. Final focused GREEN
+Command: flutter test test/features/transactions/transfer_group_idempotency_test.dart test/features/transactions/transfer_group_adversarial_test.dart
+Result: exit 0; 53 passed, 0 failed, 0 skipped.
+Runner final line: 00:10 +53: All tests passed!
+
+6. Final authoritative GREEN
+Command: flutter test test/features/transactions/transfer_group_idempotency_test.dart test/features/transactions/transfer_group_adversarial_test.dart test/features/transactions/transactions_test.dart test/features/transactions/transactions_ui_test.dart test/features/finance_engine/finance_engine_test.dart test/core/database/app_database_migration_test.dart test/core/owner_scope/owner_scope_database_test.dart test/core/sync/sync_test.dart test/features/data_deletion/data_deletion_test.dart test/features/data_deletion/account_deletion_scope_recovery_finalizer_integration_test.dart
+Result: exit 0; 186 passed, 0 failed, 0 skipped.
+Runner final line: 00:10 +186: All tests passed!
+
+7. Static analysis
+Command: flutter analyze --no-pub
+Result: exit 0; No issues found (14.6 seconds).
+
+Privacy: synthetic fixtures only. Exception details are redacted; no secrets or production financial data are present.

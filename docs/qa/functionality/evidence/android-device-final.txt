@@ -1,0 +1,30 @@
+CashPilot AI Android emulator acceptance
+Date: 2026-08-11
+Device: emulator-5554, sdk_gphone64_x86_64 / Small_Phone
+OS: Android 17, API 37
+Display: 720x1280 at 320 dpi
+
+Final main APK installation: PASS (adb install -r)
+Final cold launch: PASS; LaunchState=COLD; TotalTime=9377 ms; WaitTime=9405 ms
+Final hot task return: PASS; task brought to front in 90 ms
+Visual inspection: PASS for the fresh English onboarding screen; no clipping or crash;
+Skip and Next are visible and enabled.
+
+Synthetic device integration:
+Command: flutter test --no-pub -d emulator-5554 integration_test/ai_navigation_device_regression_test.dart
+Final result: PASS, 1 passed / 0 failed, exit 0
+Observed navigation: /splash -> /ai-assistant -> /dashboard -> /ai-assistant
+Scope: mocked orchestrator and synthetic same-user Auth refresh. This is not a live
+Firebase, App Check, Gemini, or Groq result.
+
+Two earlier attempts exposed test-harness defects before the AI behavior ran:
+1. The harness selected an account-deletion loading Scaffold with no GoRouter.
+2. It omitted the clean deletion-recovery override and used a broadcast Auth event
+   that could be emitted before subscription.
+The harness now waits for the routed dashboard, uses a clean recovery report, and
+retains the initial synthetic Auth event.
+
+After integration-test uninstall/reinstall, scoped logcat showed secure-storage
+algorithm-mismatch warnings. The deletion proof store intentionally disables silent
+reset/migration to fail closed. The main app still launched to onboarding; a real
+upgrade/migration acceptance test remains required.

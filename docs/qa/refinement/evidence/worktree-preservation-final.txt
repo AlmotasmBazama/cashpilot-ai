@@ -1,0 +1,7 @@
+Worktree preservation final evidence
+Branch: master
+HEAD: fd24526f3f21ba0e96ca73dcc4a69f5a11aed632
+Baseline status entries: 364
+Final status entries: 368
+Actions not used: git reset; git clean; git stash; git commit; git push; branch switch
+Interpretation: the shared dirty worktree and pre-existing user/agent changes were preserved. The final count includes new refinement reports/evidence and must not be interpreted as this sprint owning every dirty path.

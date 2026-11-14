@@ -1,0 +1,20 @@
+OF-033 GREEN evidence - negative opening balance rejection
+Date: 2026-08-10
+Command: flutter test test/features/categories test/features/accounts/accounts_financial_integrity_test.dart --reporter expanded
+Result: 47 passed, 0 failed, 0 skipped.
+
+The OF-033 parameterized regression rejected negative opening balances for all
+nine account types: cash, bank, creditCard, debitCard, savings, investment,
+digitalWallet, crypto, and other. Rejection occurs before account persistence,
+so no new unrecoverable negative account state or partial opening transaction exists.
+
+Legacy repair RED/GREEN command:
+flutter test test/features/finance_engine/finance_engine_test.dart test/features/accounts/accounts_financial_integrity_test.dart --name "OF-033|positive credit can repair" --reporter expanded
+RED: 9 passed, 2 failed.
+GREEN: 11 passed, 0 failed, 0 skipped.
+
+The real Drift/transaction-repository regression starts with a synthetic legacy
+negative row, posts a positive income credit, and verifies that the account
+moves from -100 to -75. Debits remain blocked while the account is below the
+supported no-negative persisted-account policy. Finance Engine credit-limit
+behavior remains covered independently.
